@@ -1,0 +1,247 @@
+@prefix : <http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/> .
+
+<http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8#hasIngridient
+:hasIngridient rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/BBQ
+:BBQ rdf:type owl:Class ;
+     rdfs:subClassOf :Sauces .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Beef
+:Beef rdf:type owl:Class ;
+      rdfs:subClassOf :Proteins .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Blue
+:Blue rdf:type owl:Class ;
+      rdfs:subClassOf :Cheese .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Brioche
+:Brioche rdf:type owl:Class ;
+         rdfs:subClassOf :Buns .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Buns
+:Buns rdf:type owl:Class ;
+      rdfs:subClassOf :Ingredients .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Burger
+:Burger rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Cheddar
+:Cheddar rdf:type owl:Class ;
+         rdfs:subClassOf :Cheese .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Cheese
+:Cheese rdf:type owl:Class ;
+        rdfs:subClassOf :Toppings .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Cheeseburger
+:Cheeseburger rdf:type owl:Class ;
+              rdfs:subClassOf :Popular_Burgers .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Chicken
+:Chicken rdf:type owl:Class ;
+         rdfs:subClassOf :Proteins .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Chicken_Burger
+:Chicken_Burger rdf:type owl:Class ;
+                rdfs:subClassOf :Popular_Burgers .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Chili_Pepper
+:Chili_Pepper rdf:type owl:Class ;
+              rdfs:subClassOf :Peppers .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Diet-Specific_Burgers
+:Diet-Specific_Burgers rdf:type owl:Class ;
+                       rdfs:subClassOf :Dish .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Diets
+:Diets rdf:type owl:Class ;
+       rdfs:subClassOf :Burger .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Dish
+:Dish rdf:type owl:Class ;
+      rdfs:subClassOf :Burger .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Fish
+:Fish rdf:type owl:Class ;
+      rdfs:subClassOf :Proteins .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Gluten-Free
+:Gluten-Free rdf:type owl:Class ;
+             rdfs:subClassOf :Diets .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Gluten-Free_Burger
+:Gluten-Free_Burger rdf:type owl:Class ;
+                    rdfs:subClassOf :Diet-Specific_Burgers .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Gluten-free_Bun
+:Gluten-free_Bun rdf:type owl:Class ;
+                 rdfs:subClassOf :Buns .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Hamburger
+:Hamburger rdf:type owl:Class ;
+           rdfs:subClassOf :Popular_Burgers .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Ingredients
+:Ingredients rdf:type owl:Class ;
+             rdfs:subClassOf :Burger .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Ketchup
+:Ketchup rdf:type owl:Class ;
+         rdfs:subClassOf :Sauces .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Lettuce
+:Lettuce rdf:type owl:Class ;
+         rdfs:subClassOf :Vegetables .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Mayo
+:Mayo rdf:type owl:Class ;
+      rdfs:subClassOf :Sauces .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Mustard
+:Mustard rdf:type owl:Class ;
+         rdfs:subClassOf :Sauces .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Onion
+:Onion rdf:type owl:Class ;
+       rdfs:subClassOf :Vegetables .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Peppers
+:Peppers rdf:type owl:Class ;
+         rdfs:subClassOf :Vegetables .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Pescatarian
+:Pescatarian rdf:type owl:Class ;
+             rdfs:subClassOf :Diets .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Plant-based_Proteins
+:Plant-based_Proteins rdf:type owl:Class ;
+                      rdfs:subClassOf :Proteins .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Popular_Burgers
+:Popular_Burgers rdf:type owl:Class ;
+                 rdfs:subClassOf :Dish .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Proteins
+:Proteins rdf:type owl:Class ;
+          rdfs:subClassOf :Ingredients .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Sauces
+:Sauces rdf:type owl:Class ;
+        rdfs:subClassOf :Toppings .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Seitan
+:Seitan rdf:type owl:Class ;
+        rdfs:subClassOf :Plant-based_Proteins .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Swiss
+:Swiss rdf:type owl:Class ;
+       rdfs:subClassOf :Cheese .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Tempeh
+:Tempeh rdf:type owl:Class ;
+        rdfs:subClassOf :Plant-based_Proteins .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Tofu
+:Tofu rdf:type owl:Class ;
+      rdfs:subClassOf :Plant-based_Proteins .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Tomato
+:Tomato rdf:type owl:Class ;
+        rdfs:subClassOf :Vegetables .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Toppings
+:Toppings rdf:type owl:Class ;
+          rdfs:subClassOf :Ingredients .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Vegan
+:Vegan rdf:type owl:Class ;
+       rdfs:subClassOf :Diets .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Vegan_Burger
+:Vegan_Burger rdf:type owl:Class ;
+              rdfs:subClassOf :Diet-Specific_Burgers .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Vegetables
+:Vegetables rdf:type owl:Class ;
+            rdfs:subClassOf :Toppings .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Vegetarian
+:Vegetarian rdf:type owl:Class ;
+            rdfs:subClassOf :Diets .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Vegetarian_Burger
+:Vegetarian_Burger rdf:type owl:Class ;
+                   rdfs:subClassOf :Diet-Specific_Burgers .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Veggie_Burger
+:Veggie_Burger rdf:type owl:Class ;
+               rdfs:subClassOf :Popular_Burgers .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Wheat_Bun
+:Wheat_Bun rdf:type owl:Class ;
+           rdfs:subClassOf :Buns .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
