@@ -120,19 +120,91 @@
       rdfs:subClassOf :Vegetables .
 
 
-###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8#Cuban_Burger
-:Cuban_Burger rdf:type owl:Class ;
-              rdfs:subClassOf :NamedBurgers .
-
-
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8#Dominican_Burger
 :Dominican_Burger rdf:type owl:Class ;
-                  rdfs:subClassOf :NamedBurgers .
+                  rdfs:subClassOf :NamedBurgers ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasBun ;
+                                    owl:someValuesFrom :Gluten-free_Bun
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasCheese ;
+                                    owl:someValuesFrom :Blue
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasPatty ;
+                                    owl:someValuesFrom :Tofu
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasSauce ;
+                                    owl:someValuesFrom :BBQ
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngridient ;
+                                    owl:someValuesFrom :Egg
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngridient ;
+                                    owl:someValuesFrom :Pineapple
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngridient ;
+                                    owl:allValuesFrom [ rdf:type owl:Class ;
+                                                        owl:unionOf ( :Egg
+                                                                      :Pineapple
+                                                                      :BBQ
+                                                                      :Blue
+                                                                      :Gluten-free_Bun
+                                                                      :Tofu
+                                                                    )
+                                                      ]
+                                  ] .
 
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8#Egg
 :Egg rdf:type owl:Class ;
      rdfs:subClassOf :Ingredients .
+
+
+###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8#Fish_Burger
+:Fish_Burger rdf:type owl:Class ;
+             rdfs:subClassOf :NamedBurgers ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBun ;
+                               owl:someValuesFrom :Wheat_Bun
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasCheese ;
+                               owl:someValuesFrom :Cheddar
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasPatty ;
+                               owl:someValuesFrom :Fish
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasSauce ;
+                               owl:someValuesFrom :Mayo
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasSauce ;
+                               owl:someValuesFrom :Mustard
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasVegetable ;
+                               owl:someValuesFrom :Onion
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasIngridient ;
+                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                   owl:unionOf ( :Cheddar
+                                                                 :Fish
+                                                                 :Mayo
+                                                                 :Mustard
+                                                                 :Onion
+                                                                 :Wheat_Bun
+                                                               )
+                                                 ]
+                             ] .
 
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8#Fruits
@@ -208,7 +280,53 @@
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Cheeseburger
 :Cheeseburger rdf:type owl:Class ;
-              rdfs:subClassOf :NamedBurgers .
+              rdfs:subClassOf :NamedBurgers ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasBun ;
+                                owl:someValuesFrom :Wheat_Bun
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasCheese ;
+                                owl:someValuesFrom :Cheddar
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasPatty ;
+                                owl:someValuesFrom :Beef
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasSauce ;
+                                owl:someValuesFrom :Ketchup
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasSauce ;
+                                owl:someValuesFrom :Mayo
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasVegetable ;
+                                owl:someValuesFrom :Lettuce
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasVegetable ;
+                                owl:someValuesFrom :Onion
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasVegetable ;
+                                owl:someValuesFrom :Tomato
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasIngridient ;
+                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :Beef
+                                                                  :Cheddar
+                                                                  :Ketchup
+                                                                  :Lettuce
+                                                                  :Mayo
+                                                                  :Onion
+                                                                  :Tomato
+                                                                  :Wheat_Bun
+                                                                )
+                                                  ]
+                              ] .
 
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Chicken
@@ -218,7 +336,48 @@
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Chicken_Burger
 :Chicken_Burger rdf:type owl:Class ;
-                rdfs:subClassOf :NamedBurgers .
+                rdfs:subClassOf :NamedBurgers ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasBun ;
+                                  owl:someValuesFrom :Wheat_Bun
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasCheese ;
+                                  owl:someValuesFrom :Swiss
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasPatty ;
+                                  owl:someValuesFrom :Chicken
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasSauce ;
+                                  owl:someValuesFrom :Mayo
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasVegetable ;
+                                  owl:someValuesFrom :Lettuce
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasVegetable ;
+                                  owl:someValuesFrom :Onion
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasVegetable ;
+                                  owl:someValuesFrom :Tomato
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasIngridient ;
+                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( :Chicken
+                                                                    :Lettuce
+                                                                    :Mayo
+                                                                    :Onion
+                                                                    :Swiss
+                                                                    :Tomato
+                                                                    :Wheat_Bun
+                                                                  )
+                                                    ]
+                                ] .
 
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Chili_Pepper
@@ -233,6 +392,31 @@
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Gluten-Free
 :Gluten-Free rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Burger
+                                                        [ rdf:type owl:Class ;
+                                                          owl:unionOf ( [ rdf:type owl:Class ;
+                                                                          owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty :hasBun ;
+                                                                                             owl:someValuesFrom :Brioche
+                                                                                           ]
+                                                                        ]
+                                                                        [ rdf:type owl:Class ;
+                                                                          owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty :hasBun ;
+                                                                                             owl:someValuesFrom :Wheat_Bun
+                                                                                           ]
+                                                                        ]
+                                                                        [ rdf:type owl:Class ;
+                                                                          owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty :hasPatty ;
+                                                                                             owl:someValuesFrom :Seitan
+                                                                                           ]
+                                                                        ]
+                                                                      )
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
              rdfs:subClassOf :Type .
 
 
@@ -293,6 +477,14 @@
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Pescatarian
 :Pescatarian rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Burger
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasPatty ;
+                                                          owl:someValuesFrom :Fish
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
              rdfs:subClassOf :Type .
 
 
@@ -367,8 +559,8 @@
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Australian_Burger
-                :Cuban_Burger
                 :Dominican_Burger
+                :Fish_Burger
                 :Cheeseburger
                 :Chicken_Burger
                 :Hamburger
