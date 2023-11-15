@@ -394,25 +394,22 @@
 :Gluten-Free rdf:type owl:Class ;
              owl:equivalentClass [ owl:intersectionOf ( :Burger
                                                         [ rdf:type owl:Class ;
-                                                          owl:unionOf ( [ rdf:type owl:Class ;
-                                                                          owl:complementOf [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty :hasBun ;
-                                                                                             owl:someValuesFrom :Brioche
-                                                                                           ]
-                                                                        ]
-                                                                        [ rdf:type owl:Class ;
-                                                                          owl:complementOf [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty :hasBun ;
-                                                                                             owl:someValuesFrom :Wheat_Bun
-                                                                                           ]
-                                                                        ]
-                                                                        [ rdf:type owl:Class ;
-                                                                          owl:complementOf [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty :hasPatty ;
-                                                                                             owl:someValuesFrom :Seitan
-                                                                                           ]
-                                                                        ]
-                                                                      )
+                                                          owl:complementOf [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasBun ;
+                                                                             owl:someValuesFrom :Brioche
+                                                                           ]
+                                                        ]
+                                                        [ rdf:type owl:Class ;
+                                                          owl:complementOf [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasBun ;
+                                                                             owl:someValuesFrom :Wheat_Bun
+                                                                           ]
+                                                        ]
+                                                        [ rdf:type owl:Class ;
+                                                          owl:complementOf [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasPatty ;
+                                                                             owl:someValuesFrom :Seitan
+                                                                           ]
                                                         ]
                                                       ) ;
                                    rdf:type owl:Class
@@ -540,6 +537,20 @@
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Vegetarian
 :Vegetarian rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :Burger
+                                                       [ rdf:type owl:Class ;
+                                                         owl:complementOf [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :hasIngridient ;
+                                                                            owl:someValuesFrom :Bacon
+                                                                          ]
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasIngridient ;
+                                                         owl:someValuesFrom :Plant-based_patty
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
             rdfs:subClassOf :Type .
 
 
