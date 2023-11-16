@@ -434,7 +434,8 @@
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :Type .
+       rdfs:subClassOf :Type ;
+       owl:disjointWith :Pescatarian .
 
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Mustard
@@ -465,6 +466,12 @@
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Pescatarian
 :Pescatarian rdf:type owl:Class ;
              owl:equivalentClass [ owl:intersectionOf ( :Burger
+                                                        [ rdf:type owl:Class ;
+                                                          owl:complementOf [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasIngridient ;
+                                                                             owl:someValuesFrom :Bacon
+                                                                           ]
+                                                        ]
                                                         [ rdf:type owl:Restriction ;
                                                           owl:onProperty :hasPatty ;
                                                           owl:someValuesFrom :Fish
@@ -522,7 +529,21 @@
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Vegan
 :Vegan rdf:type owl:Class ;
-       rdfs:subClassOf :Type .
+       owl:equivalentClass [ owl:intersectionOf ( :Burger
+                                                  [ rdf:type owl:Class ;
+                                                    owl:complementOf [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasIngridient ;
+                                                                       owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                            owl:unionOf ( :Cheese
+                                                                                                          :Egg
+                                                                                                        )
+                                                                                          ]
+                                                                     ]
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :Vegetarian .
 
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Vegetables
@@ -637,9 +658,7 @@
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Gluten-Free
                 :Meaty
-                :Pescatarian
                 :Vegan
-                :Vegetarian
               )
 ] .
 
