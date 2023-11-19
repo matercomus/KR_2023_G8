@@ -135,42 +135,138 @@ print()
 print("I made the following GCI:")
 print(formatter.format(gci))
 
+# Define the ELReasoner class
+class ELReasoner:
+    def __init__(self, ontology):
+        self.ontology = ontology
+        self.interpretation = {name: set() for name in ontology.getConceptNames()}
+        self.r_successors = {}
+        self.tbox = ontology.tbox().getAxioms()
+
+    def apply_top_rule(self):
+        # Implement the ⊤-rule here
+        for d in self.interpretation:
+            self.interpretation[d].add('⊤')
+
+    def apply_conjunction_rules(self):
+        # Implement the ⊓-rules here
+        for d, concepts in list(self.interpretation.items()):
+            for concept in concepts:
+                if '⊓' in concept:
+                    C, D = concept.split(' ⊓ ')
+                    self.interpretation[d].update({C, D})
+                    self.interpretation[d].add(concept)
+
+    def apply_existential_rules(self):
+        # Implement the ∃-rules here
+        for d, concepts in list(self.interpretation.items()):
+            for concept in concepts:
+                if concept.startswith('∃'):
+                    _, r, C = concept.split()
+                    # Rule 1
+                    if any(C in self.interpretation[e] for e in self.r_successors.get(d, [])):
+                        continue
+                    new_d = f'e{len(self.interpretation)}'
+                    self.interpretation[new_d] = {C}
+                    self.r_successors.setdefault(d, []).append(new_d)
+                    # Rule 2
+                    for e in self.r_successors.get(d, []):
+                        if C in self.interpretation[e]:
+                            self.interpretation[d].add(concept)
+
+    def apply_subsumption_rule(self):
+        # Implement the ⊑-rule here
+        for d, concepts in list(self.interpretation.items()):
+            for concept in list(concepts):
+                for axiom in self.tbox:
+                    try:
+                        lhs = axiom.lhs()
+                        rhs = axiom.rhs()
+                        # Convert Java objects to string if necessary
+                        lhs_str = formatter.format(lhs)
+                        rhs_str = formatter.format(rhs)
+                        if lhs_str == concept:
+                            self.interpretation[d].add(rhs_str)
+                    except Exception as e:
+                        pass
+
+    def reason(self):
+        # Main reasoning loop that applies the rules
+        changed = True
+        while changed:
+            changed = False
+            previous_interpretation = {d: set(concepts) for d, concepts in self.interpretation.items()}
+            
+            self.apply_top_rule()
+            self.apply_conjunction_rules()
+            self.apply_existential_rules()
+            self.apply_subsumption_rule()
+
+            if self.interpretation != previous_interpretation:
+                changed = True
+
+    def getSubsumers(self, concept):
+        # Return a set of super-concepts of the given concept
+        self.reason()
+        subsumers = set()
+        for d, concepts in self.interpretation.items():
+            if concept in concepts:
+                subsumers.update(concepts)
+        return subsumers
+
+    def classify(self):
+        # Optional: Implement a method to classify the ontology
+        return {}
+
+
+# Create an instance of ELReasoner
+el_reasoner = ELReasoner(ontology)
+
+# Example usage similar to ELK and HermiT
+margherita = elFactory.getConceptName('"Margherita"')
+print("\nI am now testing the ELReasoner.")
+el_reasoner.reason()
+print("\nAccording to the ELReasoner, Margherita has the following subsumers: ")
+subsumers = el_reasoner.getSubsumers(margherita)
+for concept in subsumers:
+    print(" - ", formatter.format(concept))
+print("(", len(subsumers), " in total)")
 
 # Using the reasoners
 
-elk = gateway.getELKReasoner()
-hermit = gateway.getHermiTReasoner() # might the upper case T!
+# elk = gateway.getELKReasoner()
+# hermit = gateway.getHermiTReasoner() # might the upper case T!
 
-margherita = elFactory.getConceptName('"Margherita"')
+# margherita = elFactory.getConceptName('"Margherita"')
 
-print()
-print("I am first testing ELK.")
-elk.setOntology(ontology)
-print()
-print("According to ELK, Margherita has the following subsumers: ")
-subsumers = elk.getSubsumers(margherita)
-for concept in subsumers:
-    print(" - ",formatter.format(concept))
-print("(",len(subsumers)," in total)")
-print()
-print("I can also classify the ontology with ELK.")
-classificationResult = elk.classify()
-print("But I am not printing the result, because that would be too much stuff (it is a dictionary)")
-print()
+# print()
+# print("I am first testing ELK.")
+# elk.setOntology(ontology)
+# print()
+# print("According to ELK, Margherita has the following subsumers: ")
+# subsumers = elk.getSubsumers(margherita)
+# for concept in subsumers:
+#     print(" - ",formatter.format(concept))
+# print("(",len(subsumers)," in total)")
+# print()
+# print("I can also classify the ontology with ELK.")
+# classificationResult = elk.classify()
+# print("But I am not printing the result, because that would be too much stuff (it is a dictionary)")
+# print()
 
-print()
-print("I am now testing HermiT.")
-hermit.setOntology(ontology)
-print()
-print("According to HermiT, Margherita has the following subsumers: ")
-subsumers = hermit.getSubsumers(margherita)
-for concept in subsumers:
-    print(" - ",formatter.format(concept))
-print("(",len(subsumers)," in total)")
-print()
-print("I can also classify the ontology with HermiT")
-classificationResult = hermit.classify()
-print("But I am not printing the result, because that would be too much stuff (it is a dictionary)")
-print()
+# print()
+# print("I am now testing HermiT.")
+# hermit.setOntology(ontology)
+# print()
+# print("According to HermiT, Margherita has the following subsumers: ")
+# subsumers = hermit.getSubsumers(margherita)
+# for concept in subsumers:
+#     print(" - ",formatter.format(concept))
+# print("(",len(subsumers)," in total)")
+# print()
+# print("I can also classify the ontology with HermiT")
+# classificationResult = hermit.classify()
+# print("But I am not printing the result, because that would be too much stuff (it is a dictionary)")
+# print()
 
 
