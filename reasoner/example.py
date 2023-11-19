@@ -14,7 +14,7 @@ formatter = gateway.getSimpleDLFormatter()
 print("Loading the ontology...")
 
 # load an ontology from a file
-ontology = parser.parseFile("pizza.owl")
+ontology = parser.parseFile("amino-acid.amino-acid-ontology.2.owl.xml")
 
 print("Loaded the ontology!")
 
@@ -136,7 +136,6 @@ print("I made the following GCI:")
 print(formatter.format(gci))
 
 # Define the ELReasoner class
-
 class ELReasoner:
     def __init__(self, ontology):
         self.ontology = ontology
@@ -152,6 +151,7 @@ class ELReasoner:
         if concept.getClass().getSimpleName() == "ConceptConjunction":
             for conjunct in concept.getConjuncts():
                 self.subsumers[concept].update(self.getSubsumers(conjunct))
+            print(f"Applied conjunction rules to {formatter.format(concept)}: {self.format_concepts(self.subsumers[concept])}")
 
     def apply_existential_rules(self, concept):
         # Implement the ∃-rules here
@@ -160,6 +160,7 @@ class ELReasoner:
             for other_concept in self.ontology.getSubConcepts():
                 if other_concept.getClass().getSimpleName() == "ConceptName" and other_concept == filler:
                     self.subsumers[concept].add(other_concept)
+            print(f"Applied existential rules to {formatter.format(concept)}: {self.format_concepts(self.subsumers[concept])}")
 
     def apply_subsumption_rule(self, concept):
         # Implement the ⊑-rule here
@@ -169,6 +170,7 @@ class ELReasoner:
                 rhs = axiom.rhs()
                 if lhs in self.getSubsumers(concept):
                     self.subsumers[concept].add(rhs)
+        print(f"Applied subsumption rule to {formatter.format(concept)}: {self.format_concepts(self.subsumers[concept])}")
 
     def reason(self):
         changed = True
@@ -183,17 +185,21 @@ class ELReasoner:
                 new_subsumers = self.getSubsumers(concept)
                 if old_subsumers != new_subsumers:
                     changed = True
+            print(f"After reasoning, subsumers for {formatter.format(concept)}: {self.format_concepts(self.subsumers[concept])}")
 
     def getSubsumers(self, concept):
         if concept not in self.subsumers:
             self.subsumers[concept] = set([concept])
         return self.subsumers[concept]
 
+    def format_concepts(self, concepts):
+        return [formatter.format(concept) for concept in concepts]
+
 # Create an instance of ELReasoner
 el_reasoner = ELReasoner(ontology)
 
 # Example usage similar to ELK and HermiT
-margherita = elFactory.getConceptName('"Margherita"')
+margherita = elFactory.getConceptName('A')
 print("\nI am now testing the ELReasoner.")
 el_reasoner.reason()
 print("\nAccording to the ELReasoner, A has the following subsumers: ")
@@ -207,7 +213,7 @@ print("(", len(subsumers), " in total)")
 elk = gateway.getELKReasoner()
 hermit = gateway.getHermiTReasoner() # might the upper case T!
 
-margherita = elFactory.getConceptName('"Margherita"')
+margherita = elFactory.getConceptName('A')
 
 print()
 print("I am first testing ELK.")
