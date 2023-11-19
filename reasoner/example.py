@@ -142,35 +142,28 @@ class ELReasoner:
         self.subsumers = {}
 
     def apply_top_rule(self, concept):
-        # Implement the ⊤-rule here
         if concept.getClass().getSimpleName() == "TopConcept$":
             self.subsumers[concept].add(concept)
 
     def apply_conjunction_rules(self, concept):
-        # Implement the ⊓-rules here
         if concept.getClass().getSimpleName() == "ConceptConjunction":
             for conjunct in concept.getConjuncts():
                 self.subsumers[concept].update(self.getSubsumers(conjunct))
-            print(f"Applied conjunction rules to {formatter.format(concept)}: {self.format_concepts(self.subsumers[concept])}")
 
     def apply_existential_rules(self, concept):
-        # Implement the ∃-rules here
         if concept.getClass().getSimpleName() == "ExistentialRoleRestriction":
             filler = concept.filler()
             for other_concept in self.ontology.getSubConcepts():
                 if other_concept.getClass().getSimpleName() == "ConceptName" and other_concept == filler:
                     self.subsumers[concept].add(other_concept)
-            print(f"Applied existential rules to {formatter.format(concept)}: {self.format_concepts(self.subsumers[concept])}")
 
     def apply_subsumption_rule(self, concept):
-        # Implement the ⊑-rule here
         for axiom in self.ontology.tbox().getAxioms():
             if axiom.getClass().getSimpleName() == "GeneralConceptInclusion":
                 lhs = axiom.lhs()
                 rhs = axiom.rhs()
                 if lhs in self.getSubsumers(concept):
                     self.subsumers[concept].add(rhs)
-        print(f"Applied subsumption rule to {formatter.format(concept)}: {self.format_concepts(self.subsumers[concept])}")
 
     def reason(self):
         changed = True
@@ -185,15 +178,11 @@ class ELReasoner:
                 new_subsumers = self.getSubsumers(concept)
                 if old_subsumers != new_subsumers:
                     changed = True
-            print(f"After reasoning, subsumers for {formatter.format(concept)}: {self.format_concepts(self.subsumers[concept])}")
 
     def getSubsumers(self, concept):
         if concept not in self.subsumers:
             self.subsumers[concept] = set([concept])
         return self.subsumers[concept]
-
-    def format_concepts(self, concepts):
-        return [formatter.format(concept) for concept in concepts]
 
 # Create an instance of ELReasoner
 el_reasoner = ELReasoner(ontology)

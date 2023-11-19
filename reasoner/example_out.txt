@@ -1,0 +1,470 @@
+Loading the ontology...
+Loaded the ontology!
+Converting to binary conjunctions
+These are the axioms in the TBox:
+S ⊑ TinyPolarAminoAcid
+W ⊑ ¬F
+T ⊑ ∀hasPolarity.Polar
+L ⊑ ∀hasSize.Large
+L ⊑ ∃hasSize.Large
+K ⊑ ∀hasCharge.Positive
+K ⊑ ∃hasCharge.Positive
+S ⊑ ∃hasSideChainStructure.Aliphatic
+S ⊑ ∀hasSideChainStructure.Aliphatic
+A ⊑ AliphaticAminoAcid
+(AminoAcid ⊓ ∃hasCharge.Negative) ⊑ NegativeChargedAminoAcid
+V ⊑ ∃hasHydrophobicity.Hydrophobic
+V ⊑ ∀hasHydrophobicity.Hydrophobic
+(AminoAcid ⊓ ∃hasCharge.Positive) ⊑ PositiveChargedAminoAcid
+V ⊑ ∀hasPolarity.Non-Polar
+V ⊑ ∃hasPolarity.Non-Polar
+G ⊑ ∀hasCharge.Neutral
+G ⊑ ∃hasCharge.Neutral
+G ⊑ ∀hasSideChainStructure.Aliphatic
+G ⊑ ∃hasSideChainStructure.Aliphatic
+P ⊑ ∀hasPolarity.Non-Polar
+P ⊑ ∃hasPolarity.Non-Polar
+AminoAcid ⊑ (M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)
+L ⊑ ∃hasPolarity.Non-Polar
+L ⊑ ∀hasPolarity.Non-Polar
+(AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny)) ⊑ TinyPolarAminoAcid
+Small ⊑ ¬Large
+Neutral ⊑ ¬Negative
+D ⊑ ∀hasPolarity.Polar
+D ⊑ ∃hasPolarity.Polar
+M ⊑ ∀hasSideChainStructure.Aliphatic
+H ⊑ ∀hasSideChainStructure.Aromatic
+H ⊑ AromaticAminoAcid
+R ⊑ ∃hasHydrophobicity.Hydrophilic
+R ⊑ ∀hasHydrophobicity.Hydrophilic
+M ⊑ ¬I
+Q ⊑ ∀hasSize.Large
+G ⊑ ∀hasSize.Tiny
+G ⊑ ∃hasSize.Tiny
+SideChainStructure ⊑ (Aliphatic ⊔ Aromatic)
+T ⊑ ∀hasCharge.Neutral
+T ⊑ ∃hasCharge.Neutral
+I ⊑ ¬M
+N ⊑ ∃hasSize.Small
+N ⊑ ∀hasSize.Small
+M ⊑ LargeAliphaticAminoAcid
+T ⊑ ∀hasHydrophobicity.Hydrophilic
+T ⊑ ∃hasHydrophobicity.Hydrophilic
+V ⊑ ∀hasSize.Small
+V ⊑ ∃hasSize.Small
+T ⊑ ¬S
+C ⊑ ∃hasSize.Small
+C ⊑ ∀hasSize.Small
+Y ⊑ ∃hasCharge.Neutral
+Y ⊑ ∀hasCharge.Neutral
+C ⊑ ∀hasSideChainStructure.Aliphatic
+C ⊑ ∃hasSideChainStructure.Aliphatic
+T ⊑ ∀hasSize.Tiny
+Aliphatic ⊑ ¬Aromatic
+AromaticAminoAcid ⊑ (AminoAcid ⊓ ∃hasSideChainStructure.Aromatic)
+N ⊑ ∀hasCharge.Neutral
+N ⊑ ∃hasCharge.Neutral
+K ⊑ ∃hasPolarity.Polar
+K ⊑ ∀hasPolarity.Polar
+Size ⊑ RefiningFeature
+A ⊑ ∀hasPolarity.Non-Polar
+A ⊑ ∃hasPolarity.Non-Polar
+Hydrophobicity ⊑ RefiningFeature
+D ⊑ ∀hasHydrophobicity.Hydrophilic
+D ⊑ ∃hasHydrophobicity.Hydrophilic
+SideChainStructure ⊑ RefiningFeature
+I ⊑ ∀hasSideChainStructure.Aliphatic
+Charge ⊑ RefiningFeature
+(Non-Polar ⊔ Polar) ⊑ Polarity
+N ⊑ ∀hasHydrophobicity.Hydrophilic
+N ⊑ ∃hasHydrophobicity.Hydrophilic
+A ⊑ ∀hasSize.Tiny
+A ⊑ ∃hasSize.Tiny
+F ⊑ ¬W
+M ⊑ ∀hasHydrophobicity.Hydrophobic
+M ⊑ ∃hasHydrophobicity.Hydrophobic
+M ⊑ ∀hasCharge.Neutral
+M ⊑ ∃hasCharge.Neutral
+(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q) ⊑ AminoAcid
+L ⊑ ∀hasSideChainStructure.Aliphatic
+L ⊑ ∃hasSideChainStructure.Aliphatic
+A ⊑ ∀hasHydrophobicity.Hydrophobic
+A ⊑ ∃hasHydrophobicity.Hydrophobic
+P ⊑ ∃hasHydrophobicity.Hydrophobic
+P ⊑ ∀hasHydrophobicity.Hydrophobic
+PositiveChargedAminoAcid ⊑ (AminoAcid ⊓ ∃hasCharge.Positive)
+C ⊑ ∃hasHydrophobicity.Hydrophobic
+C ⊑ ∀hasHydrophobicity.Hydrophobic
+(Aliphatic ⊔ Aromatic) ⊑ SideChainStructure
+A ⊑ ∃hasCharge.Neutral
+A ⊑ ∀hasCharge.Neutral
+R ⊑ ∀hasSize.Large
+I ⊑ ∀hasPolarity.Non-Polar
+I ⊑ ∃hasPolarity.Non-Polar
+H ⊑ ∀hasHydrophobicity.Hydrophilic
+H ⊑ ∃hasHydrophobicity.Hydrophilic
+R ⊑ ∀hasSideChainStructure.Aliphatic
+V ⊑ ∀hasSideChainStructure.Aliphatic
+V ⊑ ∃hasSideChainStructure.Aliphatic
+Q ⊑ ∃hasCharge.Neutral
+Q ⊑ ∀hasCharge.Neutral
+W ⊑ ∃hasHydrophobicity.Hydrophobic
+W ⊑ ∀hasHydrophobicity.Hydrophobic
+I ⊑ ∀hasSize.Large
+D ⊑ ∀hasCharge.Negative
+D ⊑ ∃hasCharge.Negative
+I ⊑ LargeAliphaticAminoAcid
+K ⊑ ∀hasSize.Large
+Aromatic ⊑ ¬Aliphatic
+(Tiny ⊔ Large ⊔ Small) ⊑ Size
+P ⊑ ∃hasSize.Small
+P ⊑ ∀hasSize.Small
+D ⊑ ∀hasSize.Small
+D ⊑ ∃hasSize.Small
+E ⊑ ¬D
+S ⊑ ∀hasSize.Tiny
+E ⊑ ∀hasPolarity.Polar
+E ⊑ ∃hasPolarity.Polar
+R ⊑ LargeAliphaticAminoAcid
+L ⊑ ∃hasHydrophobicity.Hydrophobic
+L ⊑ ∀hasHydrophobicity.Hydrophobic
+Large ⊑ ¬Tiny
+L ⊑ ¬I
+A ⊑ ¬G
+Positive ⊑ ¬Negative
+R ⊑ ¬K
+K ⊑ ¬R
+LargeAliphaticAminoAcid ⊑ (AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large))
+Polarity ⊑ (Non-Polar ⊔ Polar)
+R ⊑ ∀hasPolarity.Polar
+R ⊑ ∃hasPolarity.Polar
+domain(hasCharge) = AminoAcid
+Y ⊑ ∀hasSideChainStructure.Aromatic
+R ⊑ PositiveChargedAminoAcid
+Hydrophobic ⊑ ¬Hydrophilic
+F ⊑ ∀hasSideChainStructure.Aromatic
+F ⊑ ∃hasSideChainStructure.Aromatic
+F ⊑ ∀hasCharge.Neutral
+F ⊑ ∃hasCharge.Neutral
+G ⊑ ∃hasPolarity.Non-Polar
+G ⊑ ∀hasPolarity.Non-Polar
+F ⊑ ∃hasPolarity.Non-Polar
+F ⊑ ∀hasPolarity.Non-Polar
+domain(hasSideChainStructure) = AminoAcid
+Large ⊑ ¬Small
+S ⊑ ∃hasCharge.Neutral
+S ⊑ ∀hasCharge.Neutral
+C ⊑ ∃hasCharge.Neutral
+C ⊑ ∀hasCharge.Neutral
+Hydrophilic ⊑ ¬Hydrophobic
+Charge ⊑ (Negative ⊔ Neutral ⊔ Positive)
+G ⊑ ¬A
+E ⊑ ∀hasHydrophobicity.Hydrophilic
+E ⊑ ∃hasHydrophobicity.Hydrophilic
+Q ⊑ ∀hasSideChainStructure.Aliphatic
+domain(hasSize) = AminoAcid
+H ⊑ ∀hasPolarity.Polar
+H ⊑ ∃hasPolarity.Polar
+(Negative ⊔ Neutral ⊔ Positive) ⊑ Charge
+M ⊑ ¬L
+Q ⊑ LargeAliphaticAminoAcid
+H ⊑ ∃hasSize.Large
+H ⊑ ∀hasSize.Large
+NegativeChargedAminoAcid ⊑ (AminoAcid ⊓ ∃hasCharge.Negative)
+SpecificAminoAcid ⊑ AminoAcid
+Polar ⊑ ¬Non-Polar
+AminoAcid ⊑ SpecificAminoAcid
+Y ⊑ ∃hasPolarity.Polar
+Y ⊑ ∀hasPolarity.Polar
+P ⊑ ∀hasSideChainStructure.Aliphatic
+P ⊑ ∃hasSideChainStructure.Aliphatic
+K ⊑ ∀hasSideChainStructure.Aliphatic
+Neutral ⊑ ¬Positive
+Hydrophobicity ⊑ (Hydrophilic ⊔ Hydrophobic)
+L ⊑ ¬M
+L ⊑ ∃hasCharge.Neutral
+L ⊑ ∀hasCharge.Neutral
+N ⊑ ∃hasSideChainStructure.Aliphatic
+N ⊑ ∀hasSideChainStructure.Aliphatic
+F ⊑ ∃hasSize.Large
+F ⊑ ∀hasSize.Large
+(AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic) ⊑ AliphaticAminoAcid
+Positive ⊑ ¬Neutral
+S ⊑ ¬T
+Y ⊑ ∃hasSize.Large
+Y ⊑ ∀hasSize.Large
+M ⊑ ∀hasSize.Large
+K ⊑ ∃hasHydrophobicity.Hydrophilic
+K ⊑ ∀hasHydrophobicity.Hydrophilic
+Q ⊑ ∀hasHydrophobicity.Hydrophilic
+Q ⊑ ∃hasHydrophobicity.Hydrophilic
+NegativeChargedAminoAcid ⊑ AliphaticAminoAcid
+Size ⊑ (Tiny ⊔ Large ⊔ Small)
+E ⊑ ∃hasCharge.Negative
+E ⊑ ∀hasCharge.Negative
+F ⊑ ∃hasHydrophobicity.Hydrophobic
+F ⊑ ∀hasHydrophobicity.Hydrophobic
+I ⊑ ∀hasCharge.Neutral
+I ⊑ ∃hasCharge.Neutral
+P ⊑ ∃hasCharge.Neutral
+P ⊑ ∀hasCharge.Neutral
+(AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large)) ⊑ LargeAliphaticAminoAcid
+D ⊑ ¬E
+K ⊑ LargeAliphaticAminoAcid
+AliphaticAminoAcid ⊑ (AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic)
+A ⊑ ∀hasSideChainStructure.Aliphatic
+T ⊑ TinyPolarAminoAcid
+N ⊑ ∃hasPolarity.Polar
+N ⊑ ∀hasPolarity.Polar
+Tiny ⊑ ¬Large
+(AminoAcid ⊓ ∃hasSideChainStructure.Aromatic) ⊑ AromaticAminoAcid
+W ⊑ AromaticAminoAcid
+domain(hasHydrophobicity) = AminoAcid
+H ⊑ ∀hasCharge.Positive
+H ⊑ ∃hasCharge.Positive
+G ⊑ ∀hasHydrophobicity.Hydrophobic
+G ⊑ ∃hasHydrophobicity.Hydrophobic
+Non-Polar ⊑ ¬Polar
+Q ⊑ ∀hasPolarity.Polar
+Q ⊑ ∃hasPolarity.Polar
+I ⊑ ∀hasHydrophobicity.Hydrophobic
+I ⊑ ∃hasHydrophobicity.Hydrophobic
+TinyPolarAminoAcid ⊑ (AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny))
+(Hydrophilic ⊔ Hydrophobic) ⊑ Hydrophobicity
+Negative ⊑ ¬Positive
+V ⊑ ¬P
+Y ⊑ AromaticAminoAcid
+W ⊑ ∀hasCharge.Neutral
+W ⊑ ∃hasCharge.Neutral
+D ⊑ ∀hasSideChainStructure.Aliphatic
+W ⊑ ∀hasPolarity.Non-Polar
+W ⊑ ∃hasPolarity.Non-Polar
+I ⊑ ¬L
+C ⊑ ∀hasPolarity.Polar
+C ⊑ ∃hasPolarity.Polar
+M ⊑ ∃hasPolarity.Non-Polar
+M ⊑ ∀hasPolarity.Non-Polar
+Small ⊑ ¬Tiny
+S ⊑ ∀hasHydrophobicity.Hydrophilic
+S ⊑ ∃hasHydrophobicity.Hydrophilic
+Polarity ⊑ RefiningFeature
+Negative ⊑ ¬Neutral
+E ⊑ ∃hasSize.Small
+E ⊑ ∀hasSize.Small
+V ⊑ ∀hasCharge.Neutral
+V ⊑ ∃hasCharge.Neutral
+W ⊑ ∀hasSize.Large
+W ⊑ ∃hasSize.Large
+S ⊑ ∀hasPolarity.Polar
+E ⊑ ∀hasSideChainStructure.Aliphatic
+Y ⊑ ∃hasHydrophobicity.Hydrophobic
+Y ⊑ ∀hasHydrophobicity.Hydrophobic
+T ⊑ ∃hasSideChainStructure.Aliphatic
+T ⊑ ∀hasSideChainStructure.Aliphatic
+W ⊑ ∀hasSideChainStructure.Aromatic
+Tiny ⊑ ¬Small
+P ⊑ ¬V
+domain(hasPolarity) = AminoAcid
+R ⊑ ∀hasCharge.Positive
+
+There are  111  concepts occurring in the ontology
+These are the concepts occurring in the ontology:
+['∀hasCharge.Neutral', '∃hasCharge.Neutral', 'Size', '¬Hydrophobic', '(Tiny ⊔ Large ⊔ Small)', 'TinyPolarAminoAcid', 'Q', '¬M', 'Aromatic', '∀hasPolarity.Polar', '∃hasPolarity.Polar', 'F', '∀hasCharge.Positive', '∃hasCharge.Positive', '(AminoAcid ⊓ ∃hasSideChainStructure.Aromatic)', '(AminoAcid ⊓ ∃hasCharge.Negative)', 'Hydrophobic', '¬T', '¬Aromatic', 'S', 'A', '∃hasSideChainStructure.Aliphatic', '∀hasSideChainStructure.Aliphatic', 'H', '¬Small', '¬E', '(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', '¬Polar', '¬Aliphatic', 'Y', '¬S', '∃hasSize.Small', 'Hydrophilic', '∀hasSize.Small', 'Positive', 'Negative', 'PositiveChargedAminoAcid', 'Polar', '∃hasSideChainStructure.Aromatic', '∀hasSideChainStructure.Aromatic', '(Aliphatic ⊔ Aromatic)', 'I', '¬Negative', 'Polarity', '¬Neutral', 'E', 'Small', '∃hasSize.Tiny', '∀hasSize.Tiny', 'AromaticAminoAcid', 'D', '(AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny))', 'SideChainStructure', 'V', '∃hasHydrophobicity.Hydrophobic', '∀hasHydrophobicity.Hydrophobic', '¬A', 'Charge', '¬P', '∀hasCharge.Negative', '∃hasCharge.Negative', '(∃hasPolarity.Polar ⊓ ∃hasSize.Tiny)', 'T', 'AminoAcid', '(AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large))', '(Non-Polar ⊔ Polar)', '¬K', 'Hydrophobicity', '∃hasPolarity.Non-Polar', '∀hasPolarity.Non-Polar', 'AliphaticAminoAcid', 'W', 'N', '¬Hydrophilic', 'Neutral', '¬Tiny', 'K', '∀hasSize.Large', '∃hasSize.Large', 'L', '¬Positive', 'RefiningFeature', 'P', 'C', '(Hydrophilic ⊔ Hydrophobic)', '¬F', '(AminoAcid ⊓ ∃hasCharge.Positive)', '¬R', '(Negative ⊔ Neutral ⊔ Positive)', 'G', 'Non-Polar', '¬W', '¬V', 'R', 'SpecificAminoAcid', '¬L', '(∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large)', 'Large', 'M', 'Aliphatic', '¬Large', '¬I', '¬Non-Polar', '(AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic)', 'LargeAliphaticAminoAcid', '¬G', '∀hasHydrophobicity.Hydrophilic', '∃hasHydrophobicity.Hydrophilic', 'NegativeChargedAminoAcid', '¬D', 'Tiny']
+
+There are  46  concept names occurring in the ontology
+These are the concept names: 
+['TinyPolarAminoAcid', 'Size', 'I', 'Hydrophobicity', 'Q', 'Positive', 'Neutral', 'Large', 'AliphaticAminoAcid', 'Non-Polar', 'M', 'LargeAliphaticAminoAcid', 'RefiningFeature', 'W', 'Aliphatic', 'Y', 'Tiny', 'Polar', 'SideChainStructure', 'C', 'E', 'Hydrophobic', 'NegativeChargedAminoAcid', 'R', 'V', 'T', 'S', 'N', 'AromaticAminoAcid', 'A', 'Charge', 'PositiveChargedAminoAcid', 'L', 'Small', 'H', 'G', 'F', 'AminoAcid', 'Negative', 'Aromatic', 'P', 'D', 'Hydrophilic', 'K', 'Polarity', 'SpecificAminoAcid']
+
+Looking for axiom types in EL
+I found a general concept inclusion:
+S ⊑ TinyPolarAminoAcid
+The left hand side of the axiom is:  S
+The right hand side of the axiom is:  TinyPolarAminoAcid
+
+
+Looking for concept types in EL
+UniversalRoleRestriction
+ExistentialRoleRestriction
+I found an existential role restriction: ∃hasCharge.Neutral
+The role is: hasCharge
+The filler is: Neutral
+
+ConceptName
+I found a concept name: Size
+
+ConceptComplement
+ConceptDisjunction
+ConceptConjunction
+I found a conjunction: (AminoAcid ⊓ ∃hasSideChainStructure.Aromatic)
+The conjuncts are: 
+ - AminoAcid
+ - ∃hasSideChainStructure.Aromatic
+
+
+
+I made the following GCI:
+(A ⊓ B) ⊑ (⊤ ⊓ ∃r.(A ⊓ B))
+
+I am now testing the ELReasoner.
+Applied subsumption rule to ∀hasCharge.Neutral: ['∀hasCharge.Neutral']
+Applied existential rules to ∃hasCharge.Neutral: ['∃hasCharge.Neutral', 'Neutral']
+Applied subsumption rule to ∃hasCharge.Neutral: ['∃hasCharge.Neutral', '¬Negative', '¬Positive', 'Neutral']
+Applied subsumption rule to Size: ['RefiningFeature', 'Size', '(Tiny ⊔ Large ⊔ Small)']
+Applied subsumption rule to ¬Hydrophobic: ['¬Hydrophobic']
+Applied subsumption rule to (Tiny ⊔ Large ⊔ Small): ['(Tiny ⊔ Large ⊔ Small)', 'Size']
+Applied subsumption rule to TinyPolarAminoAcid: ['(AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny))', 'TinyPolarAminoAcid']
+Applied subsumption rule to Q: ['∀hasSize.Large', '∀hasSideChainStructure.Aliphatic', '∀hasPolarity.Polar', 'Q', '∀hasCharge.Neutral', '∃hasPolarity.Polar', '∀hasHydrophobicity.Hydrophilic', '∃hasHydrophobicity.Hydrophilic', 'LargeAliphaticAminoAcid', '∃hasCharge.Neutral']
+Applied subsumption rule to ¬M: ['¬M']
+Applied subsumption rule to Aromatic: ['Aromatic', '¬Aliphatic']
+Applied subsumption rule to ∀hasPolarity.Polar: ['∀hasPolarity.Polar']
+Applied existential rules to ∃hasPolarity.Polar: ['∃hasPolarity.Polar', 'Polar']
+Applied subsumption rule to ∃hasPolarity.Polar: ['∃hasPolarity.Polar', '¬Non-Polar', 'Polar']
+Applied subsumption rule to F: ['F', '∃hasSize.Large', '∀hasSideChainStructure.Aromatic', '∃hasSideChainStructure.Aromatic', '∀hasSize.Large', '∃hasHydrophobicity.Hydrophobic', '∀hasHydrophobicity.Hydrophobic', '∃hasCharge.Neutral', '∃hasPolarity.Non-Polar', '∀hasPolarity.Non-Polar', '∀hasCharge.Neutral', '¬W']
+Applied subsumption rule to ∀hasCharge.Positive: ['∀hasCharge.Positive']
+Applied existential rules to ∃hasCharge.Positive: ['Positive', '∃hasCharge.Positive']
+Applied subsumption rule to ∃hasCharge.Positive: ['Positive', '¬Neutral', '¬Negative', '∃hasCharge.Positive']
+Applied conjunction rules to (AminoAcid ⊓ ∃hasSideChainStructure.Aromatic): ['∃hasSideChainStructure.Aromatic', '(AminoAcid ⊓ ∃hasSideChainStructure.Aromatic)', 'AminoAcid']
+Applied subsumption rule to (AminoAcid ⊓ ∃hasSideChainStructure.Aromatic): ['∃hasSideChainStructure.Aromatic', 'SpecificAminoAcid', 'AromaticAminoAcid', '(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', '(AminoAcid ⊓ ∃hasSideChainStructure.Aromatic)']
+Applied conjunction rules to (AminoAcid ⊓ ∃hasCharge.Negative): ['(AminoAcid ⊓ ∃hasCharge.Negative)', 'AminoAcid', '∃hasCharge.Negative']
+Applied subsumption rule to (AminoAcid ⊓ ∃hasCharge.Negative): ['NegativeChargedAminoAcid', 'SpecificAminoAcid', '(AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic)', '(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', 'AliphaticAminoAcid', '(AminoAcid ⊓ ∃hasCharge.Negative)', '∃hasCharge.Negative']
+Applied subsumption rule to Hydrophobic: ['Hydrophobic', '¬Hydrophilic']
+Applied subsumption rule to ¬T: ['¬T']
+Applied subsumption rule to ¬Aromatic: ['¬Aromatic']
+Applied subsumption rule to S: ['∃hasSideChainStructure.Aliphatic', '∀hasSideChainStructure.Aliphatic', 'TinyPolarAminoAcid', '¬T', '∀hasPolarity.Polar', '∀hasCharge.Neutral', 'S', '∀hasHydrophobicity.Hydrophilic', '∃hasHydrophobicity.Hydrophilic', '∀hasSize.Tiny', '∃hasCharge.Neutral', '(AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny))']
+Applied subsumption rule to A: ['A', '∀hasHydrophobicity.Hydrophobic', '∃hasHydrophobicity.Hydrophobic', '∀hasSideChainStructure.Aliphatic', '∀hasCharge.Neutral', '∀hasPolarity.Non-Polar', '∃hasPolarity.Non-Polar', '¬G', '∀hasSize.Tiny', '∃hasSize.Tiny', 'AliphaticAminoAcid', '∃hasCharge.Neutral', '(AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic)']
+Applied existential rules to ∃hasSideChainStructure.Aliphatic: ['∃hasSideChainStructure.Aliphatic', 'Aliphatic']
+Applied subsumption rule to ∃hasSideChainStructure.Aliphatic: ['∃hasSideChainStructure.Aliphatic', 'Aliphatic', '¬Aromatic']
+Applied subsumption rule to ∀hasSideChainStructure.Aliphatic: ['∀hasSideChainStructure.Aliphatic']
+Applied subsumption rule to H: ['H', '∃hasSize.Large', '∀hasSideChainStructure.Aromatic', '∀hasSize.Large', '∀hasCharge.Positive', '∃hasCharge.Positive', '∀hasPolarity.Polar', '∃hasPolarity.Polar', 'AromaticAminoAcid', '∀hasHydrophobicity.Hydrophilic', '∃hasHydrophobicity.Hydrophilic', '(AminoAcid ⊓ ∃hasSideChainStructure.Aromatic)']
+Applied subsumption rule to ¬Small: ['¬Small']
+Applied subsumption rule to ¬E: ['¬E']
+Applied subsumption rule to (M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q): ['(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', 'SpecificAminoAcid']
+Applied subsumption rule to ¬Polar: ['¬Polar']
+Applied subsumption rule to ¬Aliphatic: ['¬Aliphatic']
+Applied subsumption rule to Y: ['∃hasSize.Large', '∀hasSize.Large', '∀hasSideChainStructure.Aromatic', '∃hasHydrophobicity.Hydrophobic', '∀hasHydrophobicity.Hydrophobic', '∃hasPolarity.Polar', '∀hasPolarity.Polar', '∀hasCharge.Neutral', 'AromaticAminoAcid', 'Y', '∃hasCharge.Neutral']
+Applied subsumption rule to ¬S: ['¬S']
+Applied existential rules to ∃hasSize.Small: ['Small', '∃hasSize.Small']
+Applied subsumption rule to ∃hasSize.Small: ['Small', '¬Tiny', '¬Large', '∃hasSize.Small']
+Applied subsumption rule to Hydrophilic: ['¬Hydrophobic', 'Hydrophilic']
+Applied subsumption rule to ∀hasSize.Small: ['∀hasSize.Small']
+Applied subsumption rule to Positive: ['Positive', '¬Neutral', '¬Negative']
+Applied subsumption rule to Negative: ['¬Neutral', '¬Positive', 'Negative']
+Applied subsumption rule to PositiveChargedAminoAcid: ['(AminoAcid ⊓ ∃hasCharge.Positive)', 'PositiveChargedAminoAcid']
+Applied subsumption rule to Polar: ['¬Non-Polar', 'Polar']
+Applied existential rules to ∃hasSideChainStructure.Aromatic: ['Aromatic', '∃hasSideChainStructure.Aromatic']
+Applied subsumption rule to ∃hasSideChainStructure.Aromatic: ['Aromatic', '∃hasSideChainStructure.Aromatic', '¬Aliphatic']
+Applied subsumption rule to ∀hasSideChainStructure.Aromatic: ['∀hasSideChainStructure.Aromatic']
+Applied subsumption rule to (Aliphatic ⊔ Aromatic): ['(Aliphatic ⊔ Aromatic)', 'SideChainStructure']
+Applied subsumption rule to I: ['∀hasSize.Large', '∀hasHydrophobicity.Hydrophobic', '∃hasHydrophobicity.Hydrophobic', '∀hasSideChainStructure.Aliphatic', 'I', '∃hasCharge.Neutral', '∃hasPolarity.Non-Polar', '∀hasPolarity.Non-Polar', '¬M', '¬L', '(AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large))', 'LargeAliphaticAminoAcid', '∀hasCharge.Neutral']
+Applied subsumption rule to ¬Negative: ['¬Negative']
+Applied subsumption rule to Polarity: ['RefiningFeature', '(Non-Polar ⊔ Polar)', 'Polarity']
+Applied subsumption rule to ¬Neutral: ['¬Neutral']
+Applied subsumption rule to E: ['E', '∀hasSideChainStructure.Aliphatic', '∃hasPolarity.Polar', '¬D', '∀hasPolarity.Polar', '∃hasSize.Small', '∀hasHydrophobicity.Hydrophilic', '∃hasHydrophobicity.Hydrophilic', '∀hasCharge.Negative', '∀hasSize.Small', '∃hasCharge.Negative']
+Applied subsumption rule to Small: ['Small', '¬Tiny', '¬Large']
+Applied existential rules to ∃hasSize.Tiny: ['Tiny', '∃hasSize.Tiny']
+Applied subsumption rule to ∃hasSize.Tiny: ['¬Small', 'Tiny', '∃hasSize.Tiny', '¬Large']
+Applied subsumption rule to ∀hasSize.Tiny: ['∀hasSize.Tiny']
+Applied subsumption rule to AromaticAminoAcid: ['(AminoAcid ⊓ ∃hasSideChainStructure.Aromatic)', 'AromaticAminoAcid']
+Applied subsumption rule to D: ['∀hasSideChainStructure.Aliphatic', '∀hasPolarity.Polar', '∃hasPolarity.Polar', '∀hasSize.Small', '∃hasHydrophobicity.Hydrophilic', '∀hasHydrophobicity.Hydrophilic', '∃hasCharge.Negative', '∃hasSize.Small', '¬E', 'D', '∀hasCharge.Negative']
+Applied conjunction rules to (AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny)): ['AminoAcid', '(AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny))', '(∃hasPolarity.Polar ⊓ ∃hasSize.Tiny)']
+Applied subsumption rule to (AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny)): ['TinyPolarAminoAcid', 'SpecificAminoAcid', '(∃hasPolarity.Polar ⊓ ∃hasSize.Tiny)', '(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', '(AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny))']
+Applied subsumption rule to SideChainStructure: ['RefiningFeature', '(Aliphatic ⊔ Aromatic)', 'SideChainStructure']
+Applied subsumption rule to V: ['∃hasHydrophobicity.Hydrophobic', '∀hasHydrophobicity.Hydrophobic', '∀hasSideChainStructure.Aliphatic', '∃hasSideChainStructure.Aliphatic', '¬P', '∃hasCharge.Neutral', '∀hasPolarity.Non-Polar', '∃hasPolarity.Non-Polar', '∀hasSize.Small', '∃hasSize.Small', 'V', '∀hasCharge.Neutral']
+Applied existential rules to ∃hasHydrophobicity.Hydrophobic: ['Hydrophobic', '∃hasHydrophobicity.Hydrophobic']
+Applied subsumption rule to ∃hasHydrophobicity.Hydrophobic: ['Hydrophobic', '∃hasHydrophobicity.Hydrophobic', '¬Hydrophilic']
+Applied subsumption rule to ∀hasHydrophobicity.Hydrophobic: ['∀hasHydrophobicity.Hydrophobic']
+Applied subsumption rule to ¬A: ['¬A']
+Applied subsumption rule to Charge: ['RefiningFeature', '(Negative ⊔ Neutral ⊔ Positive)', 'Charge']
+Applied subsumption rule to ¬P: ['¬P']
+Applied subsumption rule to ∀hasCharge.Negative: ['∀hasCharge.Negative']
+Applied existential rules to ∃hasCharge.Negative: ['Negative', '∃hasCharge.Negative']
+Applied subsumption rule to ∃hasCharge.Negative: ['¬Neutral', '¬Positive', 'Negative', '∃hasCharge.Negative']
+Applied conjunction rules to (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny): ['¬Non-Polar', '¬Large', '∃hasPolarity.Polar', '¬Small', '(∃hasPolarity.Polar ⊓ ∃hasSize.Tiny)', '∃hasSize.Tiny', 'Tiny', 'Polar']
+Applied subsumption rule to (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny): ['¬Non-Polar', '¬Large', '∃hasPolarity.Polar', '¬Small', '(∃hasPolarity.Polar ⊓ ∃hasSize.Tiny)', '∃hasSize.Tiny', 'Tiny', 'Polar']
+Applied subsumption rule to T: ['∃hasSideChainStructure.Aliphatic', '∀hasSideChainStructure.Aliphatic', 'TinyPolarAminoAcid', '∀hasPolarity.Polar', '∃hasCharge.Neutral', '∀hasHydrophobicity.Hydrophilic', '∃hasHydrophobicity.Hydrophilic', 'T', '¬S', '∀hasSize.Tiny', '∀hasCharge.Neutral', '(AminoAcid ⊓ (∃hasPolarity.Polar ⊓ ∃hasSize.Tiny))']
+Applied subsumption rule to AminoAcid: ['(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', 'SpecificAminoAcid']
+Applied conjunction rules to (AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large)): ['(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', '(AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large))', 'SpecificAminoAcid', '(∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large)']
+Applied subsumption rule to (AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large)): ['(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', '(AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large))', 'SpecificAminoAcid', 'LargeAliphaticAminoAcid', '(∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large)']
+Applied subsumption rule to (Non-Polar ⊔ Polar): ['RefiningFeature', '(Non-Polar ⊔ Polar)', 'Polarity']
+Applied subsumption rule to ¬K: ['¬K']
+Applied subsumption rule to Hydrophobicity: ['RefiningFeature', '(Hydrophilic ⊔ Hydrophobic)', 'Hydrophobicity']
+Applied existential rules to ∃hasPolarity.Non-Polar: ['Non-Polar', '∃hasPolarity.Non-Polar']
+Applied subsumption rule to ∃hasPolarity.Non-Polar: ['Non-Polar', '∃hasPolarity.Non-Polar', '¬Polar']
+Applied subsumption rule to ∀hasPolarity.Non-Polar: ['∀hasPolarity.Non-Polar']
+Applied subsumption rule to AliphaticAminoAcid: ['AliphaticAminoAcid', '(AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic)']
+Applied subsumption rule to W: ['∀hasSize.Large', '∃hasHydrophobicity.Hydrophobic', '∀hasHydrophobicity.Hydrophobic', '∃hasSize.Large', '∀hasSideChainStructure.Aromatic', '∃hasCharge.Neutral', 'AromaticAminoAcid', '∀hasPolarity.Non-Polar', '∃hasPolarity.Non-Polar', 'W', '¬F', '∀hasCharge.Neutral']
+Applied subsumption rule to N: ['∃hasSideChainStructure.Aliphatic', '∀hasSideChainStructure.Aliphatic', '∃hasPolarity.Polar', '∀hasPolarity.Polar', '∃hasCharge.Neutral', '∀hasSize.Small', '∃hasSize.Small', '∀hasHydrophobicity.Hydrophilic', '∃hasHydrophobicity.Hydrophilic', 'N', '∀hasCharge.Neutral']
+Applied subsumption rule to ¬Hydrophilic: ['¬Hydrophilic']
+Applied subsumption rule to Neutral: ['¬Negative', '¬Positive', 'Neutral']
+Applied subsumption rule to ¬Tiny: ['¬Tiny']
+Applied subsumption rule to K: ['∀hasSize.Large', '∀hasSideChainStructure.Aliphatic', '∃hasCharge.Positive', '∀hasCharge.Positive', 'K', '∃hasPolarity.Polar', '∀hasPolarity.Polar', '∃hasHydrophobicity.Hydrophilic', '∀hasHydrophobicity.Hydrophilic', '¬R', 'LargeAliphaticAminoAcid']
+Applied subsumption rule to ∀hasSize.Large: ['∀hasSize.Large']
+Applied existential rules to ∃hasSize.Large: ['∃hasSize.Large', 'Large']
+Applied subsumption rule to ∃hasSize.Large: ['∃hasSize.Large', '¬Small', '¬Tiny', 'Large']
+Applied subsumption rule to L: ['∀hasSize.Large', '∃hasSize.Large', '∃hasHydrophobicity.Hydrophobic', '∀hasHydrophobicity.Hydrophobic', '∀hasSideChainStructure.Aliphatic', '∃hasSideChainStructure.Aliphatic', '∀hasCharge.Neutral', '∀hasPolarity.Non-Polar', '∃hasPolarity.Non-Polar', '¬M', '¬I', 'L', '∃hasCharge.Neutral']
+Applied subsumption rule to ¬Positive: ['¬Positive']
+Applied subsumption rule to RefiningFeature: ['RefiningFeature']
+Applied subsumption rule to P: ['∀hasHydrophobicity.Hydrophobic', '∃hasHydrophobicity.Hydrophobic', '∀hasSideChainStructure.Aliphatic', '∃hasSideChainStructure.Aliphatic', '¬V', '∀hasCharge.Neutral', '∃hasPolarity.Non-Polar', '∀hasPolarity.Non-Polar', 'P', '∃hasSize.Small', '∀hasSize.Small', '∃hasCharge.Neutral']
+Applied subsumption rule to C: ['∃hasHydrophobicity.Hydrophobic', '∀hasHydrophobicity.Hydrophobic', '∃hasSideChainStructure.Aliphatic', '∀hasSideChainStructure.Aliphatic', '∀hasPolarity.Polar', '∃hasPolarity.Polar', '∀hasCharge.Neutral', '∀hasSize.Small', '∃hasSize.Small', 'C', '∃hasCharge.Neutral']
+Applied subsumption rule to (Hydrophilic ⊔ Hydrophobic): ['(Hydrophilic ⊔ Hydrophobic)', 'Hydrophobicity']
+Applied subsumption rule to ¬F: ['¬F']
+Applied conjunction rules to (AminoAcid ⊓ ∃hasCharge.Positive): ['Positive', '(AminoAcid ⊓ ∃hasCharge.Positive)', '∃hasCharge.Positive', 'SpecificAminoAcid', '¬Negative', '(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', '¬Neutral']
+Applied subsumption rule to (AminoAcid ⊓ ∃hasCharge.Positive): ['Positive', '(AminoAcid ⊓ ∃hasCharge.Positive)', '∃hasCharge.Positive', 'SpecificAminoAcid', '¬Negative', '(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'PositiveChargedAminoAcid', 'AminoAcid', '¬Neutral']
+Applied subsumption rule to ¬R: ['¬R']
+Applied subsumption rule to (Negative ⊔ Neutral ⊔ Positive): ['(Negative ⊔ Neutral ⊔ Positive)', 'Charge']
+Applied subsumption rule to G: ['∀hasHydrophobicity.Hydrophobic', '∃hasHydrophobicity.Hydrophobic', '∀hasSideChainStructure.Aliphatic', '∃hasSideChainStructure.Aliphatic', '∃hasCharge.Neutral', 'G', '∃hasPolarity.Non-Polar', '∀hasPolarity.Non-Polar', '¬A', '∀hasSize.Tiny', '∃hasSize.Tiny', '∀hasCharge.Neutral']
+Applied subsumption rule to Non-Polar: ['Non-Polar', '¬Polar']
+Applied subsumption rule to ¬W: ['¬W']
+Applied subsumption rule to ¬V: ['¬V']
+Applied subsumption rule to R: ['∀hasSize.Large', '¬K', 'R', '∀hasSideChainStructure.Aliphatic', '∀hasCharge.Positive', '∀hasPolarity.Polar', '∃hasPolarity.Polar', '∃hasHydrophobicity.Hydrophilic', '∀hasHydrophobicity.Hydrophilic', 'PositiveChargedAminoAcid', '(AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large))', 'LargeAliphaticAminoAcid']
+Applied subsumption rule to SpecificAminoAcid: ['AminoAcid', 'SpecificAminoAcid']
+Applied subsumption rule to ¬L: ['¬L']
+Applied conjunction rules to (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large): ['∃hasSize.Large', '∃hasSideChainStructure.Aliphatic', '¬Small', 'Aliphatic', '¬Tiny', 'Large', '¬Aromatic', '(∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large)']
+Applied subsumption rule to (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large): ['∃hasSize.Large', '∃hasSideChainStructure.Aliphatic', '¬Small', 'Aliphatic', '¬Tiny', 'Large', '¬Aromatic', '(∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large)']
+Applied subsumption rule to Large: ['¬Small', '¬Tiny', 'Large']
+Applied subsumption rule to M: ['∀hasSize.Large', 'M', '∀hasHydrophobicity.Hydrophobic', '∃hasHydrophobicity.Hydrophobic', '∀hasSideChainStructure.Aliphatic', '∃hasCharge.Neutral', '∃hasPolarity.Non-Polar', '∀hasPolarity.Non-Polar', '¬I', '¬L', '(AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large))', 'LargeAliphaticAminoAcid', '∀hasCharge.Neutral']
+Applied subsumption rule to Aliphatic: ['Aliphatic', '¬Aromatic']
+Applied subsumption rule to ¬Large: ['¬Large']
+Applied subsumption rule to ¬I: ['¬I']
+Applied subsumption rule to ¬Non-Polar: ['¬Non-Polar']
+Applied conjunction rules to (AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic): ['(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', '∃hasSideChainStructure.Aliphatic', 'SpecificAminoAcid', '¬Aromatic', '(AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic)', 'Aliphatic']
+Applied subsumption rule to (AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic): ['(M ⊔ R ⊔ K ⊔ V ⊔ H ⊔ G ⊔ C ⊔ L ⊔ N ⊔ W ⊔ I ⊔ A ⊔ P ⊔ T ⊔ E ⊔ Y ⊔ S ⊔ F ⊔ D ⊔ Q)', 'AminoAcid', '∃hasSideChainStructure.Aliphatic', 'SpecificAminoAcid', '¬Aromatic', 'AliphaticAminoAcid', '(AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic)', 'Aliphatic']
+Applied subsumption rule to LargeAliphaticAminoAcid: ['LargeAliphaticAminoAcid', '(AminoAcid ⊓ (∃hasSideChainStructure.Aliphatic ⊓ ∃hasSize.Large))']
+Applied subsumption rule to ¬G: ['¬G']
+Applied subsumption rule to ∀hasHydrophobicity.Hydrophilic: ['∀hasHydrophobicity.Hydrophilic']
+Applied existential rules to ∃hasHydrophobicity.Hydrophilic: ['∃hasHydrophobicity.Hydrophilic', 'Hydrophilic']
+Applied subsumption rule to ∃hasHydrophobicity.Hydrophilic: ['∃hasHydrophobicity.Hydrophilic', '¬Hydrophobic', 'Hydrophilic']
+Applied subsumption rule to NegativeChargedAminoAcid: ['AliphaticAminoAcid', 'NegativeChargedAminoAcid', '(AminoAcid ⊓ ∃hasCharge.Negative)', '(AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic)']
+Applied subsumption rule to ¬D: ['¬D']
+Applied subsumption rule to Tiny: ['Tiny', '¬Small', '¬Large']
+After reasoning, subsumers for Tiny: ['Tiny', '¬Small', '¬Large']
+
+According to the ELReasoner, A has the following subsumers: 
+ -  A
+ -  ∀hasHydrophobicity.Hydrophobic
+ -  ∃hasHydrophobicity.Hydrophobic
+ -  ∀hasSideChainStructure.Aliphatic
+ -  ∀hasCharge.Neutral
+ -  ∀hasPolarity.Non-Polar
+ -  ∃hasPolarity.Non-Polar
+ -  ¬G
+ -  ∀hasSize.Tiny
+ -  ∃hasSize.Tiny
+ -  AliphaticAminoAcid
+ -  ∃hasCharge.Neutral
+ -  (AminoAcid ⊓ ∃hasSideChainStructure.Aliphatic)
+( 13  in total)
+
+I am first testing ELK.
+
+According to ELK, Margherita has the following subsumers: 
+ -  ⊤
+ -  A
+ -  AminoAcid
+ -  AliphaticAminoAcid
+ -  SpecificAminoAcid
+( 5  in total)
+
+I can also classify the ontology with ELK.
+But I am not printing the result, because that would be too much stuff (it is a dictionary)
+
