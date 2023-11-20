@@ -435,7 +435,9 @@
                              rdf:type owl:Class
                            ] ;
        rdfs:subClassOf :Type ;
-       owl:disjointWith :Pescatarian .
+       owl:disjointWith :Pescatarian ,
+                        :Vegan ,
+                        :Vegetarian .
 
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Mustard
@@ -465,16 +467,22 @@
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Pescatarian
 :Pescatarian rdf:type owl:Class ;
-             owl:equivalentClass [ owl:intersectionOf ( :Burger
+             owl:equivalentClass [ owl:intersectionOf ( :NamedBurgers
                                                         [ rdf:type owl:Class ;
                                                           owl:complementOf [ rdf:type owl:Restriction ;
                                                                              owl:onProperty :hasIngridient ;
                                                                              owl:someValuesFrom :Bacon
                                                                            ]
                                                         ]
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty :hasPatty ;
-                                                          owl:someValuesFrom :Fish
+                                                        [ rdf:type owl:Class ;
+                                                          owl:complementOf [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasPatty ;
+                                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                  owl:unionOf ( :Beef
+                                                                                                                :Chicken
+                                                                                                              )
+                                                                                                ]
+                                                                           ]
                                                         ]
                                                       ) ;
                                    rdf:type owl:Class
@@ -534,8 +542,20 @@
                                                     owl:complementOf [ rdf:type owl:Restriction ;
                                                                        owl:onProperty :hasIngridient ;
                                                                        owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                            owl:unionOf ( :Cheese
+                                                                                            owl:unionOf ( :Bacon
+                                                                                                          :Cheese
                                                                                                           :Egg
+                                                                                                        )
+                                                                                          ]
+                                                                     ]
+                                                  ]
+                                                  [ rdf:type owl:Class ;
+                                                    owl:complementOf [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasPatty ;
+                                                                       owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                            owl:unionOf ( :Beef
+                                                                                                          :Chicken
+                                                                                                          :Fish
                                                                                                         )
                                                                                           ]
                                                                      ]
@@ -543,7 +563,7 @@
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :Vegetarian .
+       rdfs:subClassOf :Type .
 
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Vegetables
@@ -560,9 +580,16 @@
                                                                             owl:someValuesFrom :Bacon
                                                                           ]
                                                        ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty :hasIngridient ;
-                                                         owl:someValuesFrom :Plant-based_patty
+                                                       [ rdf:type owl:Class ;
+                                                         owl:complementOf [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :hasPatty ;
+                                                                            owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                 owl:unionOf ( :Beef
+                                                                                                               :Chicken
+                                                                                                               :Fish
+                                                                                                             )
+                                                                                               ]
+                                                                          ]
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -651,14 +678,6 @@
                 :Patty
                 :Sauces
                 :Vegetables
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Gluten-Free
-                :Meaty
-                :Vegan
               )
 ] .
 
