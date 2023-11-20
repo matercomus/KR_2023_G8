@@ -32,7 +32,9 @@ class ELReasoner:
         changed = False
         for concept in concepts.copy():
             if isinstance(concept, Restriction) and concept.type == SOME:
-                relation, filler = concept.property, concept.filler
+                relation = concept.property
+                filler = concept.value  # Use value instead of filler
+
                 # Check for an existing r-successor
                 if element in self.role_successors and relation in self.role_successors[element]:
                     for succ_element in self.role_successors[element][relation]:
@@ -64,6 +66,17 @@ class ELReasoner:
                     changed = True
         return changed
     
+    # def apply_subclass_rule(self, concepts):
+    #     changed = False
+    #     for concept in concepts.copy():
+    #         if not isinstance(concept, ThingClass):
+    #             continue
+    #         for super_concept in concept.ancestors():
+    #             if super_concept not in concepts:
+    #                 concepts.add(super_concept)
+    #                 changed = True
+    #     return changed
+    
     def apply_role_successor_rule(self, element, concepts):
         changed = False
         # For each role successor, if the role is not already assigned to the element, assign it
@@ -94,15 +107,26 @@ class ELReasoner:
                 changed |= self.apply_role_successor_rule(element, concepts)
 
         return self.elements
-
+    
     def compute_subsumers(self, class_name):
         # Find the class in the ontology
         target_class = self.ontology.search_one(iri="*" + class_name)
         if not target_class:
-            print(f"Class {class_name} not found in the ontology.")
             return []
 
-        self.add_element('d0', target_class)  # Start with initial element d0, assign to C0
+        # Check if target_class has equivalent classes that might contain restrictions
+        if hasattr(target_class, 'equivalent_to') and target_class.equivalent_to:
+            for eq_class in target_class.equivalent_to:
+                if isinstance(eq_class, And):  # Complex class expressions
+                    for part in eq_class.Classes:
+                        self.add_element('d0', part)
+                elif isinstance(eq_class, Restriction):
+                    self.add_element('d0', eq_class)
+                else:
+                    self.add_element('d0', eq_class)
+        else:
+            # Start with initial element d0, assign to C0
+            self.add_element('d0', target_class)
 
         # Apply the rules iteratively
         self.apply_rules()
@@ -112,8 +136,24 @@ class ELReasoner:
         for concepts in self.elements.values():
             subsumers.update(concepts)
 
-        # Filter out the target class and Thing
-        return ['T' if cls == Thing else 'DomainThing' if cls.name == 'DomainConcept' else cls.name for cls in subsumers]
+        # Filter out the target class, Thing, and existential restrictions
+        filtered_subsumers = []
+        for cls in subsumers:
+            if isinstance(cls, Restriction):
+                continue
+            if cls in (target_class, Thing):
+                filtered_subsumers.append('T')
+                continue
+            else:
+                cls_name = cls.name if hasattr(cls, 'name') else str(cls)
+                filtered_subsumers.append(cls_name)
+
+        # Ensure the target class itself is included
+        if target_class.name not in filtered_subsumers:
+            filtered_subsumers.append(target_class.name)
+
+        return filtered_subsumers
+
 
 def load_ontology(file_path):
     ontology = get_ontology(file_path).load()
@@ -131,5 +171,9 @@ if __name__ == "__main__":
     reasoner = ELReasoner(ontology)
     subsumers = reasoner.compute_subsumers(args.class_name)
 
-    for subsumer in subsumers:
-        print(subsumer)
+    # ontology = load_ontology('pizza.owl')
+    # reasoner = ELReasoner(ontology)
+    # subsumers = reasoner.compute_subsumers('Margherita')
+
+    # for subsumer in subsumers:
+    #     print(subsumer)

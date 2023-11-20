@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/onto.owl"
+         xmlns="http://example.org/onto.owl#">
+
+<owl:Ontology rdf:about="http://example.org/onto.owl"/>
+
+<owl:ObjectProperty rdf:about="#hasIngredient">
+  <owl:inverseOf rdf:resource="#isToppingOf"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isToppingOf">
+  <rdfs:subPropertyOf rdf:resource="#hasIngredient"/>
+  <owl:inverseOf rdf:resource="#hasIngredient"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Food">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pizza">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Vegetable">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Cheese">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Margherita">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Pizza"/>
+        <owl:Restriction>
+          <owl:someValuesFrom rdf:resource="#Cheese"/>
+          <owl:onProperty rdf:resource="#hasIngredient"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Pizza"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#margherita1">
+  <rdf:type rdf:resource="#Margherita"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
