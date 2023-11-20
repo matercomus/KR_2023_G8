@@ -14,6 +14,7 @@ formatter = gateway.getSimpleDLFormatter()
 print("Loading the ontology...")
 
 # load an ontology from a file
+# ontology = parser.parseFile("amino-acid.amino-acid-ontology.2.owl.xml")
 ontology = parser.parseFile("pizza.owl")
 
 print("Loaded the ontology!")
@@ -136,84 +137,71 @@ print("I made the following GCI:")
 print(formatter.format(gci))
 
 # Define the ELReasoner class
-
 class ELReasoner:
     def __init__(self, ontology):
         self.ontology = ontology
-        self.subsumers = {concept: set() for concept in ontology.getSubConcepts()}
-        self.initialize_subsumers()
-
-    def initialize_subsumers(self):
-        # Initialize every concept to be subsumed by the top concept
-        top_concept = elFactory.getTop()
-        # top_concept = self.ontology.getTop()
-        for concept in self.subsumers:
-            self.subsumers[concept].add(top_concept)
+        self.subsumers = {}
 
     def apply_top_rule(self, concept):
-        # Add the top concept to every concept's subsumers
-        # top_concept = self.ontology.getTop()
-        top_concept = elFactory.getTop()
-        self.subsumers[concept].add(top_concept)
+        if concept.getClass().getSimpleName() == "TopConcept$":
+            self.subsumers[concept].add(concept)
 
     def apply_conjunction_rules(self, concept):
-        # If the concept is a conjunction, it is subsumed by each of its conjuncts
         if concept.getClass().getSimpleName() == "ConceptConjunction":
             for conjunct in concept.getConjuncts():
                 self.subsumers[concept].update(self.getSubsumers(conjunct))
 
     def apply_existential_rules(self, concept):
-        # If there is an existential restriction, update subsumers
         if concept.getClass().getSimpleName() == "ExistentialRoleRestriction":
-            role = concept.role()
             filler = concept.filler()
-            # Look for concepts that have this role and filler as subsumers
             for other_concept in self.ontology.getSubConcepts():
-                if filler in self.getSubsumers(other_concept):
+                if other_concept.getClass().getSimpleName() == "ConceptName" and other_concept == filler:
                     self.subsumers[concept].add(other_concept)
 
     def apply_subsumption_rule(self, concept):
-        # Apply the subsumption rule based on the TBox axioms
         for axiom in self.ontology.tbox().getAxioms():
             if axiom.getClass().getSimpleName() == "GeneralConceptInclusion":
                 lhs = axiom.lhs()
                 rhs = axiom.rhs()
-                # If lhs is a subsumer of concept, add rhs to concept's subsumers
                 if lhs in self.getSubsumers(concept):
                     self.subsumers[concept].add(rhs)
 
     def reason(self):
-        # Apply the rules until no more changes are detected
         changed = True
         while changed:
             changed = False
             for concept in self.ontology.getSubConcepts():
-                old_subsumers = self.getSubsumers(concept).copy()
+                old_subsumers = self.getSubsumers(concept)
                 self.apply_top_rule(concept)
                 self.apply_conjunction_rules(concept)
                 self.apply_existential_rules(concept)
                 self.apply_subsumption_rule(concept)
-                if old_subsumers != self.getSubsumers(concept):
+                new_subsumers = self.getSubsumers(concept)
+                if old_subsumers != new_subsumers:
                     changed = True
 
     def getSubsumers(self, concept):
-        # Return the set of subsumers for the given concept
-        return self.subsumers.setdefault(concept, {concept})
+        if concept not in self.subsumers:
+            self.subsumers[concept] = set([concept])
+        return self.subsumers[concept]
 
 # Create an instance of ELReasoner
-el_reasoner = ELReasoner(ontology)
+# el_reasoner = ELReasoner(ontology)
 
-# Example usage similar to ELK and HermiT
-margherita = elFactory.getConceptName('"Margherita"')
-print("\nI am now testing the ELReasoner.")
-el_reasoner.reason()
-print("\nAccording to the ELReasoner, A has the following subsumers: ")
-subsumers = el_reasoner.getSubsumers(margherita)
-for concept in subsumers:
-    print(" - ", formatter.format(concept))
-print("(", len(subsumers), " in total)")
+# for concept in ontology.getSubConcepts():
+#     print('\n' + formatter.format(concept))
 
-# Using the reasoners
+# # Example usage similar to ELK and HermiT
+# margherita = elFactory.getConceptName('A')
+# print("\nI am now testing the ELReasoner.")
+# el_reasoner.reason()
+# print("\nAccording to the ELReasoner, A has the following subsumers: ")
+# subsumers = el_reasoner.getSubsumers(margherita)
+# for concept in subsumers:
+#     print(" - ", formatter.format(concept))
+# print("(", len(subsumers), " in total)")
+
+# # Using the reasoners
 
 elk = gateway.getELKReasoner()
 hermit = gateway.getHermiTReasoner() # might the upper case T!
