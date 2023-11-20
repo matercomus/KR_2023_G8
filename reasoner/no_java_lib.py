@@ -1,4 +1,5 @@
-from owlready2 import get_ontology, Thing, And, Restriction, SOME, ThingClass
+from owlready2 import SOME, And, Restriction, Thing, ThingClass, get_ontology
+
 
 class ELReasoner:
     def __init__(self, ontology):
@@ -112,7 +113,7 @@ class ELReasoner:
             subsumers.update(concepts)
 
         # Filter out the target class and Thing
-        return [cls.name for cls in subsumers if cls not in [target_class, Thing]]
+        return ['T' if cls == Thing else 'DomainThing' if cls.name == 'DomainConcept' else cls.name for cls in subsumers]
 
 def load_ontology(file_path):
     ontology = get_ontology(file_path).load()
