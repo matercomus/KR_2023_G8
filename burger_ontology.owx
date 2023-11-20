@@ -1,0 +1,1048 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="/Australian_Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BBQ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Bacon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Beef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Beet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Blue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Brioche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Buns"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Cheddar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Cheese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Cheeseburger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Chicken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Chicken_Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Chili_Pepper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Dominican_Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Egg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Fish_Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Fruits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Garlic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Gluten-Free"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Gluten-free_Bun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ingredients"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ketchup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Lettuce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Mayo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Meaty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Mustard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/NamedBurgers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Onion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Patty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Peppers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pescatarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pineapple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Plant-based_patty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Sauces"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Seitan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Swiss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Tempeh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Tofu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Tomato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Vegan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Vegetables"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Vegetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Veggie_Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wheat_Bun"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasBun"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasCheese"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasIngridient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPatty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSauce"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasVegetable"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="/Gluten-Free"/>
+        <ObjectIntersectionOf>
+            <Class IRI="/Burger"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasBun"/>
+                    <Class IRI="/Brioche"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasBun"/>
+                    <Class IRI="/Wheat_Bun"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasPatty"/>
+                    <Class IRI="/Seitan"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Meaty"/>
+        <ObjectIntersectionOf>
+            <Class IRI="/Burger"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/hasPatty"/>
+                <ObjectUnionOf>
+                    <Class IRI="/Beef"/>
+                    <Class IRI="/Chicken"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Pescatarian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="/Burger"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasIngridient"/>
+                    <Class IRI="/Bacon"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasPatty"/>
+                    <ObjectUnionOf>
+                        <Class IRI="/Beef"/>
+                        <Class IRI="/Chicken"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Vegan"/>
+        <ObjectIntersectionOf>
+            <Class IRI="/Burger"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasIngridient"/>
+                    <ObjectUnionOf>
+                        <Class IRI="/Bacon"/>
+                        <Class IRI="/Cheese"/>
+                        <Class IRI="/Egg"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasPatty"/>
+                    <ObjectUnionOf>
+                        <Class IRI="/Beef"/>
+                        <Class IRI="/Chicken"/>
+                        <Class IRI="/Fish"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Vegetarian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="/Burger"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasIngridient"/>
+                    <Class IRI="/Bacon"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasPatty"/>
+                    <ObjectUnionOf>
+                        <Class IRI="/Beef"/>
+                        <Class IRI="/Chicken"/>
+                        <Class IRI="/Fish"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <Class IRI="/NamedBurgers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasBun"/>
+            <Class IRI="/Brioche"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasCheese"/>
+            <Class IRI="/Cheddar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <Class IRI="/Bacon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <Class IRI="/Egg"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <Class IRI="/Pineapple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPatty"/>
+            <Class IRI="/Beef"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Beet"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Onion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Australian_Burger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <ObjectUnionOf>
+                <Class IRI="/Bacon"/>
+                <Class IRI="/Beef"/>
+                <Class IRI="/Beet"/>
+                <Class IRI="/Brioche"/>
+                <Class IRI="/Cheddar"/>
+                <Class IRI="/Egg"/>
+                <Class IRI="/Onion"/>
+                <Class IRI="/Pineapple"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BBQ"/>
+        <Class IRI="/Sauces"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Bacon"/>
+        <Class IRI="/Ingredients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Beef"/>
+        <Class IRI="/Patty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Beet"/>
+        <Class IRI="/Vegetables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Blue"/>
+        <Class IRI="/Cheese"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Brioche"/>
+        <Class IRI="/Buns"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Buns"/>
+        <Class IRI="/Ingredients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheddar"/>
+        <Class IRI="/Cheese"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheese"/>
+        <Class IRI="/Ingredients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <Class IRI="/NamedBurgers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasBun"/>
+            <Class IRI="/Wheat_Bun"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasCheese"/>
+            <Class IRI="/Cheddar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPatty"/>
+            <Class IRI="/Beef"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSauce"/>
+            <Class IRI="/Ketchup"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSauce"/>
+            <Class IRI="/Mayo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Lettuce"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Onion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Tomato"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cheeseburger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <ObjectUnionOf>
+                <Class IRI="/Beef"/>
+                <Class IRI="/Cheddar"/>
+                <Class IRI="/Ketchup"/>
+                <Class IRI="/Lettuce"/>
+                <Class IRI="/Mayo"/>
+                <Class IRI="/Onion"/>
+                <Class IRI="/Tomato"/>
+                <Class IRI="/Wheat_Bun"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken"/>
+        <Class IRI="/Patty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken_Burger"/>
+        <Class IRI="/NamedBurgers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasBun"/>
+            <Class IRI="/Wheat_Bun"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasCheese"/>
+            <Class IRI="/Swiss"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPatty"/>
+            <Class IRI="/Chicken"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSauce"/>
+            <Class IRI="/Mayo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Lettuce"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Onion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Tomato"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chicken_Burger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <ObjectUnionOf>
+                <Class IRI="/Chicken"/>
+                <Class IRI="/Lettuce"/>
+                <Class IRI="/Mayo"/>
+                <Class IRI="/Onion"/>
+                <Class IRI="/Swiss"/>
+                <Class IRI="/Tomato"/>
+                <Class IRI="/Wheat_Bun"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chili_Pepper"/>
+        <Class IRI="/Peppers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Dominican_Burger"/>
+        <Class IRI="/NamedBurgers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Dominican_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasBun"/>
+            <Class IRI="/Gluten-free_Bun"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Dominican_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasCheese"/>
+            <Class IRI="/Blue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Dominican_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <Class IRI="/Egg"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Dominican_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <Class IRI="/Pineapple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Dominican_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPatty"/>
+            <Class IRI="/Tofu"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Dominican_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSauce"/>
+            <Class IRI="/BBQ"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Dominican_Burger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <ObjectUnionOf>
+                <Class IRI="/BBQ"/>
+                <Class IRI="/Blue"/>
+                <Class IRI="/Egg"/>
+                <Class IRI="/Gluten-free_Bun"/>
+                <Class IRI="/Pineapple"/>
+                <Class IRI="/Tofu"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Egg"/>
+        <Class IRI="/Ingredients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fish"/>
+        <Class IRI="/Patty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fish_Burger"/>
+        <Class IRI="/NamedBurgers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fish_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasBun"/>
+            <Class IRI="/Wheat_Bun"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fish_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasCheese"/>
+            <Class IRI="/Cheddar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fish_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPatty"/>
+            <Class IRI="/Fish"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fish_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSauce"/>
+            <Class IRI="/Mayo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fish_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSauce"/>
+            <Class IRI="/Mustard"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fish_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Onion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fish_Burger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <ObjectUnionOf>
+                <Class IRI="/Cheddar"/>
+                <Class IRI="/Fish"/>
+                <Class IRI="/Mayo"/>
+                <Class IRI="/Mustard"/>
+                <Class IRI="/Onion"/>
+                <Class IRI="/Wheat_Bun"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fruits"/>
+        <Class IRI="/Ingredients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Garlic"/>
+        <Class IRI="/Vegetables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Gluten-Free"/>
+        <Class IRI="/Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Gluten-free_Bun"/>
+        <Class IRI="/Buns"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ingredients"/>
+        <Class IRI="/Burger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ketchup"/>
+        <Class IRI="/Sauces"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Lettuce"/>
+        <Class IRI="/Vegetables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Mayo"/>
+        <Class IRI="/Sauces"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Meaty"/>
+        <Class IRI="/Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Mustard"/>
+        <Class IRI="/Sauces"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/NamedBurgers"/>
+        <Class IRI="/Burger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Onion"/>
+        <Class IRI="/Vegetables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Patty"/>
+        <Class IRI="/Ingredients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Peppers"/>
+        <Class IRI="/Vegetables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pescatarian"/>
+        <Class IRI="/Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pineapple"/>
+        <Class IRI="/Fruits"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Plant-based_patty"/>
+        <Class IRI="/Patty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sauces"/>
+        <Class IRI="/Ingredients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Seitan"/>
+        <Class IRI="/Plant-based_patty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Swiss"/>
+        <Class IRI="/Cheese"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Tempeh"/>
+        <Class IRI="/Plant-based_patty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Tofu"/>
+        <Class IRI="/Plant-based_patty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Tomato"/>
+        <Class IRI="/Vegetables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Type"/>
+        <Class IRI="/Burger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Vegan"/>
+        <Class IRI="/Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Vegetables"/>
+        <Class IRI="/Ingredients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Vegetarian"/>
+        <Class IRI="/Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <Class IRI="/NamedBurgers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasBun"/>
+            <Class IRI="/Gluten-free_Bun"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPatty"/>
+            <Class IRI="/Tempeh"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSauce"/>
+            <Class IRI="/Ketchup"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSauce"/>
+            <Class IRI="/Mustard"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Beet"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Chili_Pepper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Onion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasVegetable"/>
+            <Class IRI="/Tomato"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Veggie_Burger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasIngridient"/>
+            <ObjectUnionOf>
+                <Class IRI="/Beet"/>
+                <Class IRI="/Chili_Pepper"/>
+                <Class IRI="/Gluten-free_Bun"/>
+                <Class IRI="/Ketchup"/>
+                <Class IRI="/Lettuce"/>
+                <Class IRI="/Mustard"/>
+                <Class IRI="/Onion"/>
+                <Class IRI="/Tempeh"/>
+                <Class IRI="/Tomato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wheat_Bun"/>
+        <Class IRI="/Buns"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/Australian_Burger"/>
+        <Class IRI="/Cheeseburger"/>
+        <Class IRI="/Chicken_Burger"/>
+        <Class IRI="/Dominican_Burger"/>
+        <Class IRI="/Fish_Burger"/>
+        <Class IRI="/Veggie_Burger"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Bacon"/>
+        <Class IRI="/Beef"/>
+        <Class IRI="/Buns"/>
+        <Class IRI="/Cheese"/>
+        <Class IRI="/Chicken"/>
+        <Class IRI="/Egg"/>
+        <Class IRI="/Fish"/>
+        <Class IRI="/Fruits"/>
+        <Class IRI="/Sauces"/>
+        <Class IRI="/Seitan"/>
+        <Class IRI="/Vegetables"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Bacon"/>
+        <Class IRI="/Beef"/>
+        <Class IRI="/Buns"/>
+        <Class IRI="/Cheese"/>
+        <Class IRI="/Chicken"/>
+        <Class IRI="/Egg"/>
+        <Class IRI="/Fish"/>
+        <Class IRI="/Fruits"/>
+        <Class IRI="/Sauces"/>
+        <Class IRI="/Tempeh"/>
+        <Class IRI="/Vegetables"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Bacon"/>
+        <Class IRI="/Beef"/>
+        <Class IRI="/Buns"/>
+        <Class IRI="/Cheese"/>
+        <Class IRI="/Chicken"/>
+        <Class IRI="/Egg"/>
+        <Class IRI="/Fish"/>
+        <Class IRI="/Fruits"/>
+        <Class IRI="/Sauces"/>
+        <Class IRI="/Tofu"/>
+        <Class IRI="/Vegetables"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Bacon"/>
+        <Class IRI="/Beef"/>
+        <Class IRI="/Buns"/>
+        <Class IRI="/Cheese"/>
+        <Class IRI="/Egg"/>
+        <Class IRI="/Fruits"/>
+        <Class IRI="/Sauces"/>
+        <Class IRI="/Vegetables"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Bacon"/>
+        <Class IRI="/Buns"/>
+        <Class IRI="/Cheese"/>
+        <Class IRI="/Egg"/>
+        <Class IRI="/Fish"/>
+        <Class IRI="/Fruits"/>
+        <Class IRI="/Sauces"/>
+        <Class IRI="/Vegetables"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Bacon"/>
+        <Class IRI="/Buns"/>
+        <Class IRI="/Cheese"/>
+        <Class IRI="/Egg"/>
+        <Class IRI="/Fruits"/>
+        <Class IRI="/Patty"/>
+        <Class IRI="/Sauces"/>
+        <Class IRI="/Vegetables"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Beef"/>
+        <Class IRI="/Chicken"/>
+        <Class IRI="/Fish"/>
+        <Class IRI="/Plant-based_patty"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Brioche"/>
+        <Class IRI="/Gluten-free_Bun"/>
+        <Class IRI="/Wheat_Bun"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Buns"/>
+        <Class IRI="/NamedBurgers"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Meaty"/>
+        <Class IRI="/Vegan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Meaty"/>
+        <Class IRI="/Vegetarian"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Seitan"/>
+        <Class IRI="/Tempeh"/>
+        <Class IRI="/Tofu"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasBun"/>
+        <ObjectProperty IRI="/hasIngridient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasCheese"/>
+        <ObjectProperty IRI="/hasIngridient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasPatty"/>
+        <ObjectProperty IRI="/hasIngridient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasSauce"/>
+        <ObjectProperty IRI="/hasIngridient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasVegetable"/>
+        <ObjectProperty IRI="/hasIngridient"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/hasBun"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/hasBun"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasBun"/>
+        <Class IRI="/Burger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasCheese"/>
+        <Class IRI="/Burger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasIngridient"/>
+        <Class IRI="/Burger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPatty"/>
+        <Class IRI="/Burger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSauce"/>
+        <Class IRI="/Burger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasVegetable"/>
+        <Class IRI="/Burger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasBun"/>
+        <Class IRI="/Buns"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasCheese"/>
+        <Class IRI="/Cheese"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasIngridient"/>
+        <Class IRI="/Burger"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPatty"/>
+        <Class IRI="/Patty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSauce"/>
+        <Class IRI="/Sauces"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasVegetable"/>
+        <Class IRI="/Vegetables"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

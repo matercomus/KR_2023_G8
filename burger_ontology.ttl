@@ -142,7 +142,8 @@
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Buns
 :Buns rdf:type owl:Class ;
-      rdfs:subClassOf :Ingredients .
+      rdfs:subClassOf :Ingredients ;
+      owl:disjointWith :NamedBurgers .
 
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Burger
@@ -435,8 +436,7 @@
                              rdf:type owl:Class
                            ] ;
        rdfs:subClassOf :Type ;
-       owl:disjointWith :Pescatarian ,
-                        :Vegan ,
+       owl:disjointWith :Vegan ,
                         :Vegetarian .
 
 
@@ -467,7 +467,7 @@
 
 ###  http://www.semanticweb.org/matt/ontologies/2023/10/untitled-ontology-8/Pescatarian
 :Pescatarian rdf:type owl:Class ;
-             owl:equivalentClass [ owl:intersectionOf ( :NamedBurgers
+             owl:equivalentClass [ owl:intersectionOf ( :Burger
                                                         [ rdf:type owl:Class ;
                                                           owl:complementOf [ rdf:type owl:Restriction ;
                                                                              owl:onProperty :hasIngridient ;
@@ -671,6 +671,80 @@
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Bacon
+                :Beef
+                :Buns
+                :Cheese
+                :Chicken
+                :Egg
+                :Fish
+                :Fruits
+                :Sauces
+                :Seitan
+                :Vegetables
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bacon
+                :Beef
+                :Buns
+                :Cheese
+                :Chicken
+                :Egg
+                :Fish
+                :Fruits
+                :Sauces
+                :Tempeh
+                :Vegetables
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bacon
+                :Beef
+                :Buns
+                :Cheese
+                :Chicken
+                :Egg
+                :Fish
+                :Fruits
+                :Sauces
+                :Tofu
+                :Vegetables
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bacon
+                :Beef
+                :Buns
+                :Cheese
+                :Egg
+                :Fruits
+                :Sauces
+                :Vegetables
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bacon
+                :Buns
+                :Cheese
+                :Egg
+                :Fish
+                :Fruits
+                :Sauces
+                :Vegetables
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bacon
                 :Buns
                 :Cheese
                 :Egg
@@ -678,6 +752,31 @@
                 :Patty
                 :Sauces
                 :Vegetables
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Beef
+                :Chicken
+                :Fish
+                :Plant-based_patty
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Brioche
+                :Gluten-free_Bun
+                :Wheat_Bun
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Seitan
+                :Tempeh
+                :Tofu
               )
 ] .
 
