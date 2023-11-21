@@ -1,3 +1,5 @@
+#! /usr/bin/python
+
 import argparse
 import json
 import time
@@ -32,6 +34,7 @@ if __name__ == "__main__":
     # If a limit is set, truncate the list of classes
     if args.limit is not None:
         all_classes = all_classes[:args.limit]
+    print(all_classes)
 
     gateway.convertToBinaryConjunctions(ontology_ELK)
     elFactory = gateway.getELFactory()
@@ -52,7 +55,8 @@ if __name__ == "__main__":
         end_time_EL = time.time()
         time_elapsed_EL = end_time_EL - start_time_EL
 
-        print(f"ELReasoner computed {len(subsumers_EL)} subsumers in {time_elapsed_EL:.5f} seconds")  # Print ELReasoner results
+        # Print ELReasoner results
+        print(f"ELReasoner computed {len(subsumers_EL)} subsumers in {time_elapsed_EL:.5f} seconds")
 
         result["ELReasoner"] = {
             "subsumers": subsumers_EL,
@@ -67,13 +71,15 @@ if __name__ == "__main__":
         end_time_ELK = time.time()
         time_elapsed_ELK = end_time_ELK - start_time_ELK
 
-        print(f"ELK computed {len(subsumers_ELK)} subsumers in {time_elapsed_ELK:.5f} seconds")  # Print ELK results
+        # Print ELK results
+        print(f"ELK computed {len(subsumers_ELK)} subsumers in {time_elapsed_ELK:.5f} seconds")
 
         result["ELK"] = {
             "subsumers": [formatter.format(concept) for concept in subsumers_ELK.toArray()],
             "count": len(subsumers_ELK),
             "execution_time": time_elapsed_ELK,
         }
+
         print()
         results.append(result)
 
