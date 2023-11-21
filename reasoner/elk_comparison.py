@@ -41,7 +41,7 @@ if __name__ == "__main__":
     gateway.convertToBinaryConjunctions(ontology_ELK)
     elFactory = gateway.getELFactory()
     reasoner_ELK = gateway.getELKReasoner()
-    class_name = elFactory.getConceptName(f'"{args.class_name}"')
+    class_name = elFactory.getConceptName(args.class_name)
     reasoner_ELK.setOntology(ontology_ELK)
     subsumers_ELK = reasoner_ELK.getSubsumers(class_name)
 
