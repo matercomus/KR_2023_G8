@@ -1,6 +1,11 @@
 from owlready2 import SOME, And, Restriction, Thing, ThingClass, get_ontology
 
 
+def load_ontology(file_path):
+    ontology = get_ontology(file_path).load()
+    return ontology
+
+
 class ELReasoner:
     def __init__(self, ontology):
         self.ontology = ontology
@@ -56,26 +61,16 @@ class ELReasoner:
 
     def apply_subclass_rule(self, concepts):
         changed = False
-        # Check for each concept if it is a subclass of another concept
         for concept in concepts.copy():
             if not isinstance(concept, ThingClass):
                 continue
-            for super_concept in concept.is_a:
-                if isinstance(super_concept, ThingClass) and super_concept not in concepts:
+            # Retrieve all ancestors (superclasses) of the concept
+            for super_concept in concept.ancestors(include_self=False):
+                if super_concept not in concepts:
                     concepts.add(super_concept)
                     changed = True
         return changed
-    
-    # def apply_subclass_rule(self, concepts):
-    #     changed = False
-    #     for concept in concepts.copy():
-    #         if not isinstance(concept, ThingClass):
-    #             continue
-    #         for super_concept in concept.ancestors():
-    #             if super_concept not in concepts:
-    #                 concepts.add(super_concept)
-    #                 changed = True
-    #     return changed
+
     
     def apply_role_successor_rule(self, element, concepts):
         changed = False
@@ -108,56 +103,40 @@ class ELReasoner:
 
         return self.elements
     
-    def compute_subsumers(self, class_name):
-        # Find the class in the ontology
-        target_class = self.ontology.search_one(iri="*" + class_name)
-        if not target_class:
-            return []
-
-        # Check if target_class has equivalent classes that might contain restrictions
-        if hasattr(target_class, 'equivalent_to') and target_class.equivalent_to:
+    def initialize_elements_with_class_and_equivalents(self, element, target_class):
+        self.add_element(element, target_class)
+        if hasattr(target_class, 'equivalent_to'):
             for eq_class in target_class.equivalent_to:
-                if isinstance(eq_class, And):  # Complex class expressions
-                    for part in eq_class.Classes:
-                        self.add_element('d0', part)
-                elif isinstance(eq_class, Restriction):
-                    self.add_element('d0', eq_class)
-                else:
-                    self.add_element('d0', eq_class)
-        else:
-            # Start with initial element d0, assign to C0
-            self.add_element('d0', target_class)
+                if isinstance(eq_class, (And, Restriction)):
+                    self.add_element(element, eq_class)
 
-        # Apply the rules iteratively
-        self.apply_rules()
-
-        # Compute subsumers
-        subsumers = set()
-        for concepts in self.elements.values():
-            subsumers.update(concepts)
-
-        # Filter out the target class, Thing, and existential restrictions
+    def filter_and_format_subsumers(self, subsumers, target_class):
         filtered_subsumers = []
         for cls in subsumers:
             if isinstance(cls, Restriction):
                 continue
-            if cls in (target_class, Thing):
+            if cls is Thing:
                 filtered_subsumers.append('T')
                 continue
-            else:
-                cls_name = cls.name if hasattr(cls, 'name') else str(cls)
-                filtered_subsumers.append(cls_name)
-
-        # Ensure the target class itself is included
+            cls_name = cls.name if hasattr(cls, 'name') else str(cls)
+            filtered_subsumers.append(cls_name)
         if target_class.name not in filtered_subsumers:
             filtered_subsumers.append(target_class.name)
-
         return filtered_subsumers
 
+    def compute_subsumers(self, class_name):
+        target_class = self.ontology.search_one(iri="*" + class_name)
+        if not target_class:
+            return []
 
-def load_ontology(file_path):
-    ontology = get_ontology(file_path).load()
-    return ontology
+        self.initialize_elements_with_class_and_equivalents('d0', target_class)
+        self.apply_rules()
+        subsumers = set()
+        for concepts in self.elements.values():
+            subsumers.update(concepts)
+        
+        return self.filter_and_format_subsumers(subsumers, target_class)
+
 
 if __name__ == "__main__":
     import argparse
@@ -171,9 +150,5 @@ if __name__ == "__main__":
     reasoner = ELReasoner(ontology)
     subsumers = reasoner.compute_subsumers(args.class_name)
 
-    # ontology = load_ontology('pizza.owl')
-    # reasoner = ELReasoner(ontology)
-    # subsumers = reasoner.compute_subsumers('Margherita')
-
-    # for subsumer in subsumers:
-    #     print(subsumer)
+    for subsumer in subsumers:
+        print(subsumer)
