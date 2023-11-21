@@ -140,6 +140,11 @@ class ELReasoner:
         
         return self.filter_and_format_subsumers(subsumers, target_class)
 
+    # Compute all classes in the ontology
+    def compute_all_classes(self):
+        return [cls.name for cls in self.ontology.classes()]
+
+
 
 if __name__ == "__main__":
     import argparse
