@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from owlready2 import SOME, And, Restriction, Thing, ThingClass, get_ontology
 
 
