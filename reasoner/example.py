@@ -214,7 +214,7 @@ elk.setOntology(ontology)
 print()
 print("According to ELK, Margherita has the following subsumers: ")
 subsumers = elk.getSubsumers(margherita)
-for concept in subsumers:
+for concept in subsumers.toArray():
     print(" - ",formatter.format(concept))
 print("(",len(subsumers)," in total)")
 print()

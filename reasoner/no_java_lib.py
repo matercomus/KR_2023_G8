@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 from owlready2 import SOME, And, Restriction, Thing, ThingClass, get_ontology
 
@@ -118,7 +118,7 @@ class ELReasoner:
             if isinstance(cls, Restriction):
                 continue
             if cls is Thing:
-                filtered_subsumers.append('T')
+                filtered_subsumers.append('⊤')
                 continue
             cls_name = cls.name if hasattr(cls, 'name') else str(cls)
             filtered_subsumers.append(cls_name)
@@ -153,4 +153,4 @@ if __name__ == "__main__":
     subsumers = reasoner.compute_subsumers(args.class_name)
 
     for subsumer in subsumers:
-        print(subsumer)
+        print('\n' + subsumer)
