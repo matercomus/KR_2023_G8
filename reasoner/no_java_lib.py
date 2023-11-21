@@ -11,13 +11,11 @@ def load_ontology(file_path):
 class ELReasoner:
     def __init__(self, ontology):
         self.ontology = ontology
-        self.elements = {}  # Map element to a set of concepts
-        self.role_successors = {}  # New structure to track role successors
 
-    def add_element(self, element, concept):
-        if element not in self.elements:
-            self.elements[element] = set()
-        self.elements[element].add(concept)
+    def add_element(self, element, concept, elements):
+        if element not in elements:
+            elements[element] = set()
+        elements[element].add(concept)
 
     def apply_T_rule(self, concepts):
         if Thing not in concepts:
@@ -35,7 +33,7 @@ class ELReasoner:
                         changed = True
         return changed
 
-    def apply_existential_restriction_rule(self, element, concepts):
+    def apply_existential_restriction_rule(self, element, concepts, elements, role_successors):
         changed = False
         for concept in concepts.copy():
             if isinstance(concept, Restriction) and concept.type == SOME:
@@ -43,21 +41,21 @@ class ELReasoner:
                 filler = concept.value  # Use value instead of filler
 
                 # Check for an existing r-successor
-                if element in self.role_successors and relation in self.role_successors[element]:
-                    for succ_element in self.role_successors[element][relation]:
-                        if filler not in self.elements[succ_element]:
-                            self.elements[succ_element].add(filler)
+                if element in role_successors and relation in role_successors[element]:
+                    for succ_element in role_successors[element][relation]:
+                        if filler not in elements[succ_element]:
+                            elements[succ_element].add(filler)
                             changed = True
                 else:
                     # Create a new r-successor
                     new_element = f'{element}_{relation.name}'
-                    self.add_element(new_element, filler)
+                    self.add_element(new_element, filler, elements)
                     # Track the new r-successor
-                    if element not in self.role_successors:
-                        self.role_successors[element] = {}
-                    if relation not in self.role_successors[element]:
-                        self.role_successors[element][relation] = set()
-                    self.role_successors[element][relation].add(new_element)
+                    if element not in role_successors:
+                        role_successors[element] = {}
+                    if relation not in role_successors[element]:
+                        role_successors[element][relation] = set()
+                    role_successors[element][relation].add(new_element)
                     changed = True
         return changed
 
@@ -73,14 +71,13 @@ class ELReasoner:
                     changed = True
         return changed
 
-    
-    def apply_role_successor_rule(self, element, concepts):
+    def apply_role_successor_rule(self, element, concepts, elements, role_successors):
         changed = False
         # For each role successor, if the role is not already assigned to the element, assign it
-        for role, successors in self.role_successors.get(element, {}).items():
+        for role, successors in role_successors.get(element, {}).items():
             for successor in successors:
                 # Check if 'successor' has a concept 'C' assigned
-                for concept in self.elements[successor]:
+                for concept in elements[successor]:
                     # Check if there is an existential restriction ∃r.C in the ontology
                     existential_restriction = role.some(concept)
                     if existential_restriction not in concepts:
@@ -89,29 +86,29 @@ class ELReasoner:
                         changed = True
         return changed
 
-    def apply_rules(self):
+    def apply_rules(self, elements, role_successors):
         changed = True
         while changed:
             changed = False
-            for element in list(self.elements.keys()):
-                concepts = self.elements[element]
+            for element in list(elements.keys()):
+                concepts = elements[element]
 
                 # Apply all rules
                 changed |= self.apply_T_rule(concepts)
                 changed |= self.apply_conjunction_rule(concepts)
-                changed |= self.apply_existential_restriction_rule(element, concepts)
+                changed |= self.apply_existential_restriction_rule(element, concepts, elements, role_successors)
                 changed |= self.apply_subclass_rule(concepts)
-                changed |= self.apply_role_successor_rule(element, concepts)
+                changed |= self.apply_role_successor_rule(element, concepts, elements, role_successors)
 
-        return self.elements
-    
-    def initialize_elements_with_class_and_equivalents(self, element, target_class):
-        self.add_element(element, target_class)
+        return elements
+
+    def initialize_elements_with_class_and_equivalents(self, element, target_class, elements):
+        self.add_element(element, target_class, elements)
         if hasattr(target_class, 'equivalent_to'):
             for eq_class in target_class.equivalent_to:
                 if isinstance(eq_class, (And, Restriction)):
-                    self.add_element(element, eq_class)
-    
+                    self.add_element(element, eq_class, elements)
+
     def filter_and_format_subsumers(self, subsumers, target_class):
         filtered_subsumers = []
         for cls in subsumers:
@@ -128,22 +125,25 @@ class ELReasoner:
         return filtered_subsumers
 
     def compute_subsumers(self, class_name):
+        # Initialize elements and role_successors dictionaries
+        elements = {}
+        role_successors = {}
+
         target_class = self.ontology.search_one(iri="*" + class_name)
         if not target_class:
             return []
 
-        self.initialize_elements_with_class_and_equivalents('d0', target_class)
-        self.apply_rules()
+        self.initialize_elements_with_class_and_equivalents('d0', target_class, elements)
+        self.apply_rules(elements, role_successors)
         subsumers = set()
-        for concepts in self.elements.values():
+        for concepts in elements.values():
             subsumers.update(concepts)
-        
+
         return self.filter_and_format_subsumers(subsumers, target_class)
 
     # Compute all classes in the ontology
     def compute_all_classes(self):
         return [cls.name for cls in self.ontology.classes()]
-
 
 
 if __name__ == "__main__":
