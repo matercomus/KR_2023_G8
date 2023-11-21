@@ -11,7 +11,8 @@ if __name__ == "__main__":
     # Argument parsing for command line inputs
     arg_parser = argparse.ArgumentParser(description="EL Reasoner")
     arg_parser.add_argument("ontology_file", type=str, help="Path to the ontology file")
-    arg_parser.add_argument("--limit", type=int, help="Limit on the number of classes to process")
+    arg_parser.add_argument("-l", "--limit", type=int, help="Limit on the number of classes to process")
+    arg_parser.add_argument("-v", "--verbose", action="store_true", help="Print details while processing")
     args = arg_parser.parse_args()
 
     # Connect to the Java gateway of dl4python
@@ -34,7 +35,8 @@ if __name__ == "__main__":
     # If a limit is set, truncate the list of classes
     if args.limit is not None:
         all_classes = all_classes[:args.limit]
-    print(all_classes)
+    if args.verbose:
+        print(all_classes)
 
     gateway.convertToBinaryConjunctions(ontology_ELK)
     elFactory = gateway.getELFactory()
@@ -45,7 +47,8 @@ if __name__ == "__main__":
 
     # Loop over all classes in the ontology
     for class_name in all_classes:
-        print(f"Processing class: {class_name}")  # Print current class name
+        if args.verbose:
+            print(f"Processing class: {class_name}")  # Print current class name
 
         result = {"class_name": class_name}
 
@@ -56,7 +59,8 @@ if __name__ == "__main__":
         time_elapsed_EL = end_time_EL - start_time_EL
 
         # Print ELReasoner results
-        print(f"ELReasoner computed {len(subsumers_EL)} subsumers in {time_elapsed_EL:.5f} seconds")
+        if args.verbose:
+            print(f"ELReasoner computed {len(subsumers_EL)} subsumers in {time_elapsed_EL:.5f} seconds")
 
         result["ELReasoner"] = {
             "subsumers": subsumers_EL,
@@ -72,7 +76,8 @@ if __name__ == "__main__":
         time_elapsed_ELK = end_time_ELK - start_time_ELK
 
         # Print ELK results
-        print(f"ELK computed {len(subsumers_ELK)} subsumers in {time_elapsed_ELK:.5f} seconds")
+        if args.verbose:
+            print(f"ELK computed {len(subsumers_ELK)} subsumers in {time_elapsed_ELK:.5f} seconds")
 
         result["ELK"] = {
             "subsumers": [formatter.format(concept) for concept in subsumers_ELK.toArray()],
@@ -80,9 +85,10 @@ if __name__ == "__main__":
             "execution_time": time_elapsed_ELK,
         }
 
-        print()
+        if args.verbose:
+            print()
         results.append(result)
 
     # Save results to a JSON file
     with open("results.json", "w") as f:
-        json.dump(results, f)
+        json.dump(results, f, indent=2)
