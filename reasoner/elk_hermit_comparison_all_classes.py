@@ -67,31 +67,6 @@ def process_class(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, a
     return result, end_time_EL - start_time_EL, end_time_ELK - start_time_ELK, end_time_HERMIT - start_time_HERMIT
 
 
-def get_separator(onto):
-    # Check if the base IRI ends with a '#'
-    if onto.base_iri.endswith('#'):
-        return ''
-    else:
-        return '/'
-
-
-def debug_hermit(onto, class_name):
-    # Print the base IRI
-    print(f"Base IRI: {onto.base_iri}")
-    # Print the class name
-    print(f"Class Name: {class_name}")
-    # Get the separator from the base IRI
-    separator = get_separator(onto)
-    # Print the full IRI
-    print(f"Full IRI: {onto.base_iri}{separator}{class_name}")
-    # Try to get the class from the ontology
-    class_owl = onto[onto.base_iri + separator + class_name]
-    # Check if the class exists
-    if class_owl is None:
-        print(f"Class {class_name} does not exist in the ontology.")
-    else:
-        print(f"Class {class_name} exists in the ontology.")
-
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(description="EL Reasoner")
     arg_parser.add_argument("ontology_file", type=str, help="Path to the ontology file or directory containing XML files")
@@ -152,11 +127,6 @@ if __name__ == "__main__":
 
             # Process each class
             for class_name in all_classes:
-                # Debugging HERMIT
-                if args.verbose:
-                    debug_hermit(ontology_HERMIT, class_name)
-
-
                 result, time_elapsed_EL, time_elapsed_ELK, time_elapsed_HERMIT = process_class(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, args)
                 results.append(result)
                 execution_times_EL.append(time_elapsed_EL)
