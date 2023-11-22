@@ -73,66 +73,70 @@ if __name__ == "__main__":
     aggregate_results = {}
 
     for ontology_file in ontology_files:
-        if args.verbose or args.progress:
-            print(f"Processing {ontology_file}")
+        try:
+            if args.verbose or args.progress:
+                print(f"Processing {ontology_file}")
 
-        ontology_ELK = parser.parseFile(ontology_file)
-        ontology_EL = load_ontology(ontology_file)
+            ontology_ELK = parser.parseFile(ontology_file)
+            ontology_EL = load_ontology(ontology_file)
 
-        reasoner_EL = ELReasoner(ontology_EL)
-        all_classes = reasoner_EL.compute_all_classes()
-        if args.limit is not None:
-            all_classes = all_classes[:args.limit]
+            reasoner_EL = ELReasoner(ontology_EL)
+            all_classes = reasoner_EL.compute_all_classes()
+            if args.limit is not None:
+                all_classes = all_classes[:args.limit]
 
-        gateway.convertToBinaryConjunctions(ontology_ELK)
-        elFactory = gateway.getELFactory()
-        reasoner_ELK = gateway.getELKReasoner()
-        reasoner_ELK.setOntology(ontology_ELK)
+            gateway.convertToBinaryConjunctions(ontology_ELK)
+            elFactory = gateway.getELFactory()
+            reasoner_ELK = gateway.getELKReasoner()
+            reasoner_ELK.setOntology(ontology_ELK)
 
-        results = []
-        execution_times_EL = []
-        execution_times_ELK = []
+            results = []
+            execution_times_EL = []
+            execution_times_ELK = []
 
-        if args.progress:
-            all_classes = tqdm(all_classes)
+            if args.progress:
+                all_classes = tqdm(all_classes)
 
-        for class_name in all_classes:
-            result, time_elapsed_EL, time_elapsed_ELK = process_class(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, args)
-            results.append(result)
-            execution_times_EL.append(time_elapsed_EL)
-            execution_times_ELK.append(time_elapsed_ELK)
+            for class_name in all_classes:
+                result, time_elapsed_EL, time_elapsed_ELK = process_class(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, args)
+                results.append(result)
+                execution_times_EL.append(time_elapsed_EL)
+                execution_times_ELK.append(time_elapsed_ELK)
 
-        total_time_EL, avg_time_EL, std_dev_EL = calculate_stats(execution_times_EL)
-        total_time_ELK, avg_time_ELK, std_dev_ELK = calculate_stats(execution_times_ELK)
+            total_time_EL, avg_time_EL, std_dev_EL = calculate_stats(execution_times_EL)
+            total_time_ELK, avg_time_ELK, std_dev_ELK = calculate_stats(execution_times_ELK)
 
-        if args.verbose:
-            print(f"ELReasoner total time: {total_time_EL}, average time: {avg_time_EL}, standard deviation: {std_dev_EL}")
-            print(f"ELK total time: {total_time_ELK}, average time: {avg_time_ELK}, standard deviation: {std_dev_ELK}")
-            print()
+            if args.verbose:
+                print(f"ELReasoner total time: {total_time_EL}, average time: {avg_time_EL}, standard deviation: {std_dev_EL}")
+                print(f"ELK total time: {total_time_ELK}, average time: {avg_time_ELK}, standard deviation: {std_dev_ELK}")
+                print()
 
-        # Add the stats to the results
-        stats = {
-            "ELReasoner": {
-                "total_time": total_time_EL,
-                "average_time": avg_time_EL,
-                "std_dev": std_dev_EL
-            },
-            "ELK": {
-                "total_time": total_time_ELK,
-                "average_time": avg_time_ELK,
-                "std_dev": std_dev_ELK
+            # Add the stats to the results
+            stats = {
+                "ELReasoner": {
+                    "total_time": total_time_EL,
+                    "average_time": avg_time_EL,
+                    "std_dev": std_dev_EL
+                },
+                "ELK": {
+                    "total_time": total_time_ELK,
+                    "average_time": avg_time_ELK,
+                    "std_dev": std_dev_ELK
+                }
             }
-        }
-        results.append({"statistics": stats})
+            results.append({"statistics": stats})
 
-        # Create output directory if it doesn't exist
-        os.makedirs(args.output, exist_ok=True)
+            # Create output directory if it doesn't exist
+            os.makedirs(args.output, exist_ok=True)
 
-        with open(os.path.join(args.output, f"{os.path.basename(ontology_file)}.results.json"), "w") as f:
-            json.dump(results, f, indent=2)
+            with open(os.path.join(args.output, f"{os.path.basename(ontology_file)}.results.json"), "w") as f:
+                json.dump(results, f, indent=2)
 
-        aggregate_results[os.path.basename(ontology_file)] = stats
+            aggregate_results[os.path.basename(ontology_file)] = stats
 
-        # Save the aggregate results after each ontology
-        with open(os.path.join(args.output, "aggregate_results.json"), "w") as f:
-            json.dump(aggregate_results, f, indent=2)
+            # Save the aggregate results after each ontology
+            with open(os.path.join(args.output, "aggregate_results.json"), "w") as f:
+                json.dump(aggregate_results, f, indent=2)
+
+        except Exception as e:
+            print(f"Error processing {ontology_file}: {e}")
