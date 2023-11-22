@@ -88,5 +88,20 @@ if __name__ == "__main__":
         print(f"ELReasoner total time: {total_time_EL}, average time: {avg_time_EL}, standard deviation: {std_dev_EL}")
         print(f"ELK total time: {total_time_ELK}, average time: {avg_time_ELK}, standard deviation: {std_dev_ELK}")
 
+    # Add the stats to the results
+    stats = {
+        "ELReasoner": {
+            "total_time": total_time_EL,
+            "average_time": avg_time_EL,
+            "std_dev": std_dev_EL
+        },
+        "ELK": {
+            "total_time": total_time_ELK,
+            "average_time": avg_time_ELK,
+            "std_dev": std_dev_ELK
+        }
+    }
+    results.append({"statistics": stats})
+
     with open("results.json", "w") as f:
         json.dump(results, f, indent=2)
