@@ -58,6 +58,7 @@ if __name__ == "__main__":
     arg_parser.add_argument("-l", "--limit", type=int, help="Limit on the number of classes to process")
     arg_parser.add_argument("-v", "--verbose", action="store_true", help="Print details while processing")
     arg_parser.add_argument("-p", "--progress", action="store_true", help="Show progress bar")
+    arg_parser.add_argument("-o", "--output", type=str, default=".", help="Output directory")
     args = arg_parser.parse_args()
 
     gateway = JavaGateway()
@@ -124,11 +125,14 @@ if __name__ == "__main__":
         }
         results.append({"statistics": stats})
 
-        with open(f"{os.path.basename(ontology_file)}.results.json", "w") as f:
+        # Create output directory if it doesn't exist
+        os.makedirs(args.output, exist_ok=True)
+
+        with open(os.path.join(args.output, f"{os.path.basename(ontology_file)}.results.json"), "w") as f:
             json.dump(results, f, indent=2)
 
         aggregate_results[os.path.basename(ontology_file)] = stats
 
         # Save the aggregate results after each ontology
-        with open("aggregate_results.json", "w") as f:
+        with open(os.path.join(args.output, "aggregate_results.json"), "w") as f:
             json.dump(aggregate_results, f, indent=2)
