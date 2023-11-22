@@ -1,0 +1,155 @@
+{
+  "bfo.basic-formal-ontology.2.owl.xml": {
+    "ELReasoner": {
+      "total_time": 0.019617795944213867,
+      "average_time": 0.0005605084555489676,
+      "std_dev": 0.0003627706147400571
+    },
+    "ELK": {
+      "total_time": 0.023238182067871094,
+      "average_time": 0.0006639480590820313,
+      "std_dev": 0.001547277473573684
+    },
+    "HermiT": {
+      "total_time": 0.01525735855102539,
+      "average_time": 0.0004359245300292969,
+      "std_dev": 0.00011965480659521888
+    }
+  },
+  "pizza.owl.xml": {
+    "ELReasoner": {
+      "total_time": 0.13316798210144043,
+      "average_time": 0.001345131132337782,
+      "std_dev": 0.0007053522081286804
+    },
+    "ELK": {
+      "total_time": 0.06064939498901367,
+      "average_time": 0.0006126201514041785,
+      "std_dev": 0.0020350602622170202
+    },
+    "HermiT": {
+      "total_time": 0.14388465881347656,
+      "average_time": 0.0014533803920553188,
+      "std_dev": 0.0005908822949896314
+    }
+  },
+  "Skin_Physiology_Ontology_2.0.owl.xml": {
+    "ELReasoner": {
+      "total_time": 0.5394642353057861,
+      "average_time": 0.0015913399271557114,
+      "std_dev": 0.001288158120577014
+    },
+    "ELK": {
+      "total_time": 0.18276309967041016,
+      "average_time": 0.000539124187818319,
+      "std_dev": 0.0022555034970783527
+    },
+    "HermiT": {
+      "total_time": 0.5182116031646729,
+      "average_time": 0.0015286477969459376,
+      "std_dev": 0.0006827586792794913
+    }
+  },
+  "foodon.foodon.1.owl.xml": {
+    "ELReasoner": {
+      "total_time": 127.57452893257141,
+      "average_time": 0.012740889736599561,
+      "std_dev": 0.0020757899449803177
+    },
+    "ELK": {
+      "total_time": 4.270247936248779,
+      "average_time": 0.0004264703821281114,
+      "std_dev": 0.0023305777459408806
+    },
+    "HermiT": {
+      "total_time": 130.36494970321655,
+      "average_time": 0.013019569529932743,
+      "std_dev": 0.0022484450531553924
+    }
+  },
+  "ico.informed-consent-ontology.9.owl.xml": {
+    "ELReasoner": {
+      "total_time": 5.1696014404296875,
+      "average_time": 0.012733008473964748,
+      "std_dev": 0.002102962523924643
+    },
+    "ELK": {
+      "total_time": 0.1581404209136963,
+      "average_time": 0.00038950842589580365,
+      "std_dev": 0.0009369496292942274
+    },
+    "HermiT": {
+      "total_time": 5.310838937759399,
+      "average_time": 0.01308088408315123,
+      "std_dev": 0.002051273078482991
+    }
+  },
+  "doid.human-disease-ontology.589.owl.xml": {
+    "ELReasoner": {
+      "total_time": 133.19664573669434,
+      "average_time": 0.016172492197267404,
+      "std_dev": 0.0022342250139306525
+    },
+    "ELK": {
+      "total_time": 2.781367778778076,
+      "average_time": 0.00033770856954566246,
+      "std_dev": 0.0008568543267006313
+    },
+    "HermiT": {
+      "total_time": 134.64018750190735,
+      "average_time": 0.01634776438828404,
+      "std_dev": 0.0022680400373151334
+    }
+  },
+  "OUR_burger_ontology.owl.xml": {
+    "ELReasoner": {
+      "total_time": 0.7373201847076416,
+      "average_time": 0.0153608371814092,
+      "std_dev": 0.0015966218330886696
+    },
+    "ELK": {
+      "total_time": 0.020700693130493164,
+      "average_time": 0.0004312644402186076,
+      "std_dev": 0.0008801844621104614
+    },
+    "HermiT": {
+      "total_time": 0.771277666091919,
+      "average_time": 0.01606828471024831,
+      "std_dev": 0.002275886012845635
+    }
+  },
+  "eco.evidence-and-conclusion-ontology.49.owl.xml": {
+    "ELReasoner": {
+      "total_time": 14.349905490875244,
+      "average_time": 0.01672483157444667,
+      "std_dev": 0.0023103416774900463
+    },
+    "ELK": {
+      "total_time": 0.3012394905090332,
+      "average_time": 0.0003510949772832555,
+      "std_dev": 0.000830536792196276
+    },
+    "HermiT": {
+      "total_time": 14.39801836013794,
+      "average_time": 0.016780907179647947,
+      "std_dev": 0.0021240393837568283
+    }
+  },
+  "amino-acid.amino-acid-ontology.2.owl.xml": {
+    "ELReasoner": {
+      "total_time": 0.8041119575500488,
+      "average_time": 0.01748069472934889,
+      "std_dev": 0.0031205138151913655
+    },
+    "ELK": {
+      "total_time": 0.02431941032409668,
+      "average_time": 0.0005286828331325365,
+      "std_dev": 0.0013227947155620466
+    },
+    "HermiT": {
+      "total_time": 0.8264389038085938,
+      "average_time": 0.017966063126273777,
+      "std_dev": 0.002863454324465422
+    }
+  }
+}
