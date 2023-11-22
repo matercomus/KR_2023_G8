@@ -58,7 +58,8 @@ class Reasoner:
 
         # HermiT Reasoner
         start_time_HERMIT = time.time()
-        subsumers_HERMIT = ontology_HERMIT.get_parents_of(ontology_HERMIT.search_one(iri="*" + self.class_name))
+        class_object_HERMIT = ontology_HERMIT.search_one(iri="*" + self.class_name)
+        subsumers_HERMIT = class_object_HERMIT.ancestors(include_self=True, include_constructs=False)
         end_time_HERMIT = time.time()
 
         result["HermiT"] = {
