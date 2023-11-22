@@ -10,6 +10,12 @@ from py4j.java_gateway import JavaGateway
 from tqdm import tqdm
 
 
+
+def calculate_total_count(counts_EL, counts_ELK):
+    total_count_EL = sum(counts_EL)
+    total_count_ELK = sum(counts_ELK)
+    return total_count_EL, total_count_ELK
+
 def calculate_stats(execution_times):
     total_time = sum(execution_times)
     avg_time = np.mean(execution_times)
@@ -22,34 +28,36 @@ def process_class(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, a
     start_time_EL = time.time()
     subsumers_EL = reasoner_EL.compute_subsumers(class_name)
     end_time_EL = time.time()
+    count_EL = len(subsumers_EL)
 
     result["ELReasoner"] = {
         "subsumers": subsumers_EL,
-        "count": len(subsumers_EL),
+        "count": count_EL,
         "execution_time": end_time_EL - start_time_EL,
     }
 
     if args.verbose:
-        print(f"ELReasoner computed {len(subsumers_EL)} subsumers for class {class_name} in {end_time_EL - start_time_EL:.5f} seconds")
+        print(f"ELReasoner computed {count_EL} subsumers for class {class_name} in {end_time_EL - start_time_EL:.5f} seconds")
 
     start_time_ELK = time.time()
     class_name_ELK = elFactory.getConceptName(class_name)
     subsumers_ELK = reasoner_ELK.getSubsumers(class_name_ELK)
     end_time_ELK = time.time()
+    count_ELK = len(subsumers_ELK)
 
     result["ELK"] = {
         "subsumers": [formatter.format(concept) for concept in subsumers_ELK.toArray()],
-        "count": len(subsumers_ELK),
+        "count": count_ELK,
         "execution_time": end_time_ELK - start_time_ELK,
     }
 
     if args.verbose:
-        print(f"ELK computed {len(subsumers_ELK)} subsumers for class {class_name} in {end_time_ELK - start_time_ELK:.5f} seconds")
+        print(f"ELK computed {count_ELK} subsumers for class {class_name} in {end_time_ELK - start_time_ELK:.5f} seconds")
 
     if args.verbose:
         print()
 
-    return result, end_time_EL - start_time_EL, end_time_ELK - start_time_ELK
+    return result, end_time_EL - start_time_EL, end_time_ELK - start_time_ELK, count_EL, count_ELK
 
 
 if __name__ == "__main__":
@@ -93,22 +101,27 @@ if __name__ == "__main__":
             results = []
             execution_times_EL = []
             execution_times_ELK = []
+            counts_EL = []
+            counts_ELK = []
 
             if args.progress:
                 all_classes = tqdm(all_classes)
 
             for class_name in all_classes:
-                result, time_elapsed_EL, time_elapsed_ELK = process_class(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, args)
+                result, time_elapsed_EL, time_elapsed_ELK, count_EL, count_ELK = process_class(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, args)
                 results.append(result)
                 execution_times_EL.append(time_elapsed_EL)
                 execution_times_ELK.append(time_elapsed_ELK)
+                counts_EL.append(count_EL)
+                counts_ELK.append(count_ELK)
 
             total_time_EL, avg_time_EL, std_dev_EL = calculate_stats(execution_times_EL)
             total_time_ELK, avg_time_ELK, std_dev_ELK = calculate_stats(execution_times_ELK)
+            total_count_EL, total_count_ELK = calculate_total_count(counts_EL, counts_ELK)
 
             if args.verbose:
-                print(f"ELReasoner total time: {total_time_EL}, average time: {avg_time_EL}, standard deviation: {std_dev_EL}")
-                print(f"ELK total time: {total_time_ELK}, average time: {avg_time_ELK}, standard deviation: {std_dev_ELK}")
+                print(f"ELReasoner total time: {total_time_EL}, average time: {avg_time_EL}, standard deviation: {std_dev_EL}, subsumers_found: {total_count_EL}")
+                print(f"ELK total time: {total_time_ELK}, average time: {avg_time_ELK}, standard deviation: {std_dev_ELK}, subsumers_found: {total_count_ELK}")
                 print()
 
             # Add the stats to the results
@@ -116,12 +129,14 @@ if __name__ == "__main__":
                 "ELReasoner": {
                     "total_time": total_time_EL,
                     "average_time": avg_time_EL,
-                    "std_dev": std_dev_EL
+                    "std_dev": std_dev_EL,
+                    "subsumers_found": total_count_EL
                 },
                 "ELK": {
                     "total_time": total_time_ELK,
                     "average_time": avg_time_ELK,
-                    "std_dev": std_dev_ELK
+                    "std_dev": std_dev_ELK,
+                    "subsumers_found": total_count_ELK
                 }
             }
             results.append({"statistics": stats})

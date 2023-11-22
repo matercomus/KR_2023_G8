@@ -1,0 +1,1028 @@
+[
+  {
+    "class_name": "A",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "\u22a4",
+        "A"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "A",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.008687496185302734
+    }
+  },
+  {
+    "class_name": "Aliphatic",
+    "ELReasoner": {
+      "subsumers": [
+        "Aliphatic",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010223388671875
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Aliphatic",
+        "SideChainStructure",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "AliphaticAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.0014426708221435547
+    }
+  },
+  {
+    "class_name": "AminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0011277198791503906
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Aromatic",
+    "ELReasoner": {
+      "subsumers": [
+        "Aromatic",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SideChainStructure",
+        "RefiningFeature",
+        "Aromatic"
+      ],
+      "count": 4,
+      "execution_time": 0.0015065670013427734
+    }
+  },
+  {
+    "class_name": "AromaticAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.001001596450805664
+    }
+  },
+  {
+    "class_name": "C",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "C"
+      ],
+      "count": 2,
+      "execution_time": 0.0010478496551513672
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "C",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Charge",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature",
+        "Charge",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0010938644409179688
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Charge",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "D",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "D"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "NegativeChargedAminoAcid",
+        "D",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0010428428649902344
+    }
+  },
+  {
+    "class_name": "E",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "E"
+      ],
+      "count": 2,
+      "execution_time": 0.0013964176177978516
+    },
+    "ELK": {
+      "subsumers": [
+        "E",
+        "\u22a4",
+        "NegativeChargedAminoAcid",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "F",
+    "ELReasoner": {
+      "subsumers": [
+        "F",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "\u22a4",
+        "F",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "G",
+    "ELReasoner": {
+      "subsumers": [
+        "G",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "G",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.00104522705078125
+    }
+  },
+  {
+    "class_name": "H",
+    "ELReasoner": {
+      "subsumers": [
+        "H",
+        "AromaticAminoAcid",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "H",
+        "\u22a4",
+        "PositiveChargedAminoAcid",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.001054525375366211
+    }
+  },
+  {
+    "class_name": "Hydrophilic",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "Hydrophilic"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "Hydrophobicity",
+        "\u22a4",
+        "RefiningFeature",
+        "Hydrophilic"
+      ],
+      "count": 4,
+      "execution_time": 0.0009999275207519531
+    }
+  },
+  {
+    "class_name": "Hydrophobic",
+    "ELReasoner": {
+      "subsumers": [
+        "Hydrophobic",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "Hydrophobicity",
+        "\u22a4",
+        "Hydrophobic",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Hydrophobicity",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature",
+        "\u22a4",
+        "Hydrophobicity"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "Hydrophobicity",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.0010561943054199219
+    }
+  },
+  {
+    "class_name": "I",
+    "ELReasoner": {
+      "subsumers": [
+        "LargeAliphaticAminoAcid",
+        "I",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0005037784576416016
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "I",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "K",
+    "ELReasoner": {
+      "subsumers": [
+        "LargeAliphaticAminoAcid",
+        "\u22a4",
+        "K"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "K",
+        "\u22a4",
+        "PositiveChargedAminoAcid",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 7,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "L",
+    "ELReasoner": {
+      "subsumers": [
+        "L",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0012209415435791016
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "L",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Large",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "Large"
+      ],
+      "count": 2,
+      "execution_time": 0.001390218734741211
+    },
+    "ELK": {
+      "subsumers": [
+        "Large",
+        "\u22a4",
+        "RefiningFeature",
+        "Size"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "LargeAliphaticAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "LargeAliphaticAminoAcid",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0010325908660888672
+    }
+  },
+  {
+    "class_name": "M",
+    "ELReasoner": {
+      "subsumers": [
+        "LargeAliphaticAminoAcid",
+        "\u22a4",
+        "M"
+      ],
+      "count": 3,
+      "execution_time": 0.0009999275207519531
+    },
+    "ELK": {
+      "subsumers": [
+        "M",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "N",
+    "ELReasoner": {
+      "subsumers": [
+        "N",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "N",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Negative",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "Negative"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "Negative",
+        "\u22a4",
+        "Charge",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "NegativeChargedAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "NegativeChargedAminoAcid",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0010139942169189453
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "NegativeChargedAminoAcid",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Neutral",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "Neutral"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "Neutral",
+        "\u22a4",
+        "Charge",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Non-Polar",
+    "ELReasoner": {
+      "subsumers": [
+        "Non-Polar",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010280609130859375
+    },
+    "ELK": {
+      "subsumers": [
+        "Polarity",
+        "\u22a4",
+        "RefiningFeature",
+        "Non-Polar"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "P",
+    "ELReasoner": {
+      "subsumers": [
+        "P",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010197162628173828
+    },
+    "ELK": {
+      "subsumers": [
+        "P",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Polar",
+    "ELReasoner": {
+      "subsumers": [
+        "Non-Polar",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "Polarity",
+        "\u22a4",
+        "Polar",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.0010025501251220703
+    }
+  },
+  {
+    "class_name": "Polarity",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature",
+        "Polarity",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0010194778442382812
+    },
+    "ELK": {
+      "subsumers": [
+        "Polarity",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Positive",
+    "ELReasoner": {
+      "subsumers": [
+        "Positive",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "Positive",
+        "\u22a4",
+        "Charge",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.0010273456573486328
+    }
+  },
+  {
+    "class_name": "PositiveChargedAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "PositiveChargedAminoAcid",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "PositiveChargedAminoAcid",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Q",
+    "ELReasoner": {
+      "subsumers": [
+        "LargeAliphaticAminoAcid",
+        "Q",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "Q",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0010373592376708984
+    }
+  },
+  {
+    "class_name": "R",
+    "ELReasoner": {
+      "subsumers": [
+        "R",
+        "PositiveChargedAminoAcid",
+        "LargeAliphaticAminoAcid",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.0010292530059814453
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "PositiveChargedAminoAcid",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid",
+        "R"
+      ],
+      "count": 7,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "RefiningFeature",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "S",
+    "ELReasoner": {
+      "subsumers": [
+        "TinyPolarAminoAcid",
+        "\u22a4",
+        "S"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "TinyPolarAminoAcid",
+        "SpecificAminoAcid",
+        "S"
+      ],
+      "count": 6,
+      "execution_time": 0.0010285377502441406
+    }
+  },
+  {
+    "class_name": "SideChainStructure",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature",
+        "\u22a4",
+        "SideChainStructure"
+      ],
+      "count": 3,
+      "execution_time": 0.0010213851928710938
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SideChainStructure",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Size",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature",
+        "Size",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0015342235565185547
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RefiningFeature",
+        "Size"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Small",
+    "ELReasoner": {
+      "subsumers": [
+        "Small",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Small",
+        "RefiningFeature",
+        "Size"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "SpecificAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "SpecificAminoAcid",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.001001119613647461
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "T",
+    "ELReasoner": {
+      "subsumers": [
+        "TinyPolarAminoAcid",
+        "\u22a4",
+        "T"
+      ],
+      "count": 3,
+      "execution_time": 0.00103759765625
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "T",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "TinyPolarAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Tiny",
+    "ELReasoner": {
+      "subsumers": [
+        "Tiny",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010347366333007812
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RefiningFeature",
+        "Size",
+        "Tiny"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "TinyPolarAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "TinyPolarAminoAcid"
+      ],
+      "count": 2,
+      "execution_time": 0.0009982585906982422
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "TinyPolarAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "V",
+    "ELReasoner": {
+      "subsumers": [
+        "V",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.001222848892211914
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "V",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "W",
+    "ELReasoner": {
+      "subsumers": [
+        "W",
+        "AromaticAminoAcid",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0010213851928710938
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "\u22a4",
+        "W",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Y",
+    "ELReasoner": {
+      "subsumers": [
+        "Y",
+        "AromaticAminoAcid",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "Y",
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "statistics": {
+      "ELReasoner": {
+        "total_time": 0.023785114288330078,
+        "average_time": 0.0005170677019202191,
+        "std_dev": 0.0005564893254167183,
+        "subsumers_found": 110
+      },
+      "ELK": {
+        "total_time": 0.022965431213378906,
+        "average_time": 0.0004992485046386719,
+        "std_dev": 0.001319004988567992,
+        "subsumers_found": 210
+      }
+    }
+  }
+]

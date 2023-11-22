@@ -1,0 +1,2268 @@
+[
+  {
+    "class_name": "Pizza",
+    "ELReasoner": {
+      "subsumers": [
+        "Pizza",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 4,
+      "execution_time": 0.0010089874267578125
+    },
+    "ELK": {
+      "subsumers": [
+        "Pizza",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.04111194610595703
+    }
+  },
+  {
+    "class_name": "PizzaBase",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "PizzaBase",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 4,
+      "execution_time": 0.0010228157043457031
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "PizzaBase"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Food",
+    "ELReasoner": {
+      "subsumers": [
+        "DomainConcept",
+        "\u22a4",
+        "Food"
+      ],
+      "count": 3,
+      "execution_time": 0.0010275840759277344
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Food"
+      ],
+      "count": 2,
+      "execution_time": 0.0010256767272949219
+    }
+  },
+  {
+    "class_name": "Spiciness",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "hasSpiciness"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Spiciness"
+      ],
+      "count": 2,
+      "execution_time": 0.0011088848114013672
+    }
+  },
+  {
+    "class_name": "PizzaTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "PizzaTopping",
+        "DomainConcept",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "PizzaTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0011632442474365234
+    }
+  },
+  {
+    "class_name": "American",
+    "ELReasoner": {
+      "subsumers": [
+        "American",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0009984970092773438
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "American"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "NamedPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 5,
+      "execution_time": 0.0014736652374267578
+    },
+    "ELK": {
+      "subsumers": [
+        "\"Pizza\"",
+        "\u22a4",
+        "\"Food\"",
+        "NamedPizza",
+        "\"DomainThing\""
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "MozzarellaTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "CheeseTopping",
+        "PizzaTopping",
+        "Food",
+        "DomainConcept",
+        "\u22a4",
+        "MozzarellaTopping"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "MozzarellaTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.001505136489868164
+    }
+  },
+  {
+    "class_name": "PeperoniSausageTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "MeatTopping",
+        "DomainConcept",
+        "PeperoniSausageTopping"
+      ],
+      "count": 6,
+      "execution_time": 0.0010993480682373047
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "PeperoniSausageTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "TomatoTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "\u22a4",
+        "TomatoTopping",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "TomatoTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010266304016113281
+    }
+  },
+  {
+    "class_name": "AmericanHot",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "AmericanHot",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0010149478912353516
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AmericanHot"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "HotGreenPepperTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "GreenPepperTopping",
+        "VegetableTopping",
+        "PepperTopping",
+        "Food",
+        "HotGreenPepperTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 8,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "HotGreenPepperTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0015060901641845703
+    }
+  },
+  {
+    "class_name": "JalapenoPepperTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "PepperTopping",
+        "JalapenoPepperTopping",
+        "Food",
+        "VegetableTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.001001596450805664
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "JalapenoPepperTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010037422180175781
+    }
+  },
+  {
+    "class_name": "AnchoviesTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "FishTopping",
+        "PizzaTopping",
+        "Food",
+        "AnchoviesTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AnchoviesTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010294914245605469
+    }
+  },
+  {
+    "class_name": "FishTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "FishTopping",
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "FishTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "ArtichokeTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "ArtichokeTopping",
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.004471302032470703
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "ArtichokeTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "VegetableTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0010333061218261719
+    },
+    "ELK": {
+      "subsumers": [
+        "VegetableTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Mild",
+    "ELReasoner": {
+      "subsumers": [
+        "Spiciness",
+        "\u22a4",
+        "Mild",
+        "ValuePartition"
+      ],
+      "count": 4,
+      "execution_time": 0.001107931137084961
+    },
+    "ELK": {
+      "subsumers": [
+        "Mild",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "AsparagusTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "VegetableTopping",
+        "AsparagusTopping",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "AsparagusTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010285377502441406
+    }
+  },
+  {
+    "class_name": "Cajun",
+    "ELReasoner": {
+      "subsumers": [
+        "Pizza",
+        "Food",
+        "Cajun",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0009989738464355469
+    },
+    "ELK": {
+      "subsumers": [
+        "Cajun",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0011658668518066406
+    }
+  },
+  {
+    "class_name": "OnionTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "OnionTopping",
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0005056858062744141
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "OnionTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010037422180175781
+    }
+  },
+  {
+    "class_name": "PeperonataTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "PepperTopping",
+        "Food",
+        "VegetableTopping",
+        "PeperonataTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.0010840892791748047
+    },
+    "ELK": {
+      "subsumers": [
+        "PeperonataTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010285377502441406
+    }
+  },
+  {
+    "class_name": "PrawnsTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "FishTopping",
+        "PizzaTopping",
+        "Food",
+        "PrawnsTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0010361671447753906
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "PrawnsTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "TobascoPepperSauce",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "SauceTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept",
+        "TobascoPepperSauce"
+      ],
+      "count": 6,
+      "execution_time": 0.0010612010955810547
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "TobascoPepperSauce"
+      ],
+      "count": 2,
+      "execution_time": 0.0015459060668945312
+    }
+  },
+  {
+    "class_name": "CajunSpiceTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "CajunSpiceTopping",
+        "PizzaTopping",
+        "HerbSpiceTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0010712146759033203
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "CajunSpiceTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0030908584594726562
+    }
+  },
+  {
+    "class_name": "HerbSpiceTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "HerbSpiceTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0010573863983154297
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "HerbSpiceTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0011484622955322266
+    }
+  },
+  {
+    "class_name": "Hot",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "AmericanHot",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0013728141784667969
+    },
+    "ELK": {
+      "subsumers": [
+        "Hot",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.001028299331665039
+    }
+  },
+  {
+    "class_name": "RosemaryTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "RosemaryTopping",
+        "PizzaTopping",
+        "HerbSpiceTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0010175704956054688
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RosemaryTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "CaperTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "CaperTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "CaperTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Capricciosa",
+    "ELReasoner": {
+      "subsumers": [
+        "Capricciosa",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Capricciosa"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "HamTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "HamTopping",
+        "PizzaTopping",
+        "Food",
+        "MeatTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0010364055633544922
+    },
+    "ELK": {
+      "subsumers": [
+        "HamTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "OliveTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "VegetableTopping",
+        "DomainConcept",
+        "OliveTopping"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "OliveTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010137557983398438
+    }
+  },
+  {
+    "class_name": "Caprina",
+    "ELReasoner": {
+      "subsumers": [
+        "Caprina",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Caprina"
+      ],
+      "count": 2,
+      "execution_time": 0.0010981559753417969
+    }
+  },
+  {
+    "class_name": "GoatsCheeseTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "CheeseTopping",
+        "GoatsCheeseTopping",
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0011053085327148438
+    },
+    "ELK": {
+      "subsumers": [
+        "GoatsCheeseTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010983943939208984
+    }
+  },
+  {
+    "class_name": "SundriedTomatoTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "SundriedTomatoTopping",
+        "TomatoTopping",
+        "\u22a4",
+        "VegetableTopping",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SundriedTomatoTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "CheeseTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "CheeseTopping",
+        "GoatsCheeseTopping",
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "CheeseTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010170936584472656
+    }
+  },
+  {
+    "class_name": "CheeseyPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "CheeseyPizza",
+        "CheeseTopping",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.00099945068359375
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "CheeseyPizza"
+      ],
+      "count": 2,
+      "execution_time": 0.0010514259338378906
+    }
+  },
+  {
+    "class_name": "CheeseyVegetableTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "CheeseTopping",
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "CheeseyVegetableTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.0010368824005126953
+    },
+    "ELK": {
+      "subsumers": [
+        "CheeseyVegetableTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0013747215270996094
+    }
+  },
+  {
+    "class_name": "ChickenTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "ChickenTopping",
+        "PizzaTopping",
+        "Food",
+        "MeatTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0010013580322265625
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "ChickenTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0015099048614501953
+    }
+  },
+  {
+    "class_name": "MeatTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "MeatTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.001035451889038086
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "MeatTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.001020193099975586
+    }
+  },
+  {
+    "class_name": "Country",
+    "ELReasoner": {
+      "subsumers": [
+        "Country",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 3,
+      "execution_time": 0.0010044574737548828
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Country"
+      ],
+      "count": 2,
+      "execution_time": 0.0010421276092529297
+    }
+  },
+  {
+    "class_name": "DomainConcept",
+    "ELReasoner": {
+      "subsumers": [
+        "DomainConcept",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "DeepPanBase",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaBase",
+        "DeepPanBase",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0010662078857421875
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "DeepPanBase"
+      ],
+      "count": 2,
+      "execution_time": 0.0011734962463378906
+    }
+  },
+  {
+    "class_name": "ThinAndCrispyBase",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaBase",
+        "ThinAndCrispyBase",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "ThinAndCrispyBase"
+      ],
+      "count": 2,
+      "execution_time": 0.001049041748046875
+    }
+  },
+  {
+    "class_name": "ValuePartition",
+    "ELReasoner": {
+      "subsumers": [
+        "\u22a4",
+        "ValuePartition"
+      ],
+      "count": 2,
+      "execution_time": 0.0011870861053466797
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "ValuePartition"
+      ],
+      "count": 2,
+      "execution_time": 0.0010404586791992188
+    }
+  },
+  {
+    "class_name": "Fiorentina",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "Fiorentina",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0011031627655029297
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Fiorentina"
+      ],
+      "count": 2,
+      "execution_time": 0.002434253692626953
+    }
+  },
+  {
+    "class_name": "GarlicTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "\u22a4",
+        "DomainConcept",
+        "GarlicTopping"
+      ],
+      "count": 6,
+      "execution_time": 0.0013136863708496094
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "GarlicTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0023920536041259766
+    }
+  },
+  {
+    "class_name": "ParmesanTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "ParmesanTopping",
+        "CheeseTopping",
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0020067691802978516
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "ParmesanTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0024194717407226562
+    }
+  },
+  {
+    "class_name": "SpinachTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "SpinachTopping",
+        "VegetableTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0010037422180175781
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SpinachTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0012900829315185547
+    }
+  },
+  {
+    "class_name": "FourCheesesTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "FourCheesesTopping",
+        "CheeseTopping",
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.001020669937133789
+    },
+    "ELK": {
+      "subsumers": [
+        "FourCheesesTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.002059459686279297
+    }
+  },
+  {
+    "class_name": "FourSeasons",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "DomainConcept",
+        "\u22a4",
+        "FourSeasons",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0014238357543945312
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "FourSeasons"
+      ],
+      "count": 2,
+      "execution_time": 0.0025157928466796875
+    }
+  },
+  {
+    "class_name": "MushroomTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "MushroomTopping",
+        "Food",
+        "VegetableTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0010368824005126953
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "MushroomTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0020079612731933594
+    }
+  },
+  {
+    "class_name": "FruitTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "FruitTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0015075206756591797
+    },
+    "ELK": {
+      "subsumers": [
+        "FruitTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.001047372817993164
+    }
+  },
+  {
+    "class_name": "FruttiDiMare",
+    "ELReasoner": {
+      "subsumers": [
+        "FruttiDiMare",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0011603832244873047
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "FruttiDiMare"
+      ],
+      "count": 2,
+      "execution_time": 0.0011243820190429688
+    }
+  },
+  {
+    "class_name": "MixedSeafoodTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "FishTopping",
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "MixedSeafoodTopping",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0010006427764892578
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "MixedSeafoodTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.001949310302734375
+    }
+  },
+  {
+    "class_name": "Medium",
+    "ELReasoner": {
+      "subsumers": [
+        "Spiciness",
+        "Medium",
+        "ValuePartition",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Medium"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Giardiniera",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Giardiniera",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0014510154724121094
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Giardiniera"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "LeekTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "LeekTopping",
+        "VegetableTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0005033016204833984
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "LeekTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0015070438385009766
+    }
+  },
+  {
+    "class_name": "PetitPoisTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "PetitPoisTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.009128093719482422
+    },
+    "ELK": {
+      "subsumers": [
+        "PetitPoisTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.002026796340942383
+    }
+  },
+  {
+    "class_name": "SlicedTomatoTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "SlicedTomatoTopping",
+        "\u22a4",
+        "TomatoTopping",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.0011682510375976562
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SlicedTomatoTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0014770030975341797
+    }
+  },
+  {
+    "class_name": "GorgonzolaTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "CheeseTopping",
+        "PizzaTopping",
+        "Food",
+        "GorgonzolaTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "GorgonzolaTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010459423065185547
+    }
+  },
+  {
+    "class_name": "GreenPepperTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "GreenPepperTopping",
+        "VegetableTopping",
+        "PepperTopping",
+        "Food",
+        "HotGreenPepperTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 8,
+      "execution_time": 0.0011358261108398438
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "GreenPepperTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.001024007797241211
+    }
+  },
+  {
+    "class_name": "PepperTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "GreenPepperTopping",
+        "VegetableTopping",
+        "PepperTopping",
+        "Food",
+        "HotGreenPepperTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 8,
+      "execution_time": 0.0010645389556884766
+    },
+    "ELK": {
+      "subsumers": [
+        "PepperTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010001659393310547
+    }
+  },
+  {
+    "class_name": "HotSpicedBeefTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "HotSpicedBeefTopping",
+        "PizzaTopping",
+        "Food",
+        "MeatTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "HotSpicedBeefTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.002554178237915039
+    }
+  },
+  {
+    "class_name": "IceCream",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "DomainConcept",
+        "\u22a4",
+        "IceCream"
+      ],
+      "count": 4,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "IceCream",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010170936584472656
+    }
+  },
+  {
+    "class_name": "InterestingPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "InterestingPizza",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0010004043579101562
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "InterestingPizza"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "LaReine",
+    "ELReasoner": {
+      "subsumers": [
+        "LaReine",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0013527870178222656
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "LaReine"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Margherita",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "Margherita",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0010008811950683594
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Margherita"
+      ],
+      "count": 2,
+      "execution_time": 0.001062154769897461
+    }
+  },
+  {
+    "class_name": "MeatyPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "MeatTopping",
+        "MeatyPizza",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.0015099048614501953
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "MeatyPizza"
+      ],
+      "count": 2,
+      "execution_time": 0.001226186752319336
+    }
+  },
+  {
+    "class_name": "Mushroom",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "Mushroom",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0010161399841308594
+    },
+    "ELK": {
+      "subsumers": [
+        "Mushroom",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.001111745834350586
+    }
+  },
+  {
+    "class_name": "Napoletana",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Napoletana",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0012969970703125
+    },
+    "ELK": {
+      "subsumers": [
+        "Napoletana",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0015063285827636719
+    }
+  },
+  {
+    "class_name": "NonVegetarianPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "NonVegetarianPizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.00131988525390625
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "NonVegetarianPizza"
+      ],
+      "count": 2,
+      "execution_time": 0.002086162567138672
+    }
+  },
+  {
+    "class_name": "VegetarianPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "NonVegetarianPizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0009996891021728516
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "VegetarianPizza"
+      ],
+      "count": 2,
+      "execution_time": 0.0020143985748291016
+    }
+  },
+  {
+    "class_name": "NutTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "NutTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "NutTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "ParmaHamTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "HamTopping",
+        "ParmaHamTopping",
+        "PizzaTopping",
+        "Food",
+        "MeatTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "ParmaHamTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010476112365722656
+    }
+  },
+  {
+    "class_name": "Parmense",
+    "ELReasoner": {
+      "subsumers": [
+        "Parmense",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0010328292846679688
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Parmense"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "PineKernels",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "NutTopping",
+        "\u22a4",
+        "DomainConcept",
+        "PineKernels"
+      ],
+      "count": 6,
+      "execution_time": 0.0010309219360351562
+    },
+    "ELK": {
+      "subsumers": [
+        "PineKernels",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "PolloAdAstra",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "\u22a4",
+        "Pizza",
+        "DomainConcept",
+        "PolloAdAstra",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0005047321319580078
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "PolloAdAstra"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "RedOnionTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "OnionTopping",
+        "PizzaTopping",
+        "Food",
+        "VegetableTopping",
+        "RedOnionTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.0010004043579101562
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RedOnionTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010051727294921875
+    }
+  },
+  {
+    "class_name": "SweetPepperTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "SweetPepperTopping",
+        "PizzaTopping",
+        "PepperTopping",
+        "Food",
+        "VegetableTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 7,
+      "execution_time": 0.0010194778442382812
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SweetPepperTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "PrinceCarlo",
+    "ELReasoner": {
+      "subsumers": [
+        "PrinceCarlo",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "PrinceCarlo",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0009992122650146484
+    }
+  },
+  {
+    "class_name": "QuattroFormaggi",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "DomainConcept",
+        "\u22a4",
+        "QuattroFormaggi",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0010340213775634766
+    },
+    "ELK": {
+      "subsumers": [
+        "QuattroFormaggi",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.001462697982788086
+    }
+  },
+  {
+    "class_name": "RealItalianPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "RealItalianPizza",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0010006427764892578
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RealItalianPizza"
+      ],
+      "count": 2,
+      "execution_time": 0.001270294189453125
+    }
+  },
+  {
+    "class_name": "RocketTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "VegetableTopping",
+        "RocketTopping",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RocketTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Rosa",
+    "ELReasoner": {
+      "subsumers": [
+        "Pizza",
+        "Food",
+        "Rosa",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "Rosa",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010371208190917969
+    }
+  },
+  {
+    "class_name": "SauceTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "SauceTopping",
+        "Food",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0010247230529785156
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SauceTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010440349578857422
+    }
+  },
+  {
+    "class_name": "Siciliana",
+    "ELReasoner": {
+      "subsumers": [
+        "Siciliana",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Siciliana"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "SloppyGiuseppe",
+    "ELReasoner": {
+      "subsumers": [
+        "SloppyGiuseppe",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SloppyGiuseppe"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "Soho",
+    "ELReasoner": {
+      "subsumers": [
+        "Soho",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0010607242584228516
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Soho"
+      ],
+      "count": 2,
+      "execution_time": 0.001020193099975586
+    }
+  },
+  {
+    "class_name": "SpicyPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "Pizza",
+        "SpicyTopping",
+        "\u22a4",
+        "SpicyPizza",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0013346672058105469
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SpicyPizza"
+      ],
+      "count": 2,
+      "execution_time": 0.0011241436004638672
+    }
+  },
+  {
+    "class_name": "SpicyTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "DomainConcept",
+        "Spiciness",
+        "Food",
+        "ValuePartition",
+        "SpicyTopping",
+        "\u22a4",
+        "Hot"
+      ],
+      "count": 8,
+      "execution_time": 0.0
+    },
+    "ELK": {
+      "subsumers": [
+        "SpicyTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "SpicyPizzaEquivalent",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Spiciness",
+        "SpicyPizzaEquivalent",
+        "Food",
+        "\u22a4",
+        "Hot",
+        "ValuePartition",
+        "Pizza",
+        "DomainConcept"
+      ],
+      "count": 9,
+      "execution_time": 0.0010428428649902344
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "SpicyPizzaEquivalent"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "class_name": "SultanaTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "SultanaTopping",
+        "Food",
+        "FruitTopping",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 6,
+      "execution_time": 0.0010938644409179688
+    },
+    "ELK": {
+      "subsumers": [
+        "SultanaTopping",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0010406970977783203
+    }
+  },
+  {
+    "class_name": "ThinAndCrispyPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "Food",
+        "ThinAndCrispyPizza",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0010442733764648438
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "ThinAndCrispyPizza"
+      ],
+      "count": 2,
+      "execution_time": 0.0025048255920410156
+    }
+  },
+  {
+    "class_name": "UnclosedPizza",
+    "ELReasoner": {
+      "subsumers": [
+        "UnclosedPizza",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0012271404266357422
+    },
+    "ELK": {
+      "subsumers": [
+        "UnclosedPizza",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0014691352844238281
+    }
+  },
+  {
+    "class_name": "VegetarianPizzaEquivalent1",
+    "ELReasoner": {
+      "subsumers": [
+        "VegetarianPizzaEquivalent1",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0010006427764892578
+    },
+    "ELK": {
+      "subsumers": [
+        "VegetarianPizzaEquivalent1",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0020024776458740234
+    }
+  },
+  {
+    "class_name": "VegetarianTopping",
+    "ELReasoner": {
+      "subsumers": [
+        "PizzaTopping",
+        "Food",
+        "\u22a4",
+        "VegetarianTopping",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0021293163299560547
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "VegetarianTopping"
+      ],
+      "count": 2,
+      "execution_time": 0.0010056495666503906
+    }
+  },
+  {
+    "class_name": "VegetarianPizzaEquivalent2",
+    "ELReasoner": {
+      "subsumers": [
+        "VegetarianPizzaEquivalent2",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept"
+      ],
+      "count": 5,
+      "execution_time": 0.0015053749084472656
+    },
+    "ELK": {
+      "subsumers": [
+        "VegetarianPizzaEquivalent2",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.001004934310913086
+    }
+  },
+  {
+    "class_name": "Veneziana",
+    "ELReasoner": {
+      "subsumers": [
+        "Veneziana",
+        "Food",
+        "Pizza",
+        "\u22a4",
+        "DomainConcept",
+        "NamedPizza"
+      ],
+      "count": 6,
+      "execution_time": 0.0013821125030517578
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "Veneziana"
+      ],
+      "count": 2,
+      "execution_time": 0.0
+    }
+  },
+  {
+    "statistics": {
+      "ELReasoner": {
+        "total_time": 0.09093141555786133,
+        "average_time": 0.0009184991470491044,
+        "std_dev": 0.0010585639255955162
+      },
+      "ELK": {
+        "total_time": 0.13394737243652344,
+        "average_time": 0.0013530037619850852,
+        "std_dev": 0.004088791500365298
+      }
+    }
+  }
+]

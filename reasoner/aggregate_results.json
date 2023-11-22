@@ -1,0 +1,14 @@
+{
+  "doid.human-disease-ontology.589.owl.xml": {
+    "ELReasoner": {
+      "total_time": 36.34315299987793,
+      "average_time": 0.004412718916935154,
+      "std_dev": 0.0013391560990106543
+    },
+    "ELK": {
+      "total_time": 4.185522794723511,
+      "average_time": 0.0005081984937741028,
+      "std_dev": 0.0016956663751089291
+    }
+  }
+}

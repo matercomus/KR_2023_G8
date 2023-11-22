@@ -1,0 +1,128 @@
+{
+  "amino-acid.amino-acid-ontology.2.owl.xml": {
+    "ELReasoner": {
+      "total_time": 0.023785114288330078,
+      "average_time": 0.0005170677019202191,
+      "std_dev": 0.0005564893254167183,
+      "subsumers_found": 110
+    },
+    "ELK": {
+      "total_time": 0.022965431213378906,
+      "average_time": 0.0004992485046386719,
+      "std_dev": 0.001319004988567992,
+      "subsumers_found": 210
+    }
+  },
+  "bfo.basic-formal-ontology.2.owl.xml": {
+    "ELReasoner": {
+      "total_time": 0.019408702850341797,
+      "average_time": 0.0005545343671526227,
+      "std_dev": 0.00051716651073172,
+      "subsumers_found": 186
+    },
+    "ELK": {
+      "total_time": 0.005530118942260742,
+      "average_time": 0.0001580033983503069,
+      "std_dev": 0.00046053934199050573,
+      "subsumers_found": 186
+    }
+  },
+  "doid.human-disease-ontology.589.owl.xml": {
+    "ELReasoner": {
+      "total_time": 35.13611173629761,
+      "average_time": 0.004266162182649053,
+      "std_dev": 0.0009716467296497111,
+      "subsumers_found": 68926
+    },
+    "ELK": {
+      "total_time": 2.8162572383880615,
+      "average_time": 0.00034194478367994917,
+      "std_dev": 0.0007631259076130228,
+      "subsumers_found": 68926
+    }
+  },
+  "eco.evidence-and-conclusion-ontology.49.owl.xml": {
+    "ELReasoner": {
+      "total_time": 4.2570836544036865,
+      "average_time": 0.004961635960843458,
+      "std_dev": 0.00117335358677617,
+      "subsumers_found": 7541
+    },
+    "ELK": {
+      "total_time": 0.3330838680267334,
+      "average_time": 0.00038820963639479416,
+      "std_dev": 0.0009184943254387469,
+      "subsumers_found": 6839
+    }
+  },
+  "foodon.foodon.1.owl.xml": {
+    "ELReasoner": {
+      "total_time": 112.91230893135071,
+      "average_time": 0.011276571350379577,
+      "std_dev": 0.0013404647278355698,
+      "subsumers_found": 147776
+    },
+    "ELK": {
+      "total_time": 5.309149742126465,
+      "average_time": 0.0005302256808275706,
+      "std_dev": 0.001541845792144605,
+      "subsumers_found": 183526
+    }
+  },
+  "ico.informed-consent-ontology.9.owl.xml": {
+    "ELReasoner": {
+      "total_time": 4.670178651809692,
+      "average_time": 0.011502903083275104,
+      "std_dev": 0.0014610127197748084,
+      "subsumers_found": 3337
+    },
+    "ELK": {
+      "total_time": 0.21500086784362793,
+      "average_time": 0.000529558787792187,
+      "std_dev": 0.0011303416874531558,
+      "subsumers_found": 3075
+    }
+  },
+  "OUR_burger_ontology.owl.xml": {
+    "ELReasoner": {
+      "total_time": 0.5318810939788818,
+      "average_time": 0.011080856124560038,
+      "std_dev": 0.0005694724336051393,
+      "subsumers_found": 218
+    },
+    "ELK": {
+      "total_time": 0.026458740234375,
+      "average_time": 0.0005512237548828125,
+      "std_dev": 0.0006550867892601837,
+      "subsumers_found": 222
+    }
+  },
+  "pizza.owl.xml": {
+    "ELReasoner": {
+      "total_time": 1.1163694858551025,
+      "average_time": 0.011276459453081844,
+      "std_dev": 0.0006836121304512631,
+      "subsumers_found": 566
+    },
+    "ELK": {
+      "total_time": 0.06673622131347656,
+      "average_time": 0.0006741032455906724,
+      "std_dev": 0.0007503067857958953,
+      "subsumers_found": 201
+    }
+  },
+  "Skin_Physiology_Ontology_2.0.owl.xml": {
+    "ELReasoner": {
+      "total_time": 3.9573957920074463,
+      "average_time": 0.01167373389972698,
+      "std_dev": 0.0009262899849073088,
+      "subsumers_found": 2654
+    },
+    "ELK": {
+      "total_time": 0.16770052909851074,
+      "average_time": 0.0004946918262492943,
+      "std_dev": 0.001105434012372815,
+      "subsumers_found": 2689
+    }
+  }
+}
