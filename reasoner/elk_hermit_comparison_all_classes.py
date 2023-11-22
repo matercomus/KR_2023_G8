@@ -11,60 +11,68 @@ from py4j.java_gateway import JavaGateway
 from tqdm import tqdm
 
 
-def calculate_stats(execution_times):
-    total_time = sum(execution_times)
-    avg_time = np.mean(execution_times)
-    std_dev = np.std(execution_times)
-    return total_time, avg_time, std_dev
+class Reasoner:
+    def __init__(self, class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, args):
+        self.class_name = class_name
+        self.reasoner_EL = reasoner_EL
+        self.reasoner_ELK = reasoner_ELK
+        self.elFactory = elFactory
+        self.formatter = formatter
+        self.args = args
 
+    def calculate_stats(self, execution_times):
+        total_time = sum(execution_times)
+        avg_time = np.mean(execution_times)
+        std_dev = np.std(execution_times)
+        return total_time, avg_time, std_dev
 
-def process_class(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, args):
-    result = {"class_name": class_name}
+    def process_class(self):
+        result = {"class_name": self.class_name}
 
-    # ELReasoner
-    start_time_EL = time.time()
-    subsumers_EL = reasoner_EL.compute_subsumers(class_name)
-    end_time_EL = time.time()
+        # ELReasoner
+        start_time_EL = time.time()
+        subsumers_EL = self.reasoner_EL.compute_subsumers(self.class_name)
+        end_time_EL = time.time()
 
-    result["ELReasoner"] = {
-        "subsumers": subsumers_EL,
-        "count": len(subsumers_EL),
-        "execution_time": end_time_EL - start_time_EL,
-    }
-    if args.verbose:
-        print(f"ELReasoner computed {len(subsumers_EL)} subsumers for class {class_name} in {end_time_EL - start_time_EL:.5f} seconds")
+        result["ELReasoner"] = {
+            "subsumers": subsumers_EL,
+            "count": len(subsumers_EL),
+            "execution_time": end_time_EL - start_time_EL,
+        }
+        if self.args.verbose:
+            print(f"ELReasoner computed {len(subsumers_EL)} subsumers for class {self.class_name} in {end_time_EL - start_time_EL:.5f} seconds")
 
-    # ELK Reasoner
-    start_time_ELK = time.time()
-    class_name_ELK = elFactory.getConceptName(class_name)
-    subsumers_ELK = reasoner_ELK.getSubsumers(class_name_ELK)
-    end_time_ELK = time.time()
+        # ELK Reasoner
+        start_time_ELK = time.time()
+        class_name_ELK = self.elFactory.getConceptName(self.class_name)
+        subsumers_ELK = self.reasoner_ELK.getSubsumers(class_name_ELK)
+        end_time_ELK = time.time()
 
-    result["ELK"] = {
-        "subsumers": [formatter.format(concept) for concept in subsumers_ELK.toArray()],
-        "count": len(subsumers_ELK),
-        "execution_time": end_time_ELK - start_time_ELK,
-    }
-    if args.verbose:
-        print(f"ELK computed {len(subsumers_ELK)} subsumers for class {class_name} in {end_time_ELK - start_time_ELK:.5f} seconds")
+        result["ELK"] = {
+            "subsumers": [self.formatter.format(concept) for concept in subsumers_ELK.toArray()],
+            "count": len(subsumers_ELK),
+            "execution_time": end_time_ELK - start_time_ELK,
+        }
+        if self.args.verbose:
+            print(f"ELK computed {len(subsumers_ELK)} subsumers for class {self.class_name} in {end_time_ELK - start_time_ELK:.5f} seconds")
 
-    # HermiT Reasoner
-    start_time_HERMIT = time.time()
-    subsumers_HERMIT = ontology_HERMIT.get_parents_of(ontology_HERMIT.search_one(iri="*" + class_name))
-    end_time_HERMIT = time.time()
+        # HermiT Reasoner
+        start_time_HERMIT = time.time()
+        subsumers_HERMIT = ontology_HERMIT.get_parents_of(ontology_HERMIT.search_one(iri="*" + self.class_name))
+        end_time_HERMIT = time.time()
 
-    result["HermiT"] = {
-        "subsumers": [str(i) for i in subsumers_HERMIT],
-        "count": len(subsumers_HERMIT),
-        "execution_time": end_time_HERMIT - start_time_HERMIT,
-    }
-    if args.verbose:
-        print(f"HermiT computed {len(subsumers_HERMIT)} subsumers for class {class_name} in {end_time_HERMIT - start_time_HERMIT:.5f} seconds")
+        result["HermiT"] = {
+            "subsumers": [str(i) for i in subsumers_HERMIT],
+            "count": len(subsumers_HERMIT),
+            "execution_time": end_time_HERMIT - start_time_HERMIT,
+        }
+        if self.args.verbose:
+            print(f"HermiT computed {len(subsumers_HERMIT)} subsumers for class {self.class_name} in {end_time_HERMIT - start_time_HERMIT:.5f} seconds")
 
-    if args.verbose:
-        print()
+        if self.args.verbose:
+            print()
 
-    return result, end_time_EL - start_time_EL, end_time_ELK - start_time_ELK, end_time_HERMIT - start_time_HERMIT
+        return result, end_time_EL - start_time_EL, end_time_ELK - start_time_ELK, end_time_HERMIT - start_time_HERMIT
 
 
 if __name__ == "__main__":
@@ -127,15 +135,16 @@ if __name__ == "__main__":
 
             # Process each class
             for class_name in all_classes:
-                result, time_elapsed_EL, time_elapsed_ELK, time_elapsed_HERMIT = process_class(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, args)
+                reasoner = Reasoner(class_name, reasoner_EL, reasoner_ELK, elFactory, formatter, args)
+                result, time_elapsed_EL, time_elapsed_ELK, time_elapsed_HERMIT = reasoner.process_class()
                 results.append(result)
                 execution_times_EL.append(time_elapsed_EL)
                 execution_times_ELK.append(time_elapsed_ELK)
                 execution_times_HERMIT.append(time_elapsed_HERMIT)
 
-            total_time_EL, avg_time_EL, std_dev_EL = calculate_stats(execution_times_EL)
-            total_time_ELK, avg_time_ELK, std_dev_ELK = calculate_stats(execution_times_ELK)
-            total_time_HERMIT, avg_time_HERMIT, std_dev_HERMIT = calculate_stats(execution_times_HERMIT)
+            total_time_EL, avg_time_EL, std_dev_EL = reasoner.calculate_stats(execution_times_EL)
+            total_time_ELK, avg_time_ELK, std_dev_ELK = reasoner.calculate_stats(execution_times_ELK)
+            total_time_HERMIT, avg_time_HERMIT, std_dev_HERMIT = reasoner.calculate_stats(execution_times_HERMIT)
 
             if args.verbose:
                 print(f"ELReasoner total time: {total_time_EL}, average time: {avg_time_EL}, standard deviation: {std_dev_EL}")
