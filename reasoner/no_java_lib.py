@@ -109,17 +109,19 @@ class ELReasoner:
                 if isinstance(eq_class, (And, Restriction)):
                     self.add_element(element, eq_class, elements)
 
+
     def filter_and_format_subsumers(self, subsumers, target_class):
         filtered_subsumers = []
+        # List of concepts to be filtered out
+        filter_out = ['ValuePartition', 'Thing', 'DomainConcept']
         for cls in subsumers:
             if cls is Thing:
-                filtered_subsumers.append('⊤')
                 continue
-            # Check if the concept is a simple named class (ThingClass) and not a Restriction or a complex expression
             if isinstance(cls, ThingClass) and not isinstance(cls, Restriction) and not isinstance(cls, And):
                 cls_name = cls.name if hasattr(cls, 'name') else str(cls)
-                filtered_subsumers.append(cls_name)
-        # Ensure the target class itself is included
+                # Check if the concept is in the filter_out list
+                if cls_name not in filter_out:
+                    filtered_subsumers.append(cls_name)
         if target_class.name not in filtered_subsumers:
             filtered_subsumers.append(target_class.name)
         return filtered_subsumers

@@ -1,0 +1,1683 @@
+[
+  {
+    "class_name": "Australian_Burger",
+    "ELReasoner": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "Meaty",
+        "Australian_Burger",
+        "NamedBurgers"
+      ],
+      "count": 5,
+      "execution_time": 0.01589488983154297
+    },
+    "ELK": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "NamedBurgers",
+        "\u22a4",
+        "Australian_Burger",
+        "Meaty"
+      ],
+      "count": 6,
+      "execution_time": 0.012084245681762695
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Meaty",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.Australian_Burger",
+        "OUR_burger_ontology.owl.xml.NamedBurgers"
+      ],
+      "count": 6,
+      "execution_time": 0.022567033767700195
+    }
+  },
+  {
+    "class_name": "BBQ",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "BBQ",
+        "Sauces"
+      ],
+      "count": 4,
+      "execution_time": 0.026155471801757812
+    },
+    "ELK": {
+      "subsumers": [
+        "Sauces",
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "BBQ"
+      ],
+      "count": 5,
+      "execution_time": 0.0005524158477783203
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.BBQ",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Sauces"
+      ],
+      "count": 5,
+      "execution_time": 0.0307161808013916
+    }
+  },
+  {
+    "class_name": "Bacon",
+    "ELReasoner": {
+      "subsumers": [
+        "Ingredients",
+        "Burger",
+        "Bacon"
+      ],
+      "count": 3,
+      "execution_time": 0.03444862365722656
+    },
+    "ELK": {
+      "subsumers": [
+        "Bacon",
+        "Burger",
+        "Ingredients",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.0018222332000732422
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Bacon"
+      ],
+      "count": 4,
+      "execution_time": 0.03240394592285156
+    }
+  },
+  {
+    "class_name": "Beef",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Patty",
+        "Beef",
+        "Ingredients"
+      ],
+      "count": 4,
+      "execution_time": 0.03124237060546875
+    },
+    "ELK": {
+      "subsumers": [
+        "Beef",
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Patty"
+      ],
+      "count": 5,
+      "execution_time": 0.003106832504272461
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Patty",
+        "OUR_burger_ontology.owl.xml.Beef",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing"
+      ],
+      "count": 5,
+      "execution_time": 0.03626585006713867
+    }
+  },
+  {
+    "class_name": "Beet",
+    "ELReasoner": {
+      "subsumers": [
+        "Vegetables",
+        "Burger",
+        "Ingredients",
+        "Beet"
+      ],
+      "count": 4,
+      "execution_time": 0.0379788875579834
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Beet",
+        "Vegetables"
+      ],
+      "count": 5,
+      "execution_time": 0.0008361339569091797
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Vegetables",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Beet",
+        "owl.Thing"
+      ],
+      "count": 5,
+      "execution_time": 0.0342867374420166
+    }
+  },
+  {
+    "class_name": "Blue",
+    "ELReasoner": {
+      "subsumers": [
+        "Blue",
+        "Burger",
+        "Ingredients",
+        "Cheese"
+      ],
+      "count": 4,
+      "execution_time": 0.02278423309326172
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Blue",
+        "Cheese"
+      ],
+      "count": 5,
+      "execution_time": 0.0003218650817871094
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Blue",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Cheese"
+      ],
+      "count": 5,
+      "execution_time": 0.019571542739868164
+    }
+  },
+  {
+    "class_name": "Brioche",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Buns",
+        "Ingredients",
+        "Brioche"
+      ],
+      "count": 4,
+      "execution_time": 0.017574071884155273
+    },
+    "ELK": {
+      "subsumers": [
+        "Buns",
+        "Burger",
+        "Ingredients",
+        "Brioche",
+        "\u22a4"
+      ],
+      "count": 5,
+      "execution_time": 0.00028133392333984375
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Buns",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Brioche",
+        "owl.Thing"
+      ],
+      "count": 5,
+      "execution_time": 0.018182754516601562
+    }
+  },
+  {
+    "class_name": "Buns",
+    "ELReasoner": {
+      "subsumers": [
+        "Ingredients",
+        "Burger",
+        "Buns"
+      ],
+      "count": 3,
+      "execution_time": 0.0160520076751709
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Buns",
+        "Ingredients",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.0002999305725097656
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Buns"
+      ],
+      "count": 4,
+      "execution_time": 0.02246689796447754
+    }
+  },
+  {
+    "class_name": "Burger",
+    "ELReasoner": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "Meaty",
+        "Australian_Burger",
+        "NamedBurgers"
+      ],
+      "count": 5,
+      "execution_time": 0.022951364517211914
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "\u22a4"
+      ],
+      "count": 2,
+      "execution_time": 0.0007901191711425781
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Meaty",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.Australian_Burger",
+        "OUR_burger_ontology.owl.xml.NamedBurgers"
+      ],
+      "count": 6,
+      "execution_time": 0.030498027801513672
+    }
+  },
+  {
+    "class_name": "Cheddar",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Cheddar",
+        "Ingredients",
+        "Cheese"
+      ],
+      "count": 4,
+      "execution_time": 0.027976036071777344
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Cheddar",
+        "Cheese"
+      ],
+      "count": 5,
+      "execution_time": 0.0005440711975097656
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Cheddar",
+        "OUR_burger_ontology.owl.xml.Cheese"
+      ],
+      "count": 5,
+      "execution_time": 0.031463623046875
+    }
+  },
+  {
+    "class_name": "Cheese",
+    "ELReasoner": {
+      "subsumers": [
+        "Ingredients",
+        "Burger",
+        "Cheese"
+      ],
+      "count": 3,
+      "execution_time": 0.034310340881347656
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Cheese"
+      ],
+      "count": 4,
+      "execution_time": 0.0012428760528564453
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Cheese"
+      ],
+      "count": 4,
+      "execution_time": 0.03232097625732422
+    }
+  },
+  {
+    "class_name": "Cheeseburger",
+    "ELReasoner": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "Cheeseburger",
+        "Meaty",
+        "NamedBurgers"
+      ],
+      "count": 5,
+      "execution_time": 0.037720441818237305
+    },
+    "ELK": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "NamedBurgers",
+        "Cheeseburger",
+        "\u22a4",
+        "Meaty"
+      ],
+      "count": 6,
+      "execution_time": 0.0009717941284179688
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Meaty",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.Cheeseburger",
+        "OUR_burger_ontology.owl.xml.NamedBurgers"
+      ],
+      "count": 6,
+      "execution_time": 0.02307605743408203
+    }
+  },
+  {
+    "class_name": "Chicken",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Patty",
+        "Chicken",
+        "Ingredients"
+      ],
+      "count": 4,
+      "execution_time": 0.01987767219543457
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Chicken",
+        "Patty"
+      ],
+      "count": 5,
+      "execution_time": 0.0002682209014892578
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Patty",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Chicken"
+      ],
+      "count": 5,
+      "execution_time": 0.01724100112915039
+    }
+  },
+  {
+    "class_name": "Chicken_Burger",
+    "ELReasoner": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "Meaty",
+        "Chicken_Burger",
+        "NamedBurgers"
+      ],
+      "count": 5,
+      "execution_time": 0.016955137252807617
+    },
+    "ELK": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "NamedBurgers",
+        "Chicken_Burger",
+        "\u22a4",
+        "Meaty"
+      ],
+      "count": 6,
+      "execution_time": 0.0002865791320800781
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Meaty",
+        "OUR_burger_ontology.owl.xml.Chicken_Burger",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.NamedBurgers"
+      ],
+      "count": 6,
+      "execution_time": 0.016509532928466797
+    }
+  },
+  {
+    "class_name": "Chili_Pepper",
+    "ELReasoner": {
+      "subsumers": [
+        "Vegetables",
+        "Burger",
+        "Ingredients",
+        "Chili_Pepper",
+        "Peppers"
+      ],
+      "count": 5,
+      "execution_time": 0.014818429946899414
+    },
+    "ELK": {
+      "subsumers": [
+        "Chili_Pepper",
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Peppers",
+        "Vegetables"
+      ],
+      "count": 6,
+      "execution_time": 0.0003495216369628906
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Vegetables",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Peppers",
+        "OUR_burger_ontology.owl.xml.Chili_Pepper"
+      ],
+      "count": 6,
+      "execution_time": 0.01540231704711914
+    }
+  },
+  {
+    "class_name": "Dominican_Burger",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Pescatarian",
+        "Vegetarian",
+        "Dominican_Burger",
+        "Type",
+        "NamedBurgers",
+        "Gluten-Free"
+      ],
+      "count": 7,
+      "execution_time": 0.015706539154052734
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "NamedBurgers",
+        "\u22a4",
+        "Dominican_Burger"
+      ],
+      "count": 4,
+      "execution_time": 0.0003101825714111328
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Pescatarian",
+        "OUR_burger_ontology.owl.xml.Vegetarian",
+        "OUR_burger_ontology.owl.xml.Dominican_Burger",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.NamedBurgers",
+        "OUR_burger_ontology.owl.xml.Gluten-Free"
+      ],
+      "count": 8,
+      "execution_time": 0.015862226486206055
+    }
+  },
+  {
+    "class_name": "Egg",
+    "ELReasoner": {
+      "subsumers": [
+        "Egg",
+        "Burger",
+        "Ingredients"
+      ],
+      "count": 3,
+      "execution_time": 0.016189098358154297
+    },
+    "ELK": {
+      "subsumers": [
+        "Egg",
+        "Burger",
+        "Ingredients",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.0005218982696533203
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Egg",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.023393630981445312
+    }
+  },
+  {
+    "class_name": "Fish",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Fish",
+        "Patty",
+        "Ingredients"
+      ],
+      "count": 4,
+      "execution_time": 0.030549049377441406
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Fish",
+        "Patty"
+      ],
+      "count": 5,
+      "execution_time": 0.0020101070404052734
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Patty",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Fish"
+      ],
+      "count": 5,
+      "execution_time": 0.03673148155212402
+    }
+  },
+  {
+    "class_name": "Fish_Burger",
+    "ELReasoner": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "Fish_Burger",
+        "Pescatarian",
+        "NamedBurgers"
+      ],
+      "count": 5,
+      "execution_time": 0.03309464454650879
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "NamedBurgers",
+        "\u22a4",
+        "Fish_Burger"
+      ],
+      "count": 4,
+      "execution_time": 0.0010194778442382812
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Fish_Burger",
+        "OUR_burger_ontology.owl.xml.Pescatarian",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.NamedBurgers"
+      ],
+      "count": 6,
+      "execution_time": 0.030765533447265625
+    }
+  },
+  {
+    "class_name": "Fruits",
+    "ELReasoner": {
+      "subsumers": [
+        "Ingredients",
+        "Burger",
+        "Fruits"
+      ],
+      "count": 3,
+      "execution_time": 0.024990320205688477
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "Fruits",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.002434968948364258
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Fruits",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.03438544273376465
+    }
+  },
+  {
+    "class_name": "Garlic",
+    "ELReasoner": {
+      "subsumers": [
+        "Vegetables",
+        "Burger",
+        "Garlic",
+        "Ingredients"
+      ],
+      "count": 4,
+      "execution_time": 0.027495861053466797
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Garlic",
+        "Vegetables"
+      ],
+      "count": 5,
+      "execution_time": 0.0003647804260253906
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Vegetables",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Garlic"
+      ],
+      "count": 5,
+      "execution_time": 0.014619112014770508
+    }
+  },
+  {
+    "class_name": "Gluten-Free",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Type",
+        "Gluten-Free"
+      ],
+      "count": 3,
+      "execution_time": 0.015029668807983398
+    },
+    "ELK": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "\u22a4",
+        "Gluten-Free"
+      ],
+      "count": 4,
+      "execution_time": 0.00034236907958984375
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Gluten-Free"
+      ],
+      "count": 4,
+      "execution_time": 0.020412683486938477
+    }
+  },
+  {
+    "class_name": "Gluten-free_Bun",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Buns",
+        "Ingredients",
+        "Gluten-free_Bun"
+      ],
+      "count": 4,
+      "execution_time": 0.014235496520996094
+    },
+    "ELK": {
+      "subsumers": [
+        "Buns",
+        "Burger",
+        "Ingredients",
+        "Gluten-free_Bun",
+        "\u22a4"
+      ],
+      "count": 5,
+      "execution_time": 0.0003349781036376953
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Buns",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Gluten-free_Bun",
+        "owl.Thing"
+      ],
+      "count": 5,
+      "execution_time": 0.01898956298828125
+    }
+  },
+  {
+    "class_name": "Ingredients",
+    "ELReasoner": {
+      "subsumers": [
+        "Ingredients",
+        "Burger"
+      ],
+      "count": 2,
+      "execution_time": 0.017175912857055664
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.00031113624572753906
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing"
+      ],
+      "count": 3,
+      "execution_time": 0.02044987678527832
+    }
+  },
+  {
+    "class_name": "Ketchup",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Ketchup",
+        "Ingredients",
+        "Sauces"
+      ],
+      "count": 4,
+      "execution_time": 0.016271591186523438
+    },
+    "ELK": {
+      "subsumers": [
+        "Sauces",
+        "Burger",
+        "Ingredients",
+        "Ketchup",
+        "\u22a4"
+      ],
+      "count": 5,
+      "execution_time": 0.0003407001495361328
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Sauces",
+        "OUR_burger_ontology.owl.xml.Ketchup"
+      ],
+      "count": 5,
+      "execution_time": 0.027396202087402344
+    }
+  },
+  {
+    "class_name": "Lettuce",
+    "ELReasoner": {
+      "subsumers": [
+        "Vegetables",
+        "Lettuce",
+        "Burger",
+        "Ingredients"
+      ],
+      "count": 4,
+      "execution_time": 0.03484845161437988
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Lettuce",
+        "Vegetables"
+      ],
+      "count": 5,
+      "execution_time": 0.013211488723754883
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Vegetables",
+        "OUR_burger_ontology.owl.xml.Lettuce",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing"
+      ],
+      "count": 5,
+      "execution_time": 0.033627986907958984
+    }
+  },
+  {
+    "class_name": "Mayo",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "Sauces",
+        "Mayo"
+      ],
+      "count": 4,
+      "execution_time": 0.038535118103027344
+    },
+    "ELK": {
+      "subsumers": [
+        "Sauces",
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Mayo"
+      ],
+      "count": 5,
+      "execution_time": 0.0007328987121582031
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Sauces",
+        "OUR_burger_ontology.owl.xml.Mayo"
+      ],
+      "count": 5,
+      "execution_time": 0.03359818458557129
+    }
+  },
+  {
+    "class_name": "Meaty",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Meaty",
+        "Type"
+      ],
+      "count": 3,
+      "execution_time": 0.035703420639038086
+    },
+    "ELK": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "\u22a4",
+        "Meaty"
+      ],
+      "count": 4,
+      "execution_time": 0.0007128715515136719
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Meaty",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.03351902961730957
+    }
+  },
+  {
+    "class_name": "Mustard",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Mustard",
+        "Ingredients",
+        "Sauces"
+      ],
+      "count": 4,
+      "execution_time": 0.033371925354003906
+    },
+    "ELK": {
+      "subsumers": [
+        "Sauces",
+        "Burger",
+        "Mustard",
+        "Ingredients",
+        "\u22a4"
+      ],
+      "count": 5,
+      "execution_time": 0.003538370132446289
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Mustard",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Sauces"
+      ],
+      "count": 5,
+      "execution_time": 0.03037238121032715
+    }
+  },
+  {
+    "class_name": "NamedBurgers",
+    "ELReasoner": {
+      "subsumers": [
+        "NamedBurgers",
+        "Burger"
+      ],
+      "count": 2,
+      "execution_time": 0.0390324592590332
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "NamedBurgers",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.0005204677581787109
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.NamedBurgers",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing"
+      ],
+      "count": 3,
+      "execution_time": 0.034999847412109375
+    }
+  },
+  {
+    "class_name": "Onion",
+    "ELReasoner": {
+      "subsumers": [
+        "Vegetables",
+        "Burger",
+        "Ingredients",
+        "Onion"
+      ],
+      "count": 4,
+      "execution_time": 0.03348064422607422
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "Onion",
+        "\u22a4",
+        "Vegetables"
+      ],
+      "count": 5,
+      "execution_time": 0.0030183792114257812
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Vegetables",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Onion"
+      ],
+      "count": 5,
+      "execution_time": 0.02719259262084961
+    }
+  },
+  {
+    "class_name": "Patty",
+    "ELReasoner": {
+      "subsumers": [
+        "Ingredients",
+        "Burger",
+        "Patty"
+      ],
+      "count": 3,
+      "execution_time": 0.024323463439941406
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Patty"
+      ],
+      "count": 4,
+      "execution_time": 0.0019099712371826172
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Patty"
+      ],
+      "count": 4,
+      "execution_time": 0.03278923034667969
+    }
+  },
+  {
+    "class_name": "Peppers",
+    "ELReasoner": {
+      "subsumers": [
+        "Vegetables",
+        "Burger",
+        "Ingredients",
+        "Peppers"
+      ],
+      "count": 4,
+      "execution_time": 0.030742645263671875
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Peppers",
+        "Vegetables"
+      ],
+      "count": 5,
+      "execution_time": 0.0011267662048339844
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Vegetables",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Peppers"
+      ],
+      "count": 5,
+      "execution_time": 0.03060436248779297
+    }
+  },
+  {
+    "class_name": "Pescatarian",
+    "ELReasoner": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "Pescatarian"
+      ],
+      "count": 3,
+      "execution_time": 0.03790020942687988
+    },
+    "ELK": {
+      "subsumers": [
+        "Type",
+        "Pescatarian",
+        "Burger",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.0019140243530273438
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Pescatarian"
+      ],
+      "count": 4,
+      "execution_time": 0.029735088348388672
+    }
+  },
+  {
+    "class_name": "Pineapple",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Fruits",
+        "Pineapple",
+        "Ingredients"
+      ],
+      "count": 4,
+      "execution_time": 0.027181148529052734
+    },
+    "ELK": {
+      "subsumers": [
+        "Pineapple",
+        "Burger",
+        "Ingredients",
+        "Fruits",
+        "\u22a4"
+      ],
+      "count": 5,
+      "execution_time": 0.0003571510314941406
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Fruits",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Pineapple"
+      ],
+      "count": 5,
+      "execution_time": 0.021823883056640625
+    }
+  },
+  {
+    "class_name": "Plant-based_patty",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Plant-based_patty",
+        "Patty",
+        "Ingredients"
+      ],
+      "count": 4,
+      "execution_time": 0.02006673812866211
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "Plant-based_patty",
+        "\u22a4",
+        "Patty"
+      ],
+      "count": 5,
+      "execution_time": 0.0007731914520263672
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Plant-based_patty",
+        "OUR_burger_ontology.owl.xml.Patty",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing"
+      ],
+      "count": 5,
+      "execution_time": 0.01596665382385254
+    }
+  },
+  {
+    "class_name": "Sauces",
+    "ELReasoner": {
+      "subsumers": [
+        "Ingredients",
+        "Burger",
+        "Sauces"
+      ],
+      "count": 3,
+      "execution_time": 0.016788005828857422
+    },
+    "ELK": {
+      "subsumers": [
+        "Sauces",
+        "Burger",
+        "Ingredients",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.00034332275390625
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Sauces"
+      ],
+      "count": 4,
+      "execution_time": 0.015186071395874023
+    }
+  },
+  {
+    "class_name": "Seitan",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Plant-based_patty",
+        "Patty",
+        "Ingredients",
+        "Seitan"
+      ],
+      "count": 5,
+      "execution_time": 0.014532089233398438
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "Plant-based_patty",
+        "\u22a4",
+        "Patty",
+        "Seitan"
+      ],
+      "count": 6,
+      "execution_time": 0.00033283233642578125
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Plant-based_patty",
+        "OUR_burger_ontology.owl.xml.Patty",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Seitan",
+        "owl.Thing"
+      ],
+      "count": 6,
+      "execution_time": 0.014336347579956055
+    }
+  },
+  {
+    "class_name": "Swiss",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "Swiss",
+        "Cheese"
+      ],
+      "count": 4,
+      "execution_time": 0.017607927322387695
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "Swiss",
+        "\u22a4",
+        "Cheese"
+      ],
+      "count": 5,
+      "execution_time": 0.0003247261047363281
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Swiss",
+        "OUR_burger_ontology.owl.xml.Cheese"
+      ],
+      "count": 5,
+      "execution_time": 0.017318010330200195
+    }
+  },
+  {
+    "class_name": "Tempeh",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Plant-based_patty",
+        "Patty",
+        "Ingredients",
+        "Tempeh"
+      ],
+      "count": 5,
+      "execution_time": 0.014418363571166992
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "Plant-based_patty",
+        "Tempeh",
+        "\u22a4",
+        "Patty"
+      ],
+      "count": 6,
+      "execution_time": 0.00035119056701660156
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Plant-based_patty",
+        "OUR_burger_ontology.owl.xml.Patty",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Tempeh",
+        "owl.Thing"
+      ],
+      "count": 6,
+      "execution_time": 0.024565696716308594
+    }
+  },
+  {
+    "class_name": "Tofu",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Tofu",
+        "Plant-based_patty",
+        "Patty",
+        "Ingredients"
+      ],
+      "count": 5,
+      "execution_time": 0.024308443069458008
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "Plant-based_patty",
+        "Tofu",
+        "\u22a4",
+        "Patty"
+      ],
+      "count": 6,
+      "execution_time": 0.0007586479187011719
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Plant-based_patty",
+        "OUR_burger_ontology.owl.xml.Patty",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Tofu"
+      ],
+      "count": 6,
+      "execution_time": 0.03066706657409668
+    }
+  },
+  {
+    "class_name": "Tomato",
+    "ELReasoner": {
+      "subsumers": [
+        "Vegetables",
+        "Burger",
+        "Ingredients",
+        "Tomato"
+      ],
+      "count": 4,
+      "execution_time": 0.03679299354553223
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Vegetables",
+        "Tomato"
+      ],
+      "count": 5,
+      "execution_time": 0.003306150436401367
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Vegetables",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.Tomato",
+        "owl.Thing"
+      ],
+      "count": 5,
+      "execution_time": 0.037923336029052734
+    }
+  },
+  {
+    "class_name": "Type",
+    "ELReasoner": {
+      "subsumers": [
+        "Type",
+        "Burger"
+      ],
+      "count": 2,
+      "execution_time": 0.030915260314941406
+    },
+    "ELK": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "\u22a4"
+      ],
+      "count": 3,
+      "execution_time": 0.00392913818359375
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "owl.Thing"
+      ],
+      "count": 3,
+      "execution_time": 0.020896434783935547
+    }
+  },
+  {
+    "class_name": "Vegan",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Pescatarian",
+        "Vegetarian",
+        "Type",
+        "Vegan"
+      ],
+      "count": 5,
+      "execution_time": 0.015083789825439453
+    },
+    "ELK": {
+      "subsumers": [
+        "Type",
+        "Vegan",
+        "Burger",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.00040411949157714844
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Pescatarian",
+        "OUR_burger_ontology.owl.xml.Vegetarian",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.Vegan"
+      ],
+      "count": 6,
+      "execution_time": 0.018338441848754883
+    }
+  },
+  {
+    "class_name": "Vegetables",
+    "ELReasoner": {
+      "subsumers": [
+        "Vegetables",
+        "Burger",
+        "Ingredients"
+      ],
+      "count": 3,
+      "execution_time": 0.020413637161254883
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "\u22a4",
+        "Vegetables"
+      ],
+      "count": 4,
+      "execution_time": 0.00033926963806152344
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Vegetables",
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.014899730682373047
+    }
+  },
+  {
+    "class_name": "Vegetarian",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Pescatarian",
+        "Vegetarian",
+        "Type"
+      ],
+      "count": 4,
+      "execution_time": 0.014728784561157227
+    },
+    "ELK": {
+      "subsumers": [
+        "Type",
+        "Burger",
+        "\u22a4",
+        "Vegetarian"
+      ],
+      "count": 4,
+      "execution_time": 0.0003247261047363281
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Pescatarian",
+        "OUR_burger_ontology.owl.xml.Vegetarian",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Type"
+      ],
+      "count": 5,
+      "execution_time": 0.014319419860839844
+    }
+  },
+  {
+    "class_name": "Veggie_Burger",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Pescatarian",
+        "Vegetarian",
+        "Type",
+        "Veggie_Burger",
+        "NamedBurgers",
+        "Vegan",
+        "Gluten-Free"
+      ],
+      "count": 8,
+      "execution_time": 0.014317035675048828
+    },
+    "ELK": {
+      "subsumers": [
+        "Burger",
+        "NamedBurgers",
+        "Veggie_Burger",
+        "\u22a4"
+      ],
+      "count": 4,
+      "execution_time": 0.00030112266540527344
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Pescatarian",
+        "OUR_burger_ontology.owl.xml.Vegetarian",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Type",
+        "OUR_burger_ontology.owl.xml.Veggie_Burger",
+        "OUR_burger_ontology.owl.xml.NamedBurgers",
+        "OUR_burger_ontology.owl.xml.Vegan",
+        "OUR_burger_ontology.owl.xml.Gluten-Free"
+      ],
+      "count": 9,
+      "execution_time": 0.014566659927368164
+    }
+  },
+  {
+    "class_name": "Wheat_Bun",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Buns",
+        "Ingredients",
+        "Wheat_Bun"
+      ],
+      "count": 4,
+      "execution_time": 0.014671087265014648
+    },
+    "ELK": {
+      "subsumers": [
+        "Buns",
+        "Burger",
+        "Ingredients",
+        "Wheat_Bun",
+        "\u22a4"
+      ],
+      "count": 5,
+      "execution_time": 0.00033593177795410156
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Buns",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Wheat_Bun"
+      ],
+      "count": 5,
+      "execution_time": 0.014124393463134766
+    }
+  },
+  {
+    "statistics": {
+      "ELReasoner": {
+        "total_time": 1.1772418022155762,
+        "average_time": 0.02452587087949117,
+        "std_dev": 0.008553907422866372
+      },
+      "ELK": {
+        "total_time": 0.07061553001403809,
+        "average_time": 0.0014711568752924602,
+        "std_dev": 0.002528244105479737
+      },
+      "HermiT": {
+        "total_time": 1.1873490810394287,
+        "average_time": 0.02473643918832143,
+        "std_dev": 0.00765032918367737
+      }
+    }
+  }
+]

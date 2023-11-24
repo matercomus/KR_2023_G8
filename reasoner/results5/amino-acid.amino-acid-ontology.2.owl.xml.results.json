@@ -1,0 +1,1565 @@
+[
+  {
+    "class_name": "A",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "A",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.022469758987426758
+    },
+    "ELK": {
+      "subsumers": [
+        "A",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.009055852890014648
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.A",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.02595043182373047
+    }
+  },
+  {
+    "class_name": "Aliphatic",
+    "ELReasoner": {
+      "subsumers": [
+        "SideChainStructure",
+        "RefiningFeature",
+        "Aliphatic"
+      ],
+      "count": 3,
+      "execution_time": 0.015336036682128906
+    },
+    "ELK": {
+      "subsumers": [
+        "Aliphatic",
+        "SideChainStructure",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.00036072731018066406
+    },
+    "HermiT": {
+      "subsumers": [
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SideChainStructure",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Aliphatic"
+      ],
+      "count": 4,
+      "execution_time": 0.01528024673461914
+    }
+  },
+  {
+    "class_name": "AliphaticAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 3,
+      "execution_time": 0.015047311782836914
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.0003192424774169922
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.015708208084106445
+    }
+  },
+  {
+    "class_name": "AminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 3,
+      "execution_time": 0.01747417449951172
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 3,
+      "execution_time": 0.00034928321838378906
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.017636537551879883
+    }
+  },
+  {
+    "class_name": "Aromatic",
+    "ELReasoner": {
+      "subsumers": [
+        "Aromatic",
+        "SideChainStructure",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.01571178436279297
+    },
+    "ELK": {
+      "subsumers": [
+        "SideChainStructure",
+        "\u22a4",
+        "RefiningFeature",
+        "Aromatic"
+      ],
+      "count": 4,
+      "execution_time": 0.0003743171691894531
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Aromatic",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SideChainStructure",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.015803098678588867
+    }
+  },
+  {
+    "class_name": "AromaticAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "SpecificAminoAcid",
+        "AminoAcid",
+        "AromaticAminoAcid"
+      ],
+      "count": 3,
+      "execution_time": 0.015344858169555664
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.00038361549377441406
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AromaticAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.01554107666015625
+    }
+  },
+  {
+    "class_name": "C",
+    "ELReasoner": {
+      "subsumers": [
+        "C",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.018131732940673828
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "C",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0003101825714111328
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.C",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.018044233322143555
+    }
+  },
+  {
+    "class_name": "Charge",
+    "ELReasoner": {
+      "subsumers": [
+        "Charge",
+        "RefiningFeature"
+      ],
+      "count": 2,
+      "execution_time": 0.01530766487121582
+    },
+    "ELK": {
+      "subsumers": [
+        "Charge",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.00041294097900390625
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Charge",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing"
+      ],
+      "count": 3,
+      "execution_time": 0.01579880714416504
+    }
+  },
+  {
+    "class_name": "D",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "NegativeChargedAminoAcid",
+        "D",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.015600204467773438
+    },
+    "ELK": {
+      "subsumers": [
+        "NegativeChargedAminoAcid",
+        "\u22a4",
+        "D",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0003535747528076172
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.D",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.NegativeChargedAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.016106128692626953
+    }
+  },
+  {
+    "class_name": "E",
+    "ELReasoner": {
+      "subsumers": [
+        "E",
+        "AliphaticAminoAcid",
+        "NegativeChargedAminoAcid",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.025839805603027344
+    },
+    "ELK": {
+      "subsumers": [
+        "E",
+        "NegativeChargedAminoAcid",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.00032973289489746094
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.E",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.NegativeChargedAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.017870187759399414
+    }
+  },
+  {
+    "class_name": "F",
+    "ELReasoner": {
+      "subsumers": [
+        "F",
+        "SpecificAminoAcid",
+        "AminoAcid",
+        "AromaticAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.016045331954956055
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "F",
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.00035262107849121094
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.F",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AromaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.015816450119018555
+    }
+  },
+  {
+    "class_name": "G",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "G",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.015094995498657227
+    },
+    "ELK": {
+      "subsumers": [
+        "G",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0003457069396972656
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.G"
+      ],
+      "count": 5,
+      "execution_time": 0.014928579330444336
+    }
+  },
+  {
+    "class_name": "H",
+    "ELReasoner": {
+      "subsumers": [
+        "PositiveChargedAminoAcid",
+        "H",
+        "SpecificAminoAcid",
+        "AminoAcid",
+        "AromaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.01763916015625
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "H",
+        "PositiveChargedAminoAcid",
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0003533363342285156
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AromaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.PositiveChargedAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.H"
+      ],
+      "count": 6,
+      "execution_time": 0.018804073333740234
+    }
+  },
+  {
+    "class_name": "Hydrophilic",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature",
+        "Hydrophobicity",
+        "Hydrophilic"
+      ],
+      "count": 3,
+      "execution_time": 0.014949798583984375
+    },
+    "ELK": {
+      "subsumers": [
+        "Hydrophobicity",
+        "\u22a4",
+        "RefiningFeature",
+        "Hydrophilic"
+      ],
+      "count": 4,
+      "execution_time": 0.0003254413604736328
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Hydrophobicity",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Hydrophilic",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.015642642974853516
+    }
+  },
+  {
+    "class_name": "Hydrophobic",
+    "ELReasoner": {
+      "subsumers": [
+        "Hydrophobic",
+        "Hydrophobicity",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.015472412109375
+    },
+    "ELK": {
+      "subsumers": [
+        "Hydrophobicity",
+        "Hydrophobic",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.0003504753112792969
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Hydrophobic",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Hydrophobicity",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.01578354835510254
+    }
+  },
+  {
+    "class_name": "Hydrophobicity",
+    "ELReasoner": {
+      "subsumers": [
+        "Hydrophobicity",
+        "RefiningFeature"
+      ],
+      "count": 2,
+      "execution_time": 0.021913528442382812
+    },
+    "ELK": {
+      "subsumers": [
+        "Hydrophobicity",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.0010645389556884766
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Hydrophobicity",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing"
+      ],
+      "count": 3,
+      "execution_time": 0.015656709671020508
+    }
+  },
+  {
+    "class_name": "I",
+    "ELReasoner": {
+      "subsumers": [
+        "hasURI"
+      ],
+      "count": 1,
+      "execution_time": 0.015282869338989258
+    },
+    "ELK": {
+      "subsumers": [
+        "I",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0003578662872314453
+    },
+    "HermiT": {
+      "subsumers": [
+        "owl.AnnotationProperty",
+        "oboInOwl.hasURI",
+        "22-rdf-syntax-ns.Property"
+      ],
+      "count": 3,
+      "execution_time": 0.015395402908325195
+    }
+  },
+  {
+    "class_name": "K",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "LargeAliphaticAminoAcid",
+        "PositiveChargedAminoAcid",
+        "K",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.014840841293334961
+    },
+    "ELK": {
+      "subsumers": [
+        "K",
+        "PositiveChargedAminoAcid",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 7,
+      "execution_time": 0.00035643577575683594
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.LargeAliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.K",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.PositiveChargedAminoAcid"
+      ],
+      "count": 7,
+      "execution_time": 0.015431404113769531
+    }
+  },
+  {
+    "class_name": "L",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "LargeAliphaticAminoAcid",
+        "L",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.021094322204589844
+    },
+    "ELK": {
+      "subsumers": [
+        "L",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0003337860107421875
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.LargeAliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.L"
+      ],
+      "count": 6,
+      "execution_time": 0.015415430068969727
+    }
+  },
+  {
+    "class_name": "Large",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature",
+        "Size",
+        "Large"
+      ],
+      "count": 3,
+      "execution_time": 0.015055418014526367
+    },
+    "ELK": {
+      "subsumers": [
+        "Large",
+        "\u22a4",
+        "RefiningFeature",
+        "Size"
+      ],
+      "count": 4,
+      "execution_time": 0.0003552436828613281
+    },
+    "HermiT": {
+      "subsumers": [
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Size",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Large",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.015243291854858398
+    }
+  },
+  {
+    "class_name": "LargeAliphaticAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "LargeAliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.014814615249633789
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0003731250762939453
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.LargeAliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.015034675598144531
+    }
+  },
+  {
+    "class_name": "M",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "LargeAliphaticAminoAcid",
+        "M",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.018679141998291016
+    },
+    "ELK": {
+      "subsumers": [
+        "M",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.00030612945556640625
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.M",
+        "amino-acid.amino-acid-ontology.2.owl.xml.LargeAliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.016655921936035156
+    }
+  },
+  {
+    "class_name": "N",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "AminoAcid",
+        "SpecificAminoAcid",
+        "N"
+      ],
+      "count": 4,
+      "execution_time": 0.015340566635131836
+    },
+    "ELK": {
+      "subsumers": [
+        "N",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0003533363342285156
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.N",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.01530766487121582
+    }
+  },
+  {
+    "class_name": "Negative",
+    "ELReasoner": {
+      "subsumers": [
+        "Negative",
+        "Charge",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.015173912048339844
+    },
+    "ELK": {
+      "subsumers": [
+        "Negative",
+        "Charge",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.0003457069396972656
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Negative",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Charge",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.01557302474975586
+    }
+  },
+  {
+    "class_name": "NegativeChargedAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "NegativeChargedAminoAcid",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.01979994773864746
+    },
+    "ELK": {
+      "subsumers": [
+        "NegativeChargedAminoAcid",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0004024505615234375
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.NegativeChargedAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.018953800201416016
+    }
+  },
+  {
+    "class_name": "Neutral",
+    "ELReasoner": {
+      "subsumers": [
+        "Neutral",
+        "Charge",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.0169069766998291
+    },
+    "ELK": {
+      "subsumers": [
+        "Neutral",
+        "Charge",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.00032138824462890625
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Neutral",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Charge",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.017613649368286133
+    }
+  },
+  {
+    "class_name": "Non-Polar",
+    "ELReasoner": {
+      "subsumers": [
+        "Non-Polar",
+        "Polarity",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.015249013900756836
+    },
+    "ELK": {
+      "subsumers": [
+        "Polarity",
+        "\u22a4",
+        "RefiningFeature",
+        "Non-Polar"
+      ],
+      "count": 4,
+      "execution_time": 0.0002968311309814453
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Non-Polar",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Polarity"
+      ],
+      "count": 4,
+      "execution_time": 0.015308856964111328
+    }
+  },
+  {
+    "class_name": "P",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "P",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.01950383186340332
+    },
+    "ELK": {
+      "subsumers": [
+        "P",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0003368854522705078
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.P"
+      ],
+      "count": 5,
+      "execution_time": 0.017108917236328125
+    }
+  },
+  {
+    "class_name": "Polar",
+    "ELReasoner": {
+      "subsumers": [
+        "Non-Polar",
+        "Polarity",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.015402555465698242
+    },
+    "ELK": {
+      "subsumers": [
+        "Polarity",
+        "Polar",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.0003504753112792969
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Non-Polar",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Polarity"
+      ],
+      "count": 4,
+      "execution_time": 0.015488147735595703
+    }
+  },
+  {
+    "class_name": "Polarity",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature",
+        "Polarity"
+      ],
+      "count": 2,
+      "execution_time": 0.014914512634277344
+    },
+    "ELK": {
+      "subsumers": [
+        "Polarity",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.0003578662872314453
+    },
+    "HermiT": {
+      "subsumers": [
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Polarity"
+      ],
+      "count": 3,
+      "execution_time": 0.015198945999145508
+    }
+  },
+  {
+    "class_name": "Positive",
+    "ELReasoner": {
+      "subsumers": [
+        "Charge",
+        "Positive",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.01814866065979004
+    },
+    "ELK": {
+      "subsumers": [
+        "Positive",
+        "Charge",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 4,
+      "execution_time": 0.00035691261291503906
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Charge",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Positive",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.017088890075683594
+    }
+  },
+  {
+    "class_name": "PositiveChargedAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "PositiveChargedAminoAcid",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 3,
+      "execution_time": 0.014898061752319336
+    },
+    "ELK": {
+      "subsumers": [
+        "PositiveChargedAminoAcid",
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.00034737586975097656
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.PositiveChargedAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.016922712326049805
+    }
+  },
+  {
+    "class_name": "Q",
+    "ELReasoner": {
+      "subsumers": [
+        "Burger",
+        "Ingredients",
+        "BBQ",
+        "Sauces"
+      ],
+      "count": 4,
+      "execution_time": 0.014813899993896484
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "Q",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0003788471221923828
+    },
+    "HermiT": {
+      "subsumers": [
+        "OUR_burger_ontology.owl.xml.Burger",
+        "OUR_burger_ontology.owl.xml.Ingredients",
+        "OUR_burger_ontology.owl.xml.BBQ",
+        "owl.Thing",
+        "OUR_burger_ontology.owl.xml.Sauces"
+      ],
+      "count": 5,
+      "execution_time": 0.015013694763183594
+    }
+  },
+  {
+    "class_name": "R",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "LargeAliphaticAminoAcid",
+        "PositiveChargedAminoAcid",
+        "R",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.018039703369140625
+    },
+    "ELK": {
+      "subsumers": [
+        "PositiveChargedAminoAcid",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "LargeAliphaticAminoAcid",
+        "R"
+      ],
+      "count": 7,
+      "execution_time": 0.00035262107849121094
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.LargeAliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.R",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.PositiveChargedAminoAcid"
+      ],
+      "count": 7,
+      "execution_time": 0.015991687774658203
+    }
+  },
+  {
+    "class_name": "RefiningFeature",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature"
+      ],
+      "count": 1,
+      "execution_time": 0.015044927597045898
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 2,
+      "execution_time": 0.000396728515625
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing"
+      ],
+      "count": 2,
+      "execution_time": 0.015137195587158203
+    }
+  },
+  {
+    "class_name": "S",
+    "ELReasoner": {
+      "subsumers": [
+        "TinyPolarAminoAcid",
+        "AliphaticAminoAcid",
+        "S",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.014966011047363281
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "TinyPolarAminoAcid",
+        "SpecificAminoAcid",
+        "S"
+      ],
+      "count": 6,
+      "execution_time": 0.00035500526428222656
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.TinyPolarAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.S",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.01521754264831543
+    }
+  },
+  {
+    "class_name": "SideChainStructure",
+    "ELReasoner": {
+      "subsumers": [
+        "RefiningFeature",
+        "SideChainStructure"
+      ],
+      "count": 2,
+      "execution_time": 0.016593217849731445
+    },
+    "ELK": {
+      "subsumers": [
+        "SideChainStructure",
+        "\u22a4",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.00036525726318359375
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SideChainStructure",
+        "owl.Thing"
+      ],
+      "count": 3,
+      "execution_time": 0.01771378517150879
+    }
+  },
+  {
+    "class_name": "Size",
+    "ELReasoner": {
+      "subsumers": [
+        "Size",
+        "RefiningFeature"
+      ],
+      "count": 2,
+      "execution_time": 0.014825582504272461
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RefiningFeature",
+        "Size"
+      ],
+      "count": 3,
+      "execution_time": 0.00031065940856933594
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Size",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing"
+      ],
+      "count": 3,
+      "execution_time": 0.021991252899169922
+    }
+  },
+  {
+    "class_name": "Small",
+    "ELReasoner": {
+      "subsumers": [
+        "Small",
+        "Size",
+        "RefiningFeature"
+      ],
+      "count": 3,
+      "execution_time": 0.015122652053833008
+    },
+    "ELK": {
+      "subsumers": [
+        "Small",
+        "\u22a4",
+        "RefiningFeature",
+        "Size"
+      ],
+      "count": 4,
+      "execution_time": 0.0003104209899902344
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Small",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Size",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing"
+      ],
+      "count": 4,
+      "execution_time": 0.017777442932128906
+    }
+  },
+  {
+    "class_name": "SpecificAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "SpecificAminoAcid"
+      ],
+      "count": 1,
+      "execution_time": 0.017142057418823242
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 3,
+      "execution_time": 0.00032901763916015625
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing"
+      ],
+      "count": 3,
+      "execution_time": 0.019677162170410156
+    }
+  },
+  {
+    "class_name": "T",
+    "ELReasoner": {
+      "subsumers": [
+        "TinyPolarAminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "AminoAcid",
+        "T"
+      ],
+      "count": 5,
+      "execution_time": 0.015406370162963867
+    },
+    "ELK": {
+      "subsumers": [
+        "T",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "TinyPolarAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 6,
+      "execution_time": 0.0005686283111572266
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.TinyPolarAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.T"
+      ],
+      "count": 6,
+      "execution_time": 0.018587827682495117
+    }
+  },
+  {
+    "class_name": "Tiny",
+    "ELReasoner": {
+      "subsumers": [
+        "Tiny",
+        "RefiningFeature",
+        "Size"
+      ],
+      "count": 3,
+      "execution_time": 0.015198469161987305
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "RefiningFeature",
+        "Size",
+        "Tiny"
+      ],
+      "count": 4,
+      "execution_time": 0.00030875205993652344
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.Tiny",
+        "amino-acid.amino-acid-ontology.2.owl.xml.RefiningFeature",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Size"
+      ],
+      "count": 4,
+      "execution_time": 0.021154165267944336
+    }
+  },
+  {
+    "class_name": "TinyPolarAminoAcid",
+    "ELReasoner": {
+      "subsumers": [
+        "TinyPolarAminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.01846003532409668
+    },
+    "ELK": {
+      "subsumers": [
+        "\u22a4",
+        "AminoAcid",
+        "TinyPolarAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.00032067298889160156
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.TinyPolarAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.019486665725708008
+    }
+  },
+  {
+    "class_name": "V",
+    "ELReasoner": {
+      "subsumers": [
+        "AliphaticAminoAcid",
+        "V",
+        "SpecificAminoAcid",
+        "AminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.014923810958862305
+    },
+    "ELK": {
+      "subsumers": [
+        "V",
+        "\u22a4",
+        "AminoAcid",
+        "AliphaticAminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0003197193145751953
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AliphaticAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.V"
+      ],
+      "count": 5,
+      "execution_time": 0.017152786254882812
+    }
+  },
+  {
+    "class_name": "W",
+    "ELReasoner": {
+      "subsumers": [
+        "W",
+        "SpecificAminoAcid",
+        "AminoAcid",
+        "AromaticAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.015475273132324219
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "W",
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.0003495216369628906
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.W",
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AromaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.015517473220825195
+    }
+  },
+  {
+    "class_name": "Y",
+    "ELReasoner": {
+      "subsumers": [
+        "AminoAcid",
+        "SpecificAminoAcid",
+        "Y",
+        "AromaticAminoAcid"
+      ],
+      "count": 4,
+      "execution_time": 0.016649246215820312
+    },
+    "ELK": {
+      "subsumers": [
+        "AromaticAminoAcid",
+        "Y",
+        "\u22a4",
+        "AminoAcid",
+        "SpecificAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.00035309791564941406
+    },
+    "HermiT": {
+      "subsumers": [
+        "amino-acid.amino-acid-ontology.2.owl.xml.SpecificAminoAcid",
+        "amino-acid.amino-acid-ontology.2.owl.xml.Y",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AminoAcid",
+        "owl.Thing",
+        "amino-acid.amino-acid-ontology.2.owl.xml.AromaticAminoAcid"
+      ],
+      "count": 5,
+      "execution_time": 0.016504764556884766
+    }
+  },
+  {
+    "statistics": {
+      "ELReasoner": {
+        "total_time": 0.7651450634002686,
+        "average_time": 0.016633588334788448,
+        "std_dev": 0.0023930021331488418
+      },
+      "ELK": {
+        "total_time": 0.025612354278564453,
+        "average_time": 0.0005567903104035751,
+        "std_dev": 0.0012718734936748581
+      },
+      "HermiT": {
+        "total_time": 0.7750351428985596,
+        "average_time": 0.016848590063012165,
+        "std_dev": 0.0021425512207896256
+      }
+    }
+  }
+]
