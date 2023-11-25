@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-from owlready2 import SOME, And, Restriction, Thing, ThingClass, get_ontology
+from owlready2 import (SOME, And, Restriction, Thing, ThingClass, get_ontology,
+                       set_log_level)
+
+set_log_level(0)
 
 
 def load_ontology(file_path):
