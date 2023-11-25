@@ -5,7 +5,7 @@ import os
 import time
 
 import numpy as np
-from no_java_lib import *
+from G18_Reasoner import *
 from owlready2 import *
 from py4j.java_gateway import JavaGateway
 from tqdm import tqdm

@@ -3,15 +3,15 @@
     "class_name": "BFO_0000009",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000004",
-        "BFO_0000002",
         "BFO_0000001",
         "BFO_0000009",
-        "BFO_0000141",
-        "BFO_0000006"
+        "BFO_0000006",
+        "BFO_0000004",
+        "BFO_0000002",
+        "BFO_0000141"
       ],
       "count": 6,
-      "execution_time": 0.0004830360412597656
+      "execution_time": 0.001004934310913086
     },
     "ELK": {
       "subsumers": [
@@ -24,32 +24,32 @@
         "BFO_0000009"
       ],
       "count": 7,
-      "execution_time": 0.0831906795501709
+      "execution_time": 0.12625336647033691
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000009",
+        "obo.BFO_0000004",
         "obo.BFO_0000002",
         "obo.BFO_0000001",
-        "obo.BFO_0000009",
+        "obo.BFO_0000006",
         "obo.BFO_0000141",
-        "owl.Thing",
-        "obo.BFO_0000004",
-        "obo.BFO_0000006"
+        "owl.Thing"
       ],
       "count": 7,
-      "execution_time": 0.0005280971527099609
+      "execution_time": 0.0006263256072998047
     }
   },
   {
     "class_name": "BFO_0000015",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000003",
+        "BFO_0000001",
         "BFO_0000015",
-        "BFO_0000001"
+        "BFO_0000003"
       ],
       "count": 3,
-      "execution_time": 0.0006897449493408203
+      "execution_time": 0.0003058910369873047
     },
     "ELK": {
       "subsumers": [
@@ -59,29 +59,29 @@
         "BFO_0000001"
       ],
       "count": 4,
-      "execution_time": 0.0014560222625732422
+      "execution_time": 0.0013456344604492188
     },
     "HermiT": {
       "subsumers": [
-        "owl.Thing",
-        "obo.BFO_0000015",
         "obo.BFO_0000001",
+        "obo.BFO_0000015",
+        "owl.Thing",
         "obo.BFO_0000003"
       ],
       "count": 4,
-      "execution_time": 0.0005917549133300781
+      "execution_time": 0.0012028217315673828
     }
   },
   {
     "class_name": "BFO_0000035",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000003",
+        "BFO_0000001",
         "BFO_0000035",
-        "BFO_0000001"
+        "BFO_0000003"
       ],
       "count": 3,
-      "execution_time": 0.0005779266357421875
+      "execution_time": 0.0006613731384277344
     },
     "ELK": {
       "subsumers": [
@@ -91,32 +91,32 @@
         "BFO_0000001"
       ],
       "count": 4,
-      "execution_time": 0.007342338562011719
+      "execution_time": 0.0016345977783203125
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000035",
         "obo.BFO_0000001",
+        "obo.BFO_0000035",
         "owl.Thing",
         "obo.BFO_0000003"
       ],
       "count": 4,
-      "execution_time": 0.0005052089691162109
+      "execution_time": 0.0006215572357177734
     }
   },
   {
     "class_name": "BFO_0000034",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000020",
-        "BFO_0000002",
         "BFO_0000001",
         "BFO_0000034",
         "BFO_0000016",
-        "BFO_0000017"
+        "BFO_0000017",
+        "BFO_0000020",
+        "BFO_0000002"
       ],
       "count": 6,
-      "execution_time": 0.0007653236389160156
+      "execution_time": 0.0005910396575927734
     },
     "ELK": {
       "subsumers": [
@@ -129,70 +129,70 @@
         "BFO_0000034"
       ],
       "count": 7,
-      "execution_time": 0.0014734268188476562
+      "execution_time": 0.0012586116790771484
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000034",
+        "obo.BFO_0000017",
+        "obo.BFO_0000001",
+        "obo.BFO_0000016",
         "obo.BFO_0000020",
         "obo.BFO_0000002",
-        "obo.BFO_0000001",
-        "obo.BFO_0000034",
-        "owl.Thing",
-        "obo.BFO_0000017",
-        "obo.BFO_0000016"
+        "owl.Thing"
       ],
       "count": 7,
-      "execution_time": 0.0005116462707519531
+      "execution_time": 0.00047588348388671875
     }
   },
   {
     "class_name": "BFO_0000019",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000020",
-        "BFO_0000002",
         "BFO_0000001",
-        "BFO_0000019"
+        "BFO_0000019",
+        "BFO_0000020",
+        "BFO_0000002"
       ],
       "count": 4,
-      "execution_time": 0.0005702972412109375
+      "execution_time": 0.00044918060302734375
     },
     "ELK": {
       "subsumers": [
         "BFO_0000020",
         "BFO_0000002",
-        "\u22a4",
         "BFO_0000019",
+        "\u22a4",
         "BFO_0000001"
       ],
       "count": 5,
-      "execution_time": 0.0016069412231445312
+      "execution_time": 0.0012099742889404297
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000001",
+        "obo.BFO_0000019",
         "obo.BFO_0000020",
         "obo.BFO_0000002",
-        "obo.BFO_0000001",
-        "owl.Thing",
-        "obo.BFO_0000019"
+        "owl.Thing"
       ],
       "count": 5,
-      "execution_time": 0.0010929107666015625
+      "execution_time": 0.00121307373046875
     }
   },
   {
     "class_name": "BFO_0000018",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
+        "BFO_0000006",
         "BFO_0000004",
         "BFO_0000002",
-        "BFO_0000001",
         "BFO_0000141",
-        "BFO_0000018",
-        "BFO_0000006"
+        "BFO_0000018"
       ],
       "count": 6,
-      "execution_time": 0.0009789466857910156
+      "execution_time": 0.0003566741943359375
     },
     "ELK": {
       "subsumers": [
@@ -205,33 +205,33 @@
         "BFO_0000001"
       ],
       "count": 7,
-      "execution_time": 0.001894235610961914
+      "execution_time": 0.0012507438659667969
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000004",
         "obo.BFO_0000002",
-        "obo.BFO_0000018",
         "obo.BFO_0000001",
+        "obo.BFO_0000006",
         "obo.BFO_0000141",
         "owl.Thing",
-        "obo.BFO_0000004",
-        "obo.BFO_0000006"
+        "obo.BFO_0000018"
       ],
       "count": 7,
-      "execution_time": 0.0005202293395996094
+      "execution_time": 0.0004658699035644531
     }
   },
   {
     "class_name": "BFO_0000017",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000020",
-        "BFO_0000002",
         "BFO_0000001",
-        "BFO_0000017"
+        "BFO_0000017",
+        "BFO_0000020",
+        "BFO_0000002"
       ],
       "count": 4,
-      "execution_time": 0.0004374980926513672
+      "execution_time": 0.0004248619079589844
     },
     "ELK": {
       "subsumers": [
@@ -242,32 +242,32 @@
         "BFO_0000017"
       ],
       "count": 5,
-      "execution_time": 0.0012288093566894531
+      "execution_time": 0.0009903907775878906
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000017",
+        "obo.BFO_0000001",
         "obo.BFO_0000020",
         "obo.BFO_0000002",
-        "obo.BFO_0000001",
-        "owl.Thing",
-        "obo.BFO_0000017"
+        "owl.Thing"
       ],
       "count": 5,
-      "execution_time": 0.0008516311645507812
+      "execution_time": 0.00046944618225097656
     }
   },
   {
     "class_name": "BFO_0000016",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000020",
-        "BFO_0000002",
         "BFO_0000001",
         "BFO_0000016",
-        "BFO_0000017"
+        "BFO_0000017",
+        "BFO_0000020",
+        "BFO_0000002"
       ],
       "count": 5,
-      "execution_time": 0.0008113384246826172
+      "execution_time": 0.000522613525390625
     },
     "ELK": {
       "subsumers": [
@@ -279,32 +279,32 @@
         "BFO_0000017"
       ],
       "count": 6,
-      "execution_time": 0.0018248558044433594
+      "execution_time": 0.0022640228271484375
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000017",
+        "obo.BFO_0000001",
+        "obo.BFO_0000016",
         "obo.BFO_0000020",
         "obo.BFO_0000002",
-        "obo.BFO_0000001",
-        "owl.Thing",
-        "obo.BFO_0000017",
-        "obo.BFO_0000016"
+        "owl.Thing"
       ],
       "count": 6,
-      "execution_time": 0.0004487037658691406
+      "execution_time": 0.00048089027404785156
     }
   },
   {
     "class_name": "BFO_0000038",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000003",
+        "BFO_0000001",
         "BFO_0000038",
         "BFO_0000008",
-        "BFO_0000001"
+        "BFO_0000003"
       ],
       "count": 4,
-      "execution_time": 0.0005245208740234375
+      "execution_time": 0.0005166530609130859
     },
     "ELK": {
       "subsumers": [
@@ -315,30 +315,30 @@
         "BFO_0000001"
       ],
       "count": 5,
-      "execution_time": 0.0013725757598876953
+      "execution_time": 0.0013391971588134766
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000038",
-        "obo.BFO_0000001",
-        "owl.Thing",
         "obo.BFO_0000008",
-        "obo.BFO_0000003"
+        "obo.BFO_0000003",
+        "obo.BFO_0000001",
+        "obo.BFO_0000038",
+        "owl.Thing"
       ],
       "count": 5,
-      "execution_time": 0.0006079673767089844
+      "execution_time": 0.00030612945556640625
     }
   },
   {
     "class_name": "BFO_0000011",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
         "BFO_0000011",
-        "BFO_0000003",
-        "BFO_0000001"
+        "BFO_0000003"
       ],
       "count": 3,
-      "execution_time": 0.0005583763122558594
+      "execution_time": 0.00021886825561523438
     },
     "ELK": {
       "subsumers": [
@@ -348,63 +348,63 @@
         "BFO_0000011"
       ],
       "count": 4,
-      "execution_time": 0.0013153553009033203
+      "execution_time": 0.0007772445678710938
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000011",
         "obo.BFO_0000001",
+        "obo.BFO_0000011",
         "owl.Thing",
         "obo.BFO_0000003"
       ],
       "count": 4,
-      "execution_time": 0.0005412101745605469
+      "execution_time": 0.0004787445068359375
     }
   },
   {
     "class_name": "BFO_0000031",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000002",
         "BFO_0000001",
+        "BFO_0000002",
         "BFO_0000031"
       ],
       "count": 3,
-      "execution_time": 0.0004558563232421875
+      "execution_time": 0.0002384185791015625
     },
     "ELK": {
       "subsumers": [
         "BFO_0000002",
-        "\u22a4",
         "BFO_0000031",
+        "\u22a4",
         "BFO_0000001"
       ],
       "count": 4,
-      "execution_time": 0.0013124942779541016
+      "execution_time": 0.0018241405487060547
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000002",
         "obo.BFO_0000001",
+        "obo.BFO_0000002",
         "owl.Thing",
         "obo.BFO_0000031"
       ],
       "count": 4,
-      "execution_time": 0.0005128383636474609
+      "execution_time": 0.00046706199645996094
     }
   },
   {
     "class_name": "BFO_0000030",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000004",
-        "BFO_0000002",
         "BFO_0000001",
         "BFO_0000030",
-        "BFO_0000040"
+        "BFO_0000040",
+        "BFO_0000004",
+        "BFO_0000002"
       ],
       "count": 5,
-      "execution_time": 0.0008139610290527344
+      "execution_time": 0.0005064010620117188
     },
     "ELK": {
       "subsumers": [
@@ -416,31 +416,31 @@
         "BFO_0000001"
       ],
       "count": 6,
-      "execution_time": 0.0016474723815917969
+      "execution_time": 0.0009186267852783203
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000002",
-        "obo.BFO_0000001",
         "obo.BFO_0000040",
-        "owl.Thing",
         "obo.BFO_0000004",
-        "obo.BFO_0000030"
+        "obo.BFO_0000001",
+        "obo.BFO_0000030",
+        "obo.BFO_0000002",
+        "owl.Thing"
       ],
       "count": 6,
-      "execution_time": 0.0005288124084472656
+      "execution_time": 0.0005130767822265625
     }
   },
   {
     "class_name": "BFO_0000004",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
         "BFO_0000004",
-        "BFO_0000002",
-        "BFO_0000001"
+        "BFO_0000002"
       ],
       "count": 3,
-      "execution_time": 0.0004928112030029297
+      "execution_time": 0.00043582916259765625
     },
     "ELK": {
       "subsumers": [
@@ -450,32 +450,32 @@
         "BFO_0000001"
       ],
       "count": 4,
-      "execution_time": 0.002086162567138672
+      "execution_time": 0.0016553401947021484
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000001",
         "obo.BFO_0000004",
         "obo.BFO_0000002",
-        "owl.Thing",
-        "obo.BFO_0000001"
+        "owl.Thing"
       ],
       "count": 4,
-      "execution_time": 0.0005235671997070312
+      "execution_time": 0.00044989585876464844
     }
   },
   {
     "class_name": "BFO_0000026",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000004",
-        "BFO_0000002",
         "BFO_0000001",
         "BFO_0000026",
-        "BFO_0000141",
-        "BFO_0000006"
+        "BFO_0000006",
+        "BFO_0000004",
+        "BFO_0000002",
+        "BFO_0000141"
       ],
       "count": 6,
-      "execution_time": 0.0005900859832763672
+      "execution_time": 0.0004892349243164062
     },
     "ELK": {
       "subsumers": [
@@ -488,35 +488,35 @@
         "BFO_0000001"
       ],
       "count": 7,
-      "execution_time": 0.001955270767211914
+      "execution_time": 0.0010516643524169922
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000026",
+        "obo.BFO_0000004",
         "obo.BFO_0000002",
         "obo.BFO_0000001",
-        "obo.BFO_0000026",
+        "obo.BFO_0000006",
         "obo.BFO_0000141",
-        "owl.Thing",
-        "obo.BFO_0000004",
-        "obo.BFO_0000006"
+        "owl.Thing"
       ],
       "count": 7,
-      "execution_time": 0.0005629062652587891
+      "execution_time": 0.0005128383636474609
     }
   },
   {
     "class_name": "BFO_0000147",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
+        "BFO_0000141",
         "BFO_0000004",
         "BFO_0000002",
         "BFO_0000147",
-        "BFO_0000001",
-        "BFO_0000140",
-        "BFO_0000141"
+        "BFO_0000140"
       ],
       "count": 6,
-      "execution_time": 0.0006043910980224609
+      "execution_time": 0.0005338191986083984
     },
     "ELK": {
       "subsumers": [
@@ -529,20 +529,20 @@
         "BFO_0000147"
       ],
       "count": 7,
-      "execution_time": 0.0035893917083740234
+      "execution_time": 0.0008871555328369141
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000002",
-        "obo.BFO_0000147",
-        "obo.BFO_0000001",
         "obo.BFO_0000141",
         "owl.Thing",
         "obo.BFO_0000004",
-        "obo.BFO_0000140"
+        "obo.BFO_0000140",
+        "obo.BFO_0000001",
+        "obo.BFO_0000002",
+        "obo.BFO_0000147"
       ],
       "count": 7,
-      "execution_time": 0.0009167194366455078
+      "execution_time": 0.0005395412445068359
     }
   },
   {
@@ -553,7 +553,7 @@
         "BFO_0000003"
       ],
       "count": 2,
-      "execution_time": 0.0007457733154296875
+      "execution_time": 0.00043487548828125
     },
     "ELK": {
       "subsumers": [
@@ -562,7 +562,7 @@
         "BFO_0000001"
       ],
       "count": 3,
-      "execution_time": 0.002986907958984375
+      "execution_time": 0.002846956253051758
     },
     "HermiT": {
       "subsumers": [
@@ -571,22 +571,22 @@
         "obo.BFO_0000003"
       ],
       "count": 3,
-      "execution_time": 0.0006086826324462891
+      "execution_time": 0.00046443939208984375
     }
   },
   {
     "class_name": "BFO_0000146",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000004",
-        "BFO_0000146",
-        "BFO_0000002",
         "BFO_0000001",
-        "BFO_0000140",
-        "BFO_0000141"
+        "BFO_0000141",
+        "BFO_0000146",
+        "BFO_0000004",
+        "BFO_0000002",
+        "BFO_0000140"
       ],
       "count": 6,
-      "execution_time": 0.0006198883056640625
+      "execution_time": 0.0004901885986328125
     },
     "ELK": {
       "subsumers": [
@@ -599,31 +599,31 @@
         "BFO_0000001"
       ],
       "count": 7,
-      "execution_time": 0.0033800601959228516
+      "execution_time": 0.001390218734741211
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000141",
+        "obo.BFO_0000004",
+        "obo.BFO_0000140",
+        "obo.BFO_0000001",
         "obo.BFO_0000146",
         "obo.BFO_0000002",
-        "obo.BFO_0000001",
-        "obo.BFO_0000141",
-        "owl.Thing",
-        "obo.BFO_0000004",
-        "obo.BFO_0000140"
+        "owl.Thing"
       ],
       "count": 7,
-      "execution_time": 0.0007393360137939453
+      "execution_time": 0.00031566619873046875
     }
   },
   {
     "class_name": "BFO_0000002",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000002",
-        "BFO_0000001"
+        "BFO_0000001",
+        "BFO_0000002"
       ],
       "count": 2,
-      "execution_time": 0.0006749629974365234
+      "execution_time": 0.00020241737365722656
     },
     "ELK": {
       "subsumers": [
@@ -632,30 +632,30 @@
         "BFO_0000001"
       ],
       "count": 3,
-      "execution_time": 0.002367258071899414
+      "execution_time": 0.0010297298431396484
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000001",
         "obo.BFO_0000002",
-        "owl.Thing",
-        "obo.BFO_0000001"
+        "owl.Thing"
       ],
       "count": 3,
-      "execution_time": 0.0005362033843994141
+      "execution_time": 0.00043511390686035156
     }
   },
   {
     "class_name": "BFO_0000024",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000004",
-        "BFO_0000002",
         "BFO_0000001",
         "BFO_0000024",
-        "BFO_0000040"
+        "BFO_0000040",
+        "BFO_0000004",
+        "BFO_0000002"
       ],
       "count": 5,
-      "execution_time": 0.0005657672882080078
+      "execution_time": 0.0004558563232421875
     },
     "ELK": {
       "subsumers": [
@@ -667,33 +667,33 @@
         "BFO_0000024"
       ],
       "count": 6,
-      "execution_time": 0.00220489501953125
+      "execution_time": 0.000885009765625
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000002",
-        "obo.BFO_0000001",
         "obo.BFO_0000040",
-        "owl.Thing",
         "obo.BFO_0000004",
-        "obo.BFO_0000024"
+        "obo.BFO_0000001",
+        "obo.BFO_0000024",
+        "obo.BFO_0000002",
+        "owl.Thing"
       ],
       "count": 6,
-      "execution_time": 0.0008950233459472656
+      "execution_time": 0.0012488365173339844
     }
   },
   {
     "class_name": "BFO_0000145",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000020",
-        "BFO_0000002",
-        "BFO_0000019",
         "BFO_0000001",
-        "BFO_0000145"
+        "BFO_0000145",
+        "BFO_0000019",
+        "BFO_0000020",
+        "BFO_0000002"
       ],
       "count": 5,
-      "execution_time": 0.0006763935089111328
+      "execution_time": 0.0005271434783935547
     },
     "ELK": {
       "subsumers": [
@@ -705,19 +705,19 @@
         "BFO_0000145"
       ],
       "count": 6,
-      "execution_time": 0.0020689964294433594
+      "execution_time": 0.0018694400787353516
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000145",
+        "obo.BFO_0000001",
+        "obo.BFO_0000019",
         "obo.BFO_0000020",
         "obo.BFO_0000002",
-        "obo.BFO_0000001",
-        "obo.BFO_0000145",
-        "owl.Thing",
-        "obo.BFO_0000019"
+        "owl.Thing"
       ],
       "count": 6,
-      "execution_time": 0.001207590103149414
+      "execution_time": 0.00045299530029296875
     }
   },
   {
@@ -727,7 +727,7 @@
         "BFO_0000001"
       ],
       "count": 1,
-      "execution_time": 0.000591278076171875
+      "execution_time": 0.0003476142883300781
     },
     "ELK": {
       "subsumers": [
@@ -735,29 +735,29 @@
         "BFO_0000001"
       ],
       "count": 2,
-      "execution_time": 0.0014591217041015625
+      "execution_time": 0.0006425380706787109
     },
     "HermiT": {
       "subsumers": [
-        "owl.Thing",
-        "obo.BFO_0000001"
+        "obo.BFO_0000001",
+        "owl.Thing"
       ],
       "count": 2,
-      "execution_time": 0.0007274150848388672
+      "execution_time": 0.0004184246063232422
     }
   },
   {
     "class_name": "BFO_0000023",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
+        "BFO_0000017",
         "BFO_0000020",
         "BFO_0000002",
-        "BFO_0000001",
-        "BFO_0000023",
-        "BFO_0000017"
+        "BFO_0000023"
       ],
       "count": 5,
-      "execution_time": 0.0006921291351318359
+      "execution_time": 0.0004603862762451172
     },
     "ELK": {
       "subsumers": [
@@ -769,32 +769,32 @@
         "BFO_0000017"
       ],
       "count": 6,
-      "execution_time": 0.0024650096893310547
+      "execution_time": 0.0005996227264404297
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000017",
+        "obo.BFO_0000023",
+        "obo.BFO_0000001",
         "obo.BFO_0000020",
         "obo.BFO_0000002",
-        "obo.BFO_0000001",
-        "owl.Thing",
-        "obo.BFO_0000017",
-        "obo.BFO_0000023"
+        "owl.Thing"
       ],
       "count": 6,
-      "execution_time": 0.0010101795196533203
+      "execution_time": 0.0007872581481933594
     }
   },
   {
     "class_name": "BFO_0000144",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000003",
-        "BFO_0000015",
+        "BFO_0000001",
         "BFO_0000144",
-        "BFO_0000001"
+        "BFO_0000015",
+        "BFO_0000003"
       ],
       "count": 4,
-      "execution_time": 0.0009801387786865234
+      "execution_time": 0.00043702125549316406
     },
     "ELK": {
       "subsumers": [
@@ -805,30 +805,30 @@
         "BFO_0000144"
       ],
       "count": 5,
-      "execution_time": 0.0017778873443603516
+      "execution_time": 0.0011622905731201172
     },
     "HermiT": {
       "subsumers": [
         "obo.BFO_0000015",
-        "obo.BFO_0000144",
+        "obo.BFO_0000003",
         "obo.BFO_0000001",
-        "owl.Thing",
-        "obo.BFO_0000003"
+        "obo.BFO_0000144",
+        "owl.Thing"
       ],
       "count": 5,
-      "execution_time": 0.0014526844024658203
+      "execution_time": 0.00045943260192871094
     }
   },
   {
     "class_name": "BFO_0000008",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000003",
+        "BFO_0000001",
         "BFO_0000008",
-        "BFO_0000001"
+        "BFO_0000003"
       ],
       "count": 3,
-      "execution_time": 0.0014119148254394531
+      "execution_time": 0.00039768218994140625
     },
     "ELK": {
       "subsumers": [
@@ -838,31 +838,31 @@
         "BFO_0000001"
       ],
       "count": 4,
-      "execution_time": 0.002422332763671875
+      "execution_time": 0.0007734298706054688
     },
     "HermiT": {
       "subsumers": [
-        "owl.Thing",
-        "obo.BFO_0000008",
         "obo.BFO_0000001",
+        "obo.BFO_0000008",
+        "owl.Thing",
         "obo.BFO_0000003"
       ],
       "count": 4,
-      "execution_time": 0.0005221366882324219
+      "execution_time": 0.0004315376281738281
     }
   },
   {
     "class_name": "BFO_0000029",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
+        "BFO_0000141",
         "BFO_0000004",
         "BFO_0000029",
-        "BFO_0000002",
-        "BFO_0000001",
-        "BFO_0000141"
+        "BFO_0000002"
       ],
       "count": 5,
-      "execution_time": 0.0005943775177001953
+      "execution_time": 0.00045871734619140625
     },
     "ELK": {
       "subsumers": [
@@ -874,34 +874,34 @@
         "BFO_0000001"
       ],
       "count": 6,
-      "execution_time": 0.0015146732330322266
+      "execution_time": 0.0009000301361083984
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000004",
+        "obo.BFO_0000029",
         "obo.BFO_0000002",
         "obo.BFO_0000001",
         "obo.BFO_0000141",
-        "owl.Thing",
-        "obo.BFO_0000004",
-        "obo.BFO_0000029"
+        "owl.Thing"
       ],
       "count": 6,
-      "execution_time": 0.0006213188171386719
+      "execution_time": 0.0004811286926269531
     }
   },
   {
     "class_name": "BFO_0000028",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
+        "BFO_0000006",
         "BFO_0000028",
         "BFO_0000004",
         "BFO_0000002",
-        "BFO_0000001",
-        "BFO_0000141",
-        "BFO_0000006"
+        "BFO_0000141"
       ],
       "count": 6,
-      "execution_time": 0.0007274150848388672
+      "execution_time": 0.00048279762268066406
     },
     "ELK": {
       "subsumers": [
@@ -909,39 +909,39 @@
         "BFO_0000006",
         "BFO_0000004",
         "BFO_0000002",
-        "\u22a4",
         "BFO_0000028",
+        "\u22a4",
         "BFO_0000001"
       ],
       "count": 7,
-      "execution_time": 0.003871440887451172
+      "execution_time": 0.0009927749633789062
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000028",
+        "obo.BFO_0000004",
         "obo.BFO_0000002",
         "obo.BFO_0000001",
+        "obo.BFO_0000006",
+        "obo.BFO_0000028",
         "obo.BFO_0000141",
-        "owl.Thing",
-        "obo.BFO_0000004",
-        "obo.BFO_0000006"
+        "owl.Thing"
       ],
       "count": 7,
-      "execution_time": 0.0007424354553222656
+      "execution_time": 0.0004813671112060547
     }
   },
   {
     "class_name": "BFO_0000006",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000004",
-        "BFO_0000002",
         "BFO_0000001",
+        "BFO_0000006",
         "BFO_0000141",
-        "BFO_0000006"
+        "BFO_0000004",
+        "BFO_0000002"
       ],
       "count": 5,
-      "execution_time": 0.0006721019744873047
+      "execution_time": 0.0004661083221435547
     },
     "ELK": {
       "subsumers": [
@@ -953,33 +953,33 @@
         "BFO_0000001"
       ],
       "count": 6,
-      "execution_time": 0.004453182220458984
+      "execution_time": 0.0015172958374023438
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000004",
         "obo.BFO_0000002",
         "obo.BFO_0000001",
+        "obo.BFO_0000006",
         "obo.BFO_0000141",
-        "owl.Thing",
-        "obo.BFO_0000004",
-        "obo.BFO_0000006"
+        "owl.Thing"
       ],
       "count": 6,
-      "execution_time": 0.0006098747253417969
+      "execution_time": 0.0004417896270751953
     }
   },
   {
     "class_name": "BFO_0000027",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000004",
-        "BFO_0000002",
         "BFO_0000001",
         "BFO_0000040",
-        "BFO_0000027"
+        "BFO_0000027",
+        "BFO_0000004",
+        "BFO_0000002"
       ],
       "count": 5,
-      "execution_time": 0.0006465911865234375
+      "execution_time": 0.0004944801330566406
     },
     "ELK": {
       "subsumers": [
@@ -991,32 +991,32 @@
         "BFO_0000001"
       ],
       "count": 6,
-      "execution_time": 0.0017719268798828125
+      "execution_time": 0.0008566379547119141
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000002",
-        "obo.BFO_0000001",
         "obo.BFO_0000040",
-        "owl.Thing",
         "obo.BFO_0000027",
-        "obo.BFO_0000004"
+        "obo.BFO_0000004",
+        "obo.BFO_0000001",
+        "obo.BFO_0000002",
+        "owl.Thing"
       ],
       "count": 6,
-      "execution_time": 0.0006048679351806641
+      "execution_time": 0.0004680156707763672
     }
   },
   {
     "class_name": "BFO_0000148",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000003",
+        "BFO_0000001",
         "BFO_0000148",
         "BFO_0000008",
-        "BFO_0000001"
+        "BFO_0000003"
       ],
       "count": 4,
-      "execution_time": 0.0011119842529296875
+      "execution_time": 0.00044274330139160156
     },
     "ELK": {
       "subsumers": [
@@ -1027,31 +1027,31 @@
         "BFO_0000001"
       ],
       "count": 5,
-      "execution_time": 0.0028276443481445312
+      "execution_time": 0.0008256435394287109
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000001",
-        "owl.Thing",
         "obo.BFO_0000148",
         "obo.BFO_0000008",
-        "obo.BFO_0000003"
+        "obo.BFO_0000003",
+        "obo.BFO_0000001",
+        "owl.Thing"
       ],
       "count": 5,
-      "execution_time": 0.0010101795196533203
+      "execution_time": 0.00048041343688964844
     }
   },
   {
     "class_name": "BFO_0000040",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000004",
-        "BFO_0000002",
         "BFO_0000001",
-        "BFO_0000040"
+        "BFO_0000040",
+        "BFO_0000004",
+        "BFO_0000002"
       ],
       "count": 4,
-      "execution_time": 0.0005984306335449219
+      "execution_time": 0.0004372596740722656
     },
     "ELK": {
       "subsumers": [
@@ -1062,31 +1062,31 @@
         "BFO_0000001"
       ],
       "count": 5,
-      "execution_time": 0.0014483928680419922
+      "execution_time": 0.001348257064819336
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000002",
-        "obo.BFO_0000001",
         "obo.BFO_0000040",
-        "owl.Thing",
-        "obo.BFO_0000004"
+        "obo.BFO_0000004",
+        "obo.BFO_0000001",
+        "obo.BFO_0000002",
+        "owl.Thing"
       ],
       "count": 5,
-      "execution_time": 0.0006988048553466797
+      "execution_time": 0.0004131793975830078
     }
   },
   {
     "class_name": "BFO_0000182",
     "ELReasoner": {
       "subsumers": [
-        "BFO_0000003",
+        "BFO_0000001",
         "BFO_0000182",
         "BFO_0000015",
-        "BFO_0000001"
+        "BFO_0000003"
       ],
       "count": 4,
-      "execution_time": 0.0008795261383056641
+      "execution_time": 0.0004436969757080078
     },
     "ELK": {
       "subsumers": [
@@ -1097,33 +1097,33 @@
         "BFO_0000182"
       ],
       "count": 5,
-      "execution_time": 0.0029096603393554688
+      "execution_time": 0.0008122920989990234
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000015",
-        "obo.BFO_0000001",
         "owl.Thing",
         "obo.BFO_0000182",
-        "obo.BFO_0000003"
+        "obo.BFO_0000003",
+        "obo.BFO_0000001",
+        "obo.BFO_0000015"
       ],
       "count": 5,
-      "execution_time": 0.0005254745483398438
+      "execution_time": 0.0002894401550292969
     }
   },
   {
     "class_name": "BFO_0000142",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
+        "BFO_0000141",
         "BFO_0000142",
         "BFO_0000004",
         "BFO_0000002",
-        "BFO_0000001",
-        "BFO_0000140",
-        "BFO_0000141"
+        "BFO_0000140"
       ],
       "count": 6,
-      "execution_time": 0.0006175041198730469
+      "execution_time": 0.0002758502960205078
     },
     "ELK": {
       "subsumers": [
@@ -1136,33 +1136,33 @@
         "BFO_0000142"
       ],
       "count": 7,
-      "execution_time": 0.0014317035675048828
+      "execution_time": 0.0010128021240234375
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000141",
+        "obo.BFO_0000004",
+        "obo.BFO_0000140",
+        "obo.BFO_0000001",
         "obo.BFO_0000142",
         "obo.BFO_0000002",
-        "obo.BFO_0000001",
-        "obo.BFO_0000141",
-        "owl.Thing",
-        "obo.BFO_0000004",
-        "obo.BFO_0000140"
+        "owl.Thing"
       ],
       "count": 7,
-      "execution_time": 0.0005795955657958984
+      "execution_time": 0.0005598068237304688
     }
   },
   {
     "class_name": "BFO_0000141",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
         "BFO_0000004",
         "BFO_0000002",
-        "BFO_0000001",
         "BFO_0000141"
       ],
       "count": 4,
-      "execution_time": 0.0005190372467041016
+      "execution_time": 0.0004744529724121094
     },
     "ELK": {
       "subsumers": [
@@ -1173,30 +1173,30 @@
         "BFO_0000001"
       ],
       "count": 5,
-      "execution_time": 0.0013997554779052734
+      "execution_time": 0.0025267601013183594
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000002",
-        "obo.BFO_0000001",
         "obo.BFO_0000141",
-        "owl.Thing",
-        "obo.BFO_0000004"
+        "obo.BFO_0000004",
+        "obo.BFO_0000001",
+        "obo.BFO_0000002",
+        "owl.Thing"
       ],
       "count": 5,
-      "execution_time": 0.0005133152008056641
+      "execution_time": 0.0004451274871826172
     }
   },
   {
     "class_name": "BFO_0000020",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
         "BFO_0000020",
-        "BFO_0000002",
-        "BFO_0000001"
+        "BFO_0000002"
       ],
       "count": 3,
-      "execution_time": 0.00047326087951660156
+      "execution_time": 0.0004119873046875
     },
     "ELK": {
       "subsumers": [
@@ -1206,31 +1206,31 @@
         "BFO_0000001"
       ],
       "count": 4,
-      "execution_time": 0.0029239654541015625
+      "execution_time": 0.0007212162017822266
     },
     "HermiT": {
       "subsumers": [
+        "obo.BFO_0000001",
         "obo.BFO_0000020",
         "obo.BFO_0000002",
-        "owl.Thing",
-        "obo.BFO_0000001"
+        "owl.Thing"
       ],
       "count": 4,
-      "execution_time": 0.0004918575286865234
+      "execution_time": 0.0004284381866455078
     }
   },
   {
     "class_name": "BFO_0000140",
     "ELReasoner": {
       "subsumers": [
+        "BFO_0000001",
+        "BFO_0000141",
         "BFO_0000004",
         "BFO_0000002",
-        "BFO_0000001",
-        "BFO_0000140",
-        "BFO_0000141"
+        "BFO_0000140"
       ],
       "count": 5,
-      "execution_time": 0.0005214214324951172
+      "execution_time": 0.00043129920959472656
     },
     "ELK": {
       "subsumers": [
@@ -1242,37 +1242,37 @@
         "BFO_0000001"
       ],
       "count": 6,
-      "execution_time": 0.0014920234680175781
+      "execution_time": 0.003175973892211914
     },
     "HermiT": {
       "subsumers": [
-        "obo.BFO_0000002",
-        "obo.BFO_0000001",
         "obo.BFO_0000141",
-        "owl.Thing",
         "obo.BFO_0000004",
-        "obo.BFO_0000140"
+        "obo.BFO_0000140",
+        "obo.BFO_0000001",
+        "obo.BFO_0000002",
+        "owl.Thing"
       ],
       "count": 6,
-      "execution_time": 0.00049591064453125
+      "execution_time": 0.0004711151123046875
     }
   },
   {
     "statistics": {
       "ELReasoner": {
-        "total_time": 0.02367401123046875,
-        "average_time": 0.0006764003208705357,
-        "std_dev": 0.00019899410495779663
+        "total_time": 0.015828371047973633,
+        "average_time": 0.00045223917279924665,
+        "std_dev": 0.00013536150508521055
       },
       "ELK": {
-        "total_time": 0.16047286987304688,
-        "average_time": 0.004584939139229911,
-        "std_dev": 0.013532158250508387
+        "total_time": 0.17054963111877441,
+        "average_time": 0.004872846603393555,
+        "std_dev": 0.020825369339916397
       },
       "HermiT": {
-        "total_time": 0.02383708953857422,
-        "average_time": 0.0006810597011021205,
-        "std_dev": 0.0002319833622500768
+        "total_time": 0.018796682357788086,
+        "average_time": 0.0005370480673653738,
+        "std_dev": 0.00022674992747238366
       }
     }
   }
